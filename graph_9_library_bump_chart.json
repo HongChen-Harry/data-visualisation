@@ -1,0 +1,514 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "PLV three-year branch visits / municipal population; descending competition ranks among all 50 services each year. Shows latest top eight, not ranks within eight. Name aliases harmonized: Wodonga to Hyphen, Connected Libraries (Casey), Your Library (Eastern). Service area changes may affect comparability.",
+  "width": 690,
+  "height": 430,
+  "padding": {
+    "left": 5,
+    "right": 130,
+    "top": 5,
+    "bottom": 5
+  },
+  "title": {
+    "fontSize": 24,
+    "subtitleFontSize": 13,
+    "subtitlePadding": 7,
+    "offset": 22,
+    "anchor": "start",
+    "color": "#172b40",
+    "subtitleColor": "#526171",
+    "text": "Library Visit Rankings Over Time",
+    "subtitle": "2022\u201323 to 2024\u201325 \u00b7 Latest top eight by branch visits per resident; ranked among 50"
+  },
+  "data": {
+    "url": "data/processed/graph_9_library_bump_chart.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "rank": "number",
+        "visits_per_resident": "number"
+      }
+    }
+  },
+  "transform": [
+    {
+      "filter": "datum.latest_top_eight === 'yes'"
+    }
+  ],
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2.5,
+        "point": {
+          "filled": true,
+          "size": 75
+        }
+      },
+      "encoding": {
+        "x": {
+          "field": "financial_year",
+          "type": "ordinal",
+          "sort": [
+            "2022-23",
+            "2023-24",
+            "2024-25"
+          ],
+          "axis": {
+            "title": null,
+            "labelAngle": 0,
+            "labelPadding": 12
+          }
+        },
+        "y": {
+          "field": "rank",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              24
+            ],
+            "reverse": true,
+            "zero": false
+          },
+          "axis": {
+            "title": "Rank among 50 library services",
+            "tickMinStep": 1,
+            "format": "d",
+            "values": [
+              1,
+              5,
+              10,
+              15,
+              20,
+              24
+            ]
+          }
+        },
+        "detail": {
+          "field": "service"
+        },
+        "color": {
+          "condition": {
+            "test": "datum.service === 'Yarra'",
+            "value": "#08519c"
+          },
+          "value": "#9bb4ca"
+        },
+        "tooltip": [
+          {
+            "field": "service",
+            "title": "Library service"
+          },
+          {
+            "field": "financial_year",
+            "title": "Year"
+          },
+          {
+            "field": "rank",
+            "type": "quantitative",
+            "title": "Rank"
+          },
+          {
+            "field": "visits_per_resident",
+            "type": "quantitative",
+            "format": ".2f",
+            "title": "Branch visits per resident"
+          }
+        ]
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.financial_year === '2024-25'"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 12,
+        "fontSize": 12,
+        "fontWeight": "bold"
+      },
+      "encoding": {
+        "x": {
+          "field": "financial_year",
+          "type": "ordinal",
+          "sort": [
+            "2022-23",
+            "2023-24",
+            "2024-25"
+          ],
+          "axis": {
+            "title": null,
+            "labelAngle": 0,
+            "labelPadding": 12
+          }
+        },
+        "y": {
+          "field": "rank",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              24
+            ],
+            "reverse": true,
+            "zero": false
+          },
+          "axis": {
+            "title": "Rank among 50 library services",
+            "tickMinStep": 1,
+            "format": "d",
+            "values": [
+              1,
+              5,
+              10,
+              15,
+              20,
+              24
+            ]
+          }
+        },
+        "detail": {
+          "field": "service"
+        },
+        "color": {
+          "condition": {
+            "test": "datum.service === 'Yarra'",
+            "value": "#08519c"
+          },
+          "value": "#43566a"
+        },
+        "tooltip": [
+          {
+            "field": "service",
+            "title": "Library service"
+          },
+          {
+            "field": "financial_year",
+            "title": "Year"
+          },
+          {
+            "field": "rank",
+            "type": "quantitative",
+            "title": "Rank"
+          },
+          {
+            "field": "visits_per_resident",
+            "type": "quantitative",
+            "format": ".2f",
+            "title": "Branch visits per resident"
+          }
+        ],
+        "text": {
+          "field": "service"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "financial_year": "2023-24",
+            "rank": 0
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "fontSize": 12,
+        "color": "#08519c",
+        "fontWeight": "bold",
+        "dy": -5
+      },
+      "encoding": {
+        "x": {
+          "field": "financial_year",
+          "type": "ordinal",
+          "sort": [
+            "2022-23",
+            "2023-24",
+            "2024-25"
+          ],
+          "axis": {
+            "title": null,
+            "labelAngle": 0,
+            "labelPadding": 12
+          }
+        },
+        "y": {
+          "field": "rank",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              24
+            ],
+            "reverse": true,
+            "zero": false
+          },
+          "axis": {
+            "title": "Rank among 50 library services",
+            "tickMinStep": 1,
+            "format": "d",
+            "values": [
+              1,
+              5,
+              10,
+              15,
+              20,
+              24
+            ]
+          }
+        },
+        "text": {
+          "value": "Yarra returns to #1 in 2024\u201325 (6.21 visits per resident)"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "financial_year": "2022-23",
+            "rank": 19
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "fontSize": 12,
+        "color": "#43566a",
+        "fontWeight": "bold",
+        "align": "left",
+        "dx": 10
+      },
+      "encoding": {
+        "x": {
+          "field": "financial_year",
+          "type": "ordinal",
+          "sort": [
+            "2022-23",
+            "2023-24",
+            "2024-25"
+          ],
+          "axis": {
+            "title": null,
+            "labelAngle": 0,
+            "labelPadding": 12
+          }
+        },
+        "y": {
+          "field": "rank",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              24
+            ],
+            "reverse": true,
+            "zero": false
+          },
+          "axis": {
+            "title": "Rank among 50 library services",
+            "tickMinStep": 1,
+            "format": "d",
+            "values": [
+              1,
+              5,
+              10,
+              15,
+              20,
+              24
+            ]
+          }
+        },
+        "text": {
+          "value": "Indigo starts at #23, rises to #6"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "rule",
+        "color": "#526b82",
+        "strokeWidth": 1.5
+      },
+      "encoding": {
+        "x": {
+          "field": "financial_year",
+          "type": "ordinal",
+          "sort": [
+            "2022-23",
+            "2023-24",
+            "2024-25"
+          ],
+          "axis": {
+            "title": null,
+            "labelAngle": 0,
+            "labelPadding": 12
+          }
+        },
+        "y": {
+          "field": "rank",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              24
+            ],
+            "reverse": true,
+            "zero": false
+          },
+          "axis": {
+            "title": "Rank among 50 library services",
+            "tickMinStep": 1,
+            "format": "d",
+            "values": [
+              1,
+              5,
+              10,
+              15,
+              20,
+              24
+            ]
+          }
+        },
+        "x2": {
+          "field": "label_year"
+        },
+        "y2": {
+          "field": "label_rank"
+        }
+      },
+      "data": {
+        "values": [
+          {
+            "financial_year": "2024-25",
+            "rank": 1,
+            "label_year": "2023-24",
+            "label_rank": 0
+          },
+          {
+            "financial_year": "2022-23",
+            "rank": 23,
+            "label_year": "2022-23",
+            "label_rank": 19
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "point",
+        "shape": "triangle-up",
+        "filled": true,
+        "color": "#526b82",
+        "size": 90,
+        "strokeWidth": 0,
+        "aria": false,
+        "xOffset": {
+          "expr": "-sin(datum.annotation_arrow_angle * PI / 180) * 9"
+        },
+        "yOffset": {
+          "expr": "cos(datum.annotation_arrow_angle * PI / 180) * 9"
+        }
+      },
+      "encoding": {
+        "x": {
+          "field": "financial_year",
+          "type": "ordinal",
+          "sort": [
+            "2022-23",
+            "2023-24",
+            "2024-25"
+          ],
+          "axis": {
+            "title": null,
+            "labelAngle": 0,
+            "labelPadding": 12
+          }
+        },
+        "y": {
+          "field": "rank",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              24
+            ],
+            "reverse": true,
+            "zero": false
+          },
+          "axis": {
+            "title": "Rank among 50 library services",
+            "tickMinStep": 1,
+            "format": "d",
+            "values": [
+              1,
+              5,
+              10,
+              15,
+              20,
+              24
+            ]
+          }
+        },
+        "angle": {
+          "field": "annotation_arrow_angle",
+          "type": "quantitative",
+          "scale": null
+        },
+        "tooltip": null
+      },
+      "data": {
+        "values": [
+          {
+            "financial_year": "2024-25",
+            "rank": 1,
+            "label_year": "2023-24",
+            "label_rank": 0
+          },
+          {
+            "financial_year": "2022-23",
+            "rank": 23,
+            "label_year": "2022-23",
+            "label_rank": 19
+          }
+        ]
+      },
+      "name": "annotation_arrow_9_root_5",
+      "transform": [
+        {
+          "calculate": "atan2((indexof([\"2022-23\", \"2023-24\", \"2024-25\"],datum.financial_year)-indexof([\"2022-23\", \"2023-24\", \"2024-25\"],datum.label_year)) * 230.0, (datum.rank-datum.label_rank) * -17.916666666666668) * 180 / PI",
+          "as": "annotation_arrow_angle"
+        }
+      ]
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "domain": false,
+      "ticks": false,
+      "gridColor": "#e6ecf1",
+      "labelColor": "#43566a",
+      "titleColor": "#43566a",
+      "labelFontSize": 12,
+      "titleFontSize": 13
+    },
+    "title": {
+      "fontSize": 24,
+      "subtitleFontSize": 13,
+      "subtitlePadding": 7,
+      "offset": 22,
+      "anchor": "start",
+      "color": "#172b40",
+      "subtitleColor": "#526171"
+    }
+  }
+}

@@ -1,0 +1,201 @@
+service,financial_year,population,metric,metric_order,value,unit,normalized_value
+Bayside,2024-25,106118,Local funding,0,33.6391,AUD / resident,25.287985
+Boroondara,2024-25,178008,Local funding,0,59.286392,AUD / resident,58.760003
+Brimbank,2024-25,198152,Local funding,0,40.537542,AUD / resident,34.291071
+Buloke,2024-25,5956,Local funding,0,26.639659,AUD / resident,16.153087
+Campaspe,2024-25,38153,Local funding,0,23.188557,AUD / resident,11.649088
+Central Highlands,2024-25,239369,Local funding,0,18.743016,AUD / resident,5.847258
+Connected Libraries,2024-25,405415,Local funding,0,16.750804,AUD / resident,3.247242
+Corangamite Moyne,2024-25,33563,Local funding,0,34.765693,AUD / resident,26.75829
+Darebin,2024-25,159963,Local funding,0,35.463964,AUD / resident,27.669596
+East Gippsland,2024-25,49422,Local funding,0,42.383412,AUD / resident,36.700097
+Frankston,2024-25,144615,Local funding,0,23.165909,AUD / resident,11.619531
+Gannawarra,2024-25,10404,Local funding,0,59.533545,AUD / resident,59.08256
+Geelong,2024-25,381432,Local funding,0,46.552949,AUD / resident,42.141717
+Glen Eira,2024-25,161057,Local funding,0,27.118393,AUD / resident,16.777877
+Glenelg,2024-25,20007,Local funding,0,34.723547,AUD / resident,26.703285
+Goldfields,2024-25,208097,Local funding,0,27.872689,AUD / resident,17.762301
+Goulburn Valley,2024-25,112449,Local funding,0,26.476723,AUD / resident,15.94044
+Greater Dandenong,2024-25,167298,Local funding,0,41.144849,AUD / resident,35.083662
+High Country,2024-25,68785,Local funding,0,28.16521,AUD / resident,18.144068
+Hindmarsh,2024-25,5464,Local funding,0,19.469802,AUD / resident,6.79578
+Hobsons Bay,2024-25,95633,Local funding,0,57.828961,AUD / resident,56.857924
+Hume,2024-25,271709,Local funding,0,22.687349,AUD / resident,10.994968
+Hyphen,2024-25,44824,Local funding,0,16.489068,AUD / resident,2.905655
+Indigo,2024-25,17788,Local funding,0,37.866258,AUD / resident,30.804806
+Kingston,2024-25,166521,Local funding,0,39.811699,AUD / resident,33.343781
+Latrobe,2024-25,78845,Local funding,0,28.687526,AUD / resident,18.825737
+Maribyrnong,2024-25,94251,Local funding,0,55.336315,AUD / resident,53.604798
+Melbourne,2024-25,189381,Local funding,0,90.885749,AUD / resident,100.0
+Melton,2024-25,219697,Local funding,0,14.262666,AUD / resident,0.0
+Merri-bek,2024-25,186534,Local funding,0,36.749702,AUD / resident,29.347601
+Mildura,2024-25,57626,Local funding,0,41.621577,AUD / resident,35.705834
+Mitchell,2024-25,56384,Local funding,0,16.292528,AUD / resident,2.649151
+Monash,2024-25,209268,Local funding,0,40.524147,AUD / resident,34.27359
+Moonee Valley,2024-25,129732,Local funding,0,48.570954,AUD / resident,44.775395
+Mornington Peninsula,2024-25,171450,Local funding,0,30.719627,AUD / resident,21.47781
+Murrindindi,2024-25,15603,Local funding,0,43.677242,AUD / resident,38.388661
+Myli,2024-25,266867,Local funding,0,30.850798,AUD / resident,21.649001
+Port Phillip,2024-25,112669,Local funding,0,53.980376,AUD / resident,51.835176
+Stonnington,2024-25,114038,Local funding,0,53.479404,AUD / resident,51.181363
+Swan Hill,2024-25,21094,Local funding,0,51.518346,AUD / resident,48.622006
+Towong,2024-25,6237,Local funding,0,18.342793,AUD / resident,5.324932
+Warrnambool,2024-25,36150,Local funding,0,49.144951,AUD / resident,45.524512
+Wellington,2024-25,46533,Local funding,0,36.005244,AUD / resident,28.376015
+Whitehorse Manningham,2024-25,315223,Local funding,0,32.677796,AUD / resident,24.033398
+Wimmera,2024-25,24289,Local funding,0,27.020455,AUD / resident,16.65006
+Wyndham,2024-25,337009,Local funding,0,37.50815,AUD / resident,30.337442
+Yarra,2024-25,100706,Local funding,0,54.750323,AUD / resident,52.840026
+Yarra Plenty,2024-25,448828,Local funding,0,34.568919,AUD / resident,26.501483
+Yarriambiack,2024-25,6346,Local funding,0,30.088087,AUD / resident,20.653594
+Your Library,2024-25,442793,Local funding,0,26.89575,AUD / resident,16.487309
+Bayside,2024-25,106118,Physical loans,1,6.298517,Loans / resident,70.339317
+Boroondara,2024-25,178008,Physical loans,1,8.456828,Loans / resident,100.0
+Brimbank,2024-25,198152,Physical loans,1,4.287042,Loans / resident,42.696541
+Buloke,2024-25,5956,Physical loans,1,1.180154,Loans / resident,0.0
+Campaspe,2024-25,38153,Physical loans,1,4.41905,Loans / resident,44.510658
+Central Highlands,2024-25,239369,Physical loans,1,4.140089,Loans / resident,40.677031
+Connected Libraries,2024-25,405415,Physical loans,1,3.081849,Loans / resident,26.134126
+Corangamite Moyne,2024-25,33563,Physical loans,1,2.633972,Loans / resident,19.97915
+Darebin,2024-25,159963,Physical loans,1,5.141702,Loans / resident,54.441733
+East Gippsland,2024-25,49422,Physical loans,1,4.68336,Loans / resident,48.14295
+Frankston,2024-25,144615,Physical loans,1,4.735712,Loans / resident,48.862405
+Gannawarra,2024-25,10404,Physical loans,1,3.946078,Loans / resident,38.010831
+Geelong,2024-25,381432,Physical loans,1,6.363981,Loans / resident,71.238962
+Glen Eira,2024-25,161057,Physical loans,1,5.229515,Loans / resident,55.648514
+Glenelg,2024-25,20007,Physical loans,1,4.392213,Loans / resident,44.141851
+Goldfields,2024-25,208097,Physical loans,1,4.617404,Loans / resident,47.236557
+Goulburn Valley,2024-25,112449,Physical loans,1,2.945807,Loans / resident,24.264551
+Greater Dandenong,2024-25,167298,Physical loans,1,3.874936,Loans / resident,37.033149
+High Country,2024-25,68785,Physical loans,1,4.283637,Loans / resident,42.64975
+Hindmarsh,2024-25,5464,Physical loans,1,1.419107,Loans / resident,3.283814
+Hobsons Bay,2024-25,95633,Physical loans,1,3.941004,Loans / resident,37.94109
+Hume,2024-25,271709,Physical loans,1,3.71259,Loans / resident,34.8021
+Hyphen,2024-25,44824,Physical loans,1,2.95228,Loans / resident,24.353513
+Indigo,2024-25,17788,Physical loans,1,4.08978,Loans / resident,39.985651
+Kingston,2024-25,166521,Physical loans,1,4.618571,Loans / resident,47.252584
+Latrobe,2024-25,78845,Physical loans,1,2.709684,Loans / resident,21.01962
+Maribyrnong,2024-25,94251,Physical loans,1,5.363561,Loans / resident,57.490648
+Melbourne,2024-25,189381,Physical loans,1,5.59432,Loans / resident,60.661868
+Melton,2024-25,219697,Physical loans,1,2.729186,Loans / resident,21.287635
+Merri-bek,2024-25,186534,Physical loans,1,5.105407,Loans / resident,53.942955
+Mildura,2024-25,57626,Physical loans,1,3.485232,Loans / resident,31.677633
+Mitchell,2024-25,56384,Physical loans,1,2.285063,Loans / resident,15.184256
+Monash,2024-25,209268,Physical loans,1,6.229404,Loans / resident,69.389537
+Moonee Valley,2024-25,129732,Physical loans,1,4.832493,Loans / resident,50.192423
+Mornington Peninsula,2024-25,171450,Physical loans,1,5.437824,Loans / resident,58.511215
+Murrindindi,2024-25,15603,Physical loans,1,3.769596,Loans / resident,35.585507
+Myli,2024-25,266867,Physical loans,1,3.136368,Loans / resident,26.883344
+Port Phillip,2024-25,112669,Physical loans,1,7.196886,Loans / resident,82.685201
+Stonnington,2024-25,114038,Physical loans,1,3.825891,Loans / resident,36.359155
+Swan Hill,2024-25,21094,Physical loans,1,3.971224,Loans / resident,38.356395
+Towong,2024-25,6237,Physical loans,1,2.144781,Loans / resident,13.256424
+Warrnambool,2024-25,36150,Physical loans,1,6.699557,Loans / resident,75.850635
+Wellington,2024-25,46533,Physical loans,1,3.75007,Loans / resident,35.317174
+Whitehorse Manningham,2024-25,315223,Physical loans,1,7.755027,Loans / resident,90.355478
+Wimmera,2024-25,24289,Physical loans,1,2.447445,Loans / resident,17.4158
+Wyndham,2024-25,337009,Physical loans,1,4.755149,Loans / resident,49.129518
+Yarra,2024-25,100706,Physical loans,1,5.822305,Loans / resident,63.794949
+Yarra Plenty,2024-25,448828,Physical loans,1,5.071791,Loans / resident,53.48099
+Yarriambiack,2024-25,6346,Physical loans,1,2.069335,Loans / resident,12.219602
+Your Library,2024-25,442793,Physical loans,1,5.135921,Loans / resident,54.362298
+Bayside,2024-25,106118,Branch visits,2,4.273347,Visits / resident,65.168088
+Boroondara,2024-25,178008,Branch visits,2,5.462451,Visits / resident,86.500209
+Brimbank,2024-25,198152,Branch visits,2,4.164858,Visits / resident,63.221844
+Buloke,2024-25,5956,Branch visits,2,1.793486,Visits / resident,20.68024
+Campaspe,2024-25,38153,Branch visits,2,3.43551,Visits / resident,50.137583
+Central Highlands,2024-25,239369,Branch visits,2,2.416612,Visits / resident,31.858912
+Connected Libraries,2024-25,405415,Branch visits,2,1.914882,Visits / resident,22.858055
+Corangamite Moyne,2024-25,33563,Branch visits,2,1.866311,Visits / resident,21.986705
+Darebin,2024-25,159963,Branch visits,2,3.41569,Visits / resident,49.782023
+East Gippsland,2024-25,49422,Branch visits,2,4.977014,Visits / resident,77.791641
+Frankston,2024-25,144615,Branch visits,2,1.791121,Visits / resident,20.637825
+Gannawarra,2024-25,10404,Branch visits,2,5.212611,Visits / resident,82.018156
+Geelong,2024-25,381432,Branch visits,2,3.820311,Visits / resident,57.040792
+Glen Eira,2024-25,161057,Branch visits,2,3.60121,Visits / resident,53.110181
+Glenelg,2024-25,20007,Branch visits,2,4.925576,Visits / resident,76.868857
+Goldfields,2024-25,208097,Branch visits,2,4.131876,Visits / resident,62.630153
+Goulburn Valley,2024-25,112449,Branch visits,2,2.175351,Visits / resident,27.530766
+Greater Dandenong,2024-25,167298,Branch visits,2,4.909043,Visits / resident,76.572252
+High Country,2024-25,68785,Branch visits,2,4.017998,Visits / resident,60.587223
+Hindmarsh,2024-25,5464,Branch visits,2,1.751281,Visits / resident,19.923107
+Hobsons Bay,2024-25,95633,Branch visits,2,6.192998,Visits / resident,99.605971
+Hume,2024-25,271709,Branch visits,2,3.043304,Visits / resident,43.101544
+Hyphen,2024-25,44824,Branch visits,2,2.873282,Visits / resident,40.051417
+Indigo,2024-25,17788,Branch visits,2,5.153081,Visits / resident,80.950212
+Kingston,2024-25,166521,Branch visits,2,2.35488,Visits / resident,30.751464
+Latrobe,2024-25,78845,Branch visits,2,2.595802,Visits / resident,35.073517
+Maribyrnong,2024-25,94251,Branch visits,2,4.415508,Visits / resident,67.718404
+Melbourne,2024-25,189381,Branch visits,2,6.166379,Visits / resident,99.128429
+Melton,2024-25,219697,Branch visits,2,2.548883,Visits / resident,34.231812
+Merri-bek,2024-25,186534,Branch visits,2,3.611829,Visits / resident,53.300699
+Mildura,2024-25,57626,Branch visits,2,1.943984,Visits / resident,23.380123
+Mitchell,2024-25,56384,Branch visits,2,2.120779,Visits / resident,26.55177
+Monash,2024-25,209268,Branch visits,2,4.180892,Visits / resident,63.509491
+Moonee Valley,2024-25,129732,Branch visits,2,3.442659,Visits / resident,50.265834
+Mornington Peninsula,2024-25,171450,Branch visits,2,2.003284,Visits / resident,24.443947
+Murrindindi,2024-25,15603,Branch visits,2,4.372749,Visits / resident,66.951328
+Myli,2024-25,266867,Branch visits,2,2.916041,Visits / resident,40.818488
+Port Phillip,2024-25,112669,Branch visits,2,5.04318,Visits / resident,78.978623
+Stonnington,2024-25,114038,Branch visits,2,2.61704,Visits / resident,35.45452
+Swan Hill,2024-25,21094,Branch visits,2,2.361288,Visits / resident,30.866411
+Towong,2024-25,6237,Branch visits,2,1.91358,Visits / resident,22.834697
+Warrnambool,2024-25,36150,Branch visits,2,4.877815,Visits / resident,76.012034
+Wellington,2024-25,46533,Branch visits,2,4.846453,Visits / resident,75.449418
+Whitehorse Manningham,2024-25,315223,Branch visits,2,3.113412,Visits / resident,44.359258
+Wimmera,2024-25,24289,Branch visits,2,2.815966,Visits / resident,39.023186
+Wyndham,2024-25,337009,Branch visits,2,2.936675,Visits / resident,41.188667
+Yarra,2024-25,100706,Branch visits,2,6.214962,Visits / resident,100.0
+Yarra Plenty,2024-25,448828,Branch visits,2,3.176255,Visits / resident,45.486637
+Yarriambiack,2024-25,6346,Branch visits,2,0.640719,Visits / resident,0.0
+Your Library,2024-25,442793,Branch visits,2,3.873456,Visits / resident,57.99418
+Bayside,2024-25,106118,Event attendance,3,0.341384,Attendances / resident,28.868339
+Boroondara,2024-25,178008,Event attendance,3,0.217906,Attendances / resident,7.441119
+Brimbank,2024-25,198152,Event attendance,3,0.290176,Attendances / resident,19.982213
+Buloke,2024-25,5956,Event attendance,3,0.267965,Attendances / resident,16.127902
+Campaspe,2024-25,38153,Event attendance,3,0.659031,Attendances / resident,83.989691
+Central Highlands,2024-25,239369,Event attendance,3,0.293814,Attendances / resident,20.613503
+Connected Libraries,2024-25,405415,Event attendance,3,0.17769,Attendances / resident,0.462349
+Corangamite Moyne,2024-25,33563,Event attendance,3,0.241456,Attendances / resident,11.527835
+Darebin,2024-25,159963,Event attendance,3,0.218994,Attendances / resident,7.629999
+East Gippsland,2024-25,49422,Event attendance,3,0.291611,Attendances / resident,20.231193
+Frankston,2024-25,144615,Event attendance,3,0.330775,Attendances / resident,27.027303
+Gannawarra,2024-25,10404,Event attendance,3,0.316032,Attendances / resident,24.469027
+Geelong,2024-25,381432,Event attendance,3,0.421194,Attendances / resident,42.717841
+Glen Eira,2024-25,161057,Event attendance,3,0.327257,Attendances / resident,26.416821
+Glenelg,2024-25,20007,Event attendance,3,0.239416,Attendances / resident,11.173804
+Goldfields,2024-25,208097,Event attendance,3,0.330336,Attendances / resident,26.951213
+Goulburn Valley,2024-25,112449,Event attendance,3,0.278402,Attendances / resident,17.938985
+Greater Dandenong,2024-25,167298,Event attendance,3,0.252197,Attendances / resident,13.391606
+High Country,2024-25,68785,Event attendance,3,0.246609,Attendances / resident,12.421973
+Hindmarsh,2024-25,5464,Event attendance,3,0.385066,Attendances / resident,36.448455
+Hobsons Bay,2024-25,95633,Event attendance,3,0.357377,Attendances / resident,31.643528
+Hume,2024-25,271709,Event attendance,3,0.31183,Attendances / resident,23.73979
+Hyphen,2024-25,44824,Event attendance,3,0.286409,Attendances / resident,19.328495
+Indigo,2024-25,17788,Event attendance,3,0.751293,Attendances / resident,100.0
+Kingston,2024-25,166521,Event attendance,3,0.229352,Attendances / resident,9.427438
+Latrobe,2024-25,78845,Event attendance,3,0.239368,Attendances / resident,11.165506
+Maribyrnong,2024-25,94251,Event attendance,3,0.43399,Attendances / resident,44.938292
+Melbourne,2024-25,189381,Event attendance,3,0.286544,Attendances / resident,19.35192
+Melton,2024-25,219697,Event attendance,3,0.192197,Attendances / resident,2.979754
+Merri-bek,2024-25,186534,Event attendance,3,0.280641,Attendances / resident,18.327478
+Mildura,2024-25,57626,Event attendance,3,0.175025,Attendances / resident,0.0
+Mitchell,2024-25,56384,Event attendance,3,0.203409,Attendances / resident,4.925419
+Monash,2024-25,209268,Event attendance,3,0.322491,Attendances / resident,25.58977
+Moonee Valley,2024-25,129732,Event attendance,3,0.440693,Attendances / resident,46.101472
+Mornington Peninsula,2024-25,171450,Event attendance,3,0.180443,Attendances / resident,0.940208
+Murrindindi,2024-25,15603,Event attendance,3,0.52977,Attendances / resident,61.559005
+Myli,2024-25,266867,Event attendance,3,0.379084,Attendances / resident,35.410409
+Port Phillip,2024-25,112669,Event attendance,3,0.339694,Attendances / resident,28.575078
+Stonnington,2024-25,114038,Event attendance,3,0.221654,Attendances / resident,8.091554
+Swan Hill,2024-25,21094,Event attendance,3,0.636389,Attendances / resident,80.060746
+Towong,2024-25,6237,Event attendance,3,0.230079,Attendances / resident,9.55344
+Warrnambool,2024-25,36150,Event attendance,3,0.552974,Attendances / resident,65.585571
+Wellington,2024-25,46533,Event attendance,3,0.342553,Attendances / resident,29.071106
+Whitehorse Manningham,2024-25,315223,Event attendance,3,0.217881,Attendances / resident,7.436735
+Wimmera,2024-25,24289,Event attendance,3,0.246573,Attendances / resident,12.415643
+Wyndham,2024-25,337009,Event attendance,3,0.37307,Attendances / resident,34.36683
+Yarra,2024-25,100706,Event attendance,3,0.66852,Attendances / resident,85.636408
+Yarra Plenty,2024-25,448828,Event attendance,3,0.319982,Attendances / resident,25.154467
+Yarriambiack,2024-25,6346,Event attendance,3,0.314056,Attendances / resident,24.126096
+Your Library,2024-25,442793,Event attendance,3,0.32328,Attendances / resident,25.726677

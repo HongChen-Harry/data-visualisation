@@ -1,0 +1,426 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "description": "Victorian council expenditure by function, 2024\u201325. Source: Victorian Local Government Grants Commission, Total Exp sheet. Data cleaned from 79 councils; total columns excluded.",
+  "width": 900,
+  "height": 500,
+  "padding": {
+    "top": 20,
+    "left": 20,
+    "right": 20,
+    "bottom": 65
+  },
+  "autosize": "pad",
+  "background": "#ffffff",
+  "title": {
+    "text": "Victorian Council Expenditure by Service",
+    "subtitle": "2024\u201325 \u2022 Larger and darker rectangles represent higher expenditure \u2022 AUD",
+    "anchor": "start",
+    "fontSize": 22,
+    "subtitleFontSize": 13,
+    "offset": 18
+  },
+  "data": [
+    {
+      "name": "source",
+      "values": [
+        {
+          "id": "root",
+          "parent": null,
+          "category": "All services",
+          "expenditure": 0
+        },
+        {
+          "id": "1",
+          "parent": "root",
+          "category": "Governance",
+          "expenditure": 2716539645.33
+        },
+        {
+          "id": "2",
+          "parent": "root",
+          "category": "Recreation & Culture",
+          "expenditure": 2519740630.03
+        },
+        {
+          "id": "3",
+          "parent": "root",
+          "category": "Local Roads & Bridges",
+          "expenditure": 1449359398.29
+        },
+        {
+          "id": "4",
+          "parent": "root",
+          "category": "Waste Management",
+          "expenditure": 1331509603.3
+        },
+        {
+          "id": "5",
+          "parent": "root",
+          "category": "Business & Economic Services",
+          "expenditure": 1125176909.35
+        },
+        {
+          "id": "6",
+          "parent": "root",
+          "category": "Family & Community Services",
+          "expenditure": 1005760489.93
+        },
+        {
+          "id": "7",
+          "parent": "root",
+          "category": "Traffic & Street Management",
+          "expenditure": 937802724.19
+        },
+        {
+          "id": "8",
+          "parent": "root",
+          "category": "Environment",
+          "expenditure": 641296643.7
+        },
+        {
+          "id": "9",
+          "parent": "root",
+          "category": "Aged & Disabled Services",
+          "expenditure": 342287419.6
+        },
+        {
+          "id": "10",
+          "parent": "root",
+          "category": "Other (Main Roads & Other)",
+          "expenditure": 109476391.44
+        }
+      ]
+    },
+    {
+      "name": "totals",
+      "source": "source",
+      "transform": [
+        {
+          "type": "aggregate",
+          "fields": [
+            "expenditure"
+          ],
+          "ops": [
+            "sum"
+          ],
+          "as": [
+            "total"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "tree",
+      "source": "source",
+      "transform": [
+        {
+          "type": "stratify",
+          "key": "id",
+          "parentKey": "parent"
+        },
+        {
+          "type": "treemap",
+          "field": "expenditure",
+          "sort": {
+            "field": "value",
+            "order": "descending"
+          },
+          "method": "squarify",
+          "size": [
+            {
+              "signal": "width"
+            },
+            {
+              "signal": "height"
+            }
+          ],
+          "paddingInner": 3,
+          "paddingOuter": 0,
+          "round": true
+        }
+      ]
+    },
+    {
+      "name": "leaves",
+      "source": "tree",
+      "transform": [
+        {
+          "type": "filter",
+          "expr": "!datum.children"
+        }
+      ]
+    },
+    {
+      "name": "labels",
+      "source": "leaves",
+      "transform": [
+        {
+          "type": "filter",
+          "expr": "datum.x1 - datum.x0 > 75 && datum.y1 - datum.y0 > 48"
+        }
+      ]
+    },
+    {
+      "name": "other",
+      "source": "leaves",
+      "transform": [
+        {
+          "type": "filter",
+          "expr": "datum.category === 'Other (Main Roads & Other)'"
+        }
+      ]
+    }
+  ],
+  "scales": [
+    {
+      "name": "color",
+      "type": "linear",
+      "domain": {
+        "data": "leaves",
+        "field": "expenditure"
+      },
+      "range": [
+        "#deebf7",
+        "#08519c"
+      ],
+      "zero": true
+    }
+  ],
+  "marks": [
+    {
+      "type": "rect",
+      "from": {
+        "data": "leaves"
+      },
+      "encode": {
+        "enter": {
+          "x": {
+            "field": "x0"
+          },
+          "y": {
+            "field": "y0"
+          },
+          "x2": {
+            "field": "x1"
+          },
+          "y2": {
+            "field": "y1"
+          },
+          "fill": {
+            "scale": "color",
+            "field": "expenditure"
+          },
+          "stroke": {
+            "value": "white"
+          },
+          "strokeWidth": {
+            "value": 2
+          }
+        },
+        "update": {
+          "fillOpacity": {
+            "value": 1
+          },
+          "tooltip": {
+            "signal": "{'Service': datum.category, 'Expenditure (AUD)': format(datum.expenditure, '$,.2f'), 'Share of total': format(datum.expenditure / data('totals')[0].total, '.1%')}"
+          }
+        },
+        "hover": {
+          "fillOpacity": {
+            "value": 0.8
+          }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "interactive": false,
+      "from": {
+        "data": "labels"
+      },
+      "encode": {
+        "enter": {
+          "x": {
+            "signal": "datum.x0 + 9"
+          },
+          "y": {
+            "signal": "datum.y0 + 10"
+          },
+          "text": {
+            "field": "category"
+          },
+          "baseline": {
+            "value": "top"
+          },
+          "fontSize": {
+            "value": 13
+          },
+          "fontWeight": {
+            "value": "bold"
+          },
+          "fill": {
+            "signal": "datum.expenditure > 1.8e9 ? '#ffffff' : '#102b46'"
+          },
+          "limit": {
+            "signal": "max(0, datum.x1 - datum.x0 - 18)"
+          }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "interactive": false,
+      "from": {
+        "data": "labels"
+      },
+      "encode": {
+        "enter": {
+          "x": {
+            "signal": "datum.x0 + 9"
+          },
+          "y": {
+            "signal": "datum.y0 + 30"
+          },
+          "text": {
+            "signal": "'$' + format(datum.expenditure / 1e9, '.2f') + 'bn \u00b7 ' + format(datum.expenditure / data('totals')[0].total, '.1%')"
+          },
+          "baseline": {
+            "value": "top"
+          },
+          "fontSize": {
+            "value": 12
+          },
+          "fill": {
+            "signal": "datum.expenditure > 1.8e9 ? '#ffffff' : '#102b46'"
+          },
+          "limit": {
+            "signal": "max(0, datum.x1 - datum.x0 - 18)"
+          }
+        }
+      }
+    },
+    {
+      "type": "rule",
+      "interactive": false,
+      "from": {
+        "data": "other"
+      },
+      "encode": {
+        "enter": {
+          "x": {
+            "signal": "(datum.x0 + datum.x1) / 2"
+          },
+          "x2": {
+            "signal": "(datum.x0 + datum.x1) / 2"
+          },
+          "y": {
+            "field": "y1"
+          },
+          "y2": {
+            "signal": "height + 15"
+          },
+          "stroke": {
+            "value": "#526b82"
+          },
+          "strokeWidth": {
+            "value": 1.5
+          }
+        }
+      }
+    },
+    {
+      "name": "other_annotation_arrow",
+      "type": "symbol",
+      "interactive": false,
+      "from": {
+        "data": "other"
+      },
+      "encode": {
+        "enter": {
+          "x": {
+            "signal": "(datum.x0 + datum.x1) / 2"
+          },
+          "y": {
+            "signal": "datum.y1 + 7"
+          },
+          "shape": {
+            "value": "triangle-up"
+          },
+          "size": {
+            "value": 90
+          },
+          "fill": {
+            "value": "#526b82"
+          }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "interactive": false,
+      "from": {
+        "data": "other"
+      },
+      "encode": {
+        "enter": {
+          "x": {
+            "signal": "width"
+          },
+          "y": {
+            "signal": "height + 21"
+          },
+          "align": {
+            "value": "right"
+          },
+          "baseline": {
+            "value": "top"
+          },
+          "text": {
+            "value": "Other (Main Roads & Other)"
+          },
+          "fontSize": {
+            "value": 13
+          },
+          "fontWeight": {
+            "value": "bold"
+          },
+          "fill": {
+            "value": "#102b46"
+          }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "interactive": false,
+      "from": {
+        "data": "other"
+      },
+      "encode": {
+        "enter": {
+          "x": {
+            "signal": "width"
+          },
+          "y": {
+            "signal": "height + 40"
+          },
+          "align": {
+            "value": "right"
+          },
+          "baseline": {
+            "value": "top"
+          },
+          "text": {
+            "signal": "'$' + format(datum.expenditure / 1e6, '.1f') + 'm \u00b7 ' + format(datum.expenditure / data('totals')[0].total, '.1%')"
+          },
+          "fontSize": {
+            "value": 12
+          },
+          "fill": {
+            "value": "#102b46"
+          }
+        }
+      }
+    }
+  ]
+}

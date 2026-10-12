@@ -1,0 +1,646 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "LGPRF Indicators 2024-25: WC3 direct kerbside garbage collection cost per bin (AUD); WC5 kerbside waste diverted from landfill. WC5 source proportions multiplied by 100 to percentage points. All 79 councils have applicable numeric results. Cost covers garbage service, not the whole recycling system.",
+  "width": 820,
+  "height": 420,
+  "title": {
+    "text": "Waste Collection Cost and Landfill Diversion",
+    "subtitle": "2024\u201325 \u00b7 Garbage collection cost per bin versus kerbside landfill diversion",
+    "anchor": "start",
+    "color": "#172b40",
+    "subtitleColor": "#526171",
+    "fontSize": 24,
+    "subtitleFontSize": 13,
+    "subtitlePadding": 7,
+    "offset": 22
+  },
+  "data": {
+    "url": "data/processed/graph_5_waste_scatterplot.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "garbage_collection_cost": "number",
+        "landfill_diversion_pct": "number"
+      }
+    }
+  },
+  "params": [
+    {
+      "name": "councilGroup",
+      "value": "All councils",
+      "bind": {
+        "input": "select",
+        "options": [
+          "All councils",
+          "Metro",
+          "Interface",
+          "Regional City",
+          "Large Shire",
+          "Small Shire"
+        ],
+        "name": "Council group: "
+      }
+    }
+  ],
+  "transform": [
+    {
+      "filter": "councilGroup === 'All councils' || datum.group === councilGroup"
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "domain": false,
+      "ticks": false,
+      "gridColor": "#e6ecf1",
+      "labelColor": "#43566a",
+      "titleColor": "#43566a",
+      "titleFontWeight": "normal",
+      "labelFontSize": 12,
+      "titleFontSize": 13,
+      "labelPadding": 8,
+      "titlePadding": 14
+    },
+    "title": {
+      "anchor": "start",
+      "color": "#172b40",
+      "subtitleColor": "#526171",
+      "fontSize": 24,
+      "subtitleFontSize": 13,
+      "subtitlePadding": 7,
+      "offset": 22
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "color": "#265d8c",
+        "stroke": "white",
+        "strokeWidth": 1
+      },
+      "encoding": {
+        "x": {
+          "field": "garbage_collection_cost",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              500
+            ]
+          },
+          "axis": {
+            "title": "Garbage collection cost (AUD per bin)",
+            "format": "$,.0f",
+            "tickCount": 6
+          }
+        },
+        "y": {
+          "field": "landfill_diversion_pct",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              100
+            ]
+          },
+          "axis": {
+            "title": "Kerbside waste diverted from landfill",
+            "labelExpr": "datum.value + '%'",
+            "tickCount": 6
+          }
+        },
+        "size": {
+          "condition": {
+            "param": "hoverCouncil",
+            "empty": false,
+            "value": 140
+          },
+          "value": 65
+        },
+        "opacity": {
+          "condition": {
+            "param": "hoverCouncil",
+            "empty": false,
+            "value": 1
+          },
+          "value": 0.65
+        },
+        "tooltip": [
+          {
+            "field": "council",
+            "title": "Council",
+            "type": "nominal"
+          },
+          {
+            "field": "group",
+            "title": "Group",
+            "type": "nominal"
+          },
+          {
+            "field": "garbage_collection_cost",
+            "title": "Garbage collection (AUD per bin)",
+            "type": "quantitative",
+            "format": "$,.2f"
+          },
+          {
+            "field": "landfill_diversion_pct",
+            "title": "Diverted from landfill (%)",
+            "type": "quantitative",
+            "format": ".1f"
+          }
+        ]
+      },
+      "params": [
+        {
+          "name": "hoverCouncil",
+          "select": {
+            "type": "point",
+            "fields": [
+              "council"
+            ],
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ]
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.council === 'Alpine Shire'"
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "garbage_collection_cost",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              500
+            ]
+          },
+          "axis": {
+            "title": "Garbage collection cost (AUD per bin)",
+            "format": "$,.0f",
+            "tickCount": 6
+          }
+        },
+        "y": {
+          "field": "landfill_diversion_pct",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              100
+            ]
+          },
+          "axis": {
+            "title": "Kerbside waste diverted from landfill",
+            "labelExpr": "datum.value + '%'",
+            "tickCount": 6
+          }
+        }
+      },
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 145,
+        "color": "#08519c",
+        "stroke": "white",
+        "strokeWidth": 2
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.council === 'Alpine Shire'"
+        },
+        {
+          "calculate": "120",
+          "as": "annotation_x"
+        },
+        {
+          "calculate": "82",
+          "as": "annotation_y"
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "annotation_x",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              500
+            ]
+          },
+          "axis": {
+            "title": "Garbage collection cost (AUD per bin)",
+            "format": "$,.0f",
+            "tickCount": 6
+          }
+        },
+        "y": {
+          "field": "annotation_y",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              100
+            ]
+          },
+          "axis": {
+            "title": "Kerbside waste diverted from landfill",
+            "labelExpr": "datum.value + '%'",
+            "tickCount": 6
+          }
+        },
+        "text": {
+          "value": "Alpine: 74.1% diverted at $113/bin"
+        }
+      },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 7,
+        "dy": 0,
+        "fontSize": 12,
+        "fontWeight": "bold",
+        "color": "#08519c"
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.council === 'Melbourne City'"
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "garbage_collection_cost",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              500
+            ]
+          },
+          "axis": {
+            "title": "Garbage collection cost (AUD per bin)",
+            "format": "$,.0f",
+            "tickCount": 6
+          }
+        },
+        "y": {
+          "field": "landfill_diversion_pct",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              100
+            ]
+          },
+          "axis": {
+            "title": "Kerbside waste diverted from landfill",
+            "labelExpr": "datum.value + '%'",
+            "tickCount": 6
+          }
+        }
+      },
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 145,
+        "color": "#08519c",
+        "stroke": "white",
+        "strokeWidth": 2
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.council === 'Melbourne City'"
+        },
+        {
+          "calculate": "460",
+          "as": "annotation_x"
+        },
+        {
+          "calculate": "21",
+          "as": "annotation_y"
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "annotation_x",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              500
+            ]
+          },
+          "axis": {
+            "title": "Garbage collection cost (AUD per bin)",
+            "format": "$,.0f",
+            "tickCount": 6
+          }
+        },
+        "y": {
+          "field": "annotation_y",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              100
+            ]
+          },
+          "axis": {
+            "title": "Kerbside waste diverted from landfill",
+            "labelExpr": "datum.value + '%'",
+            "tickCount": 6
+          }
+        },
+        "text": {
+          "value": "Melbourne: $476/bin; 28.5% diverted"
+        }
+      },
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "dx": -7,
+        "dy": 0,
+        "fontSize": 12,
+        "fontWeight": "bold",
+        "color": "#08519c"
+      }
+    },
+    {
+      "mark": {
+        "type": "rule",
+        "color": "#526b82",
+        "strokeWidth": 1.5
+      },
+      "encoding": {
+        "x": {
+          "field": "garbage_collection_cost",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              500
+            ]
+          },
+          "axis": {
+            "title": "Garbage collection cost (AUD per bin)",
+            "format": "$,.0f",
+            "tickCount": 6
+          }
+        },
+        "y": {
+          "field": "landfill_diversion_pct",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              100
+            ]
+          },
+          "axis": {
+            "title": "Kerbside waste diverted from landfill",
+            "labelExpr": "datum.value + '%'",
+            "tickCount": 6
+          }
+        },
+        "x2": {
+          "field": "annotation_x"
+        },
+        "y2": {
+          "field": "annotation_y"
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum.council === 'Alpine Shire'"
+        },
+        {
+          "calculate": "120",
+          "as": "annotation_x"
+        },
+        {
+          "calculate": "82",
+          "as": "annotation_y"
+        }
+      ]
+    },
+    {
+      "mark": {
+        "type": "point",
+        "shape": "triangle-up",
+        "filled": true,
+        "color": "#526b82",
+        "size": 90,
+        "strokeWidth": 0,
+        "aria": false,
+        "xOffset": {
+          "expr": "-sin(datum.annotation_arrow_angle * PI / 180) * 9"
+        },
+        "yOffset": {
+          "expr": "cos(datum.annotation_arrow_angle * PI / 180) * 9"
+        }
+      },
+      "encoding": {
+        "x": {
+          "field": "garbage_collection_cost",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              500
+            ]
+          },
+          "axis": {
+            "title": "Garbage collection cost (AUD per bin)",
+            "format": "$,.0f",
+            "tickCount": 6
+          }
+        },
+        "y": {
+          "field": "landfill_diversion_pct",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              100
+            ]
+          },
+          "axis": {
+            "title": "Kerbside waste diverted from landfill",
+            "labelExpr": "datum.value + '%'",
+            "tickCount": 6
+          }
+        },
+        "angle": {
+          "field": "annotation_arrow_angle",
+          "type": "quantitative",
+          "scale": null
+        },
+        "tooltip": null
+      },
+      "transform": [
+        {
+          "filter": "datum.council === 'Alpine Shire'"
+        },
+        {
+          "calculate": "120",
+          "as": "annotation_x"
+        },
+        {
+          "calculate": "82",
+          "as": "annotation_y"
+        },
+        {
+          "calculate": "atan2((datum.garbage_collection_cost-datum.annotation_x) * 1.64, (datum.landfill_diversion_pct-datum.annotation_y) * 4.2) * 180 / PI",
+          "as": "annotation_arrow_angle"
+        }
+      ],
+      "name": "annotation_arrow_5_root_6"
+    },
+    {
+      "mark": {
+        "type": "rule",
+        "color": "#526b82",
+        "strokeWidth": 1.5
+      },
+      "encoding": {
+        "x": {
+          "field": "garbage_collection_cost",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              500
+            ]
+          },
+          "axis": {
+            "title": "Garbage collection cost (AUD per bin)",
+            "format": "$,.0f",
+            "tickCount": 6
+          }
+        },
+        "y": {
+          "field": "landfill_diversion_pct",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              100
+            ]
+          },
+          "axis": {
+            "title": "Kerbside waste diverted from landfill",
+            "labelExpr": "datum.value + '%'",
+            "tickCount": 6
+          }
+        },
+        "x2": {
+          "field": "annotation_x"
+        },
+        "y2": {
+          "field": "annotation_y"
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum.council === 'Melbourne City'"
+        },
+        {
+          "calculate": "460",
+          "as": "annotation_x"
+        },
+        {
+          "calculate": "21",
+          "as": "annotation_y"
+        }
+      ]
+    },
+    {
+      "mark": {
+        "type": "point",
+        "shape": "triangle-up",
+        "filled": true,
+        "color": "#526b82",
+        "size": 90,
+        "strokeWidth": 0,
+        "aria": false,
+        "xOffset": {
+          "expr": "-sin(datum.annotation_arrow_angle * PI / 180) * 9"
+        },
+        "yOffset": {
+          "expr": "cos(datum.annotation_arrow_angle * PI / 180) * 9"
+        }
+      },
+      "encoding": {
+        "x": {
+          "field": "garbage_collection_cost",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              500
+            ]
+          },
+          "axis": {
+            "title": "Garbage collection cost (AUD per bin)",
+            "format": "$,.0f",
+            "tickCount": 6
+          }
+        },
+        "y": {
+          "field": "landfill_diversion_pct",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              100
+            ]
+          },
+          "axis": {
+            "title": "Kerbside waste diverted from landfill",
+            "labelExpr": "datum.value + '%'",
+            "tickCount": 6
+          }
+        },
+        "angle": {
+          "field": "annotation_arrow_angle",
+          "type": "quantitative",
+          "scale": null
+        },
+        "tooltip": null
+      },
+      "transform": [
+        {
+          "filter": "datum.council === 'Melbourne City'"
+        },
+        {
+          "calculate": "460",
+          "as": "annotation_x"
+        },
+        {
+          "calculate": "21",
+          "as": "annotation_y"
+        },
+        {
+          "calculate": "atan2((datum.garbage_collection_cost-datum.annotation_x) * 1.64, (datum.landfill_diversion_pct-datum.annotation_y) * 4.2) * 180 / PI",
+          "as": "annotation_arrow_angle"
+        }
+      ],
+      "name": "annotation_arrow_5_root_8"
+    }
+  ]
+}

@@ -1,0 +1,912 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "2024\u201325 total expenditure / ABS resident population at 30 June 2025. LGPRF council groups. All 79 councils matched; Borough of Queenscliffe normalized explicitly.",
+  "width": 820,
+  "height": 400,
+  "title": {
+    "text": "Council Expenditure per Resident",
+    "subtitle": "2024\u201325 \u00b7 AUD per resident \u00b7 Boxes show the middle 50%; dots represent councils",
+    "anchor": "start",
+    "color": "#172b40",
+    "subtitleColor": "#526171",
+    "fontSize": 24,
+    "subtitleFontSize": 13,
+    "subtitlePadding": 7,
+    "offset": 22
+  },
+  "data": {
+    "url": "data/processed/graph_4_boxplot.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "encoding": {
+    "x": {
+      "field": "group",
+      "type": "nominal",
+      "sort": [
+        "Metro",
+        "Interface",
+        "Regional City",
+        "Large Shire",
+        "Small Shire"
+      ],
+      "axis": {
+        "title": null,
+        "labelAngle": 0,
+        "domain": false,
+        "ticks": false,
+        "labelPadding": 14
+      }
+    },
+    "y": {
+      "field": "expenditure_per_resident",
+      "type": "quantitative",
+      "scale": {
+        "zero": true
+      },
+      "axis": {
+        "title": "Expenditure per resident (AUD)",
+        "format": "$,.0f",
+        "tickCount": 5,
+        "gridColor": "#e6ecf1",
+        "domain": false,
+        "ticks": false,
+        "titlePadding": 14,
+        "labelPadding": 8
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "boxplot",
+        "extent": 1.5,
+        "size": 55,
+        "color": "#b5cce0",
+        "outliers": false,
+        "median": {
+          "color": "#153f65",
+          "strokeWidth": 2
+        },
+        "ticks": {
+          "color": "#66839d",
+          "size": 18
+        },
+        "opacity": 0.8,
+        "rule": {
+          "color": "#66839d"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 32,
+        "color": "#264f73",
+        "opacity": 0.45,
+        "stroke": "white",
+        "strokeWidth": 0.5
+      },
+      "encoding": {
+        "tooltip": [
+          {
+            "field": "council",
+            "type": "nominal",
+            "title": "Council"
+          },
+          {
+            "field": "group",
+            "type": "nominal",
+            "title": "Group"
+          },
+          {
+            "field": "expenditure_per_resident",
+            "type": "quantitative",
+            "title": "Expenditure per resident",
+            "format": "$,.2f"
+          },
+          {
+            "field": "population",
+            "type": "quantitative",
+            "title": "Population (30 June 2025)",
+            "format": ",.0f"
+          },
+          {
+            "field": "expenditure",
+            "type": "quantitative",
+            "title": "Total expenditure",
+            "format": "$,.2f"
+          }
+        ]
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.council === 'West Wimmera'"
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "color": "#08519c",
+        "size": 140,
+        "stroke": "white",
+        "strokeWidth": 2
+      }
+    },
+    {
+      "mark": {
+        "type": "rule",
+        "color": "#526b82",
+        "strokeWidth": 1.5
+      },
+      "encoding": {
+        "x": {
+          "field": "group",
+          "type": "nominal",
+          "sort": [
+            "Metro",
+            "Interface",
+            "Regional City",
+            "Large Shire",
+            "Small Shire"
+          ],
+          "axis": {
+            "title": null,
+            "labelAngle": 0,
+            "domain": false,
+            "ticks": false,
+            "labelPadding": 14
+          }
+        },
+        "y": {
+          "field": "expenditure_per_resident",
+          "type": "quantitative",
+          "scale": {
+            "zero": true
+          },
+          "axis": {
+            "title": "Expenditure per resident (AUD)",
+            "format": "$,.0f",
+            "tickCount": 5,
+            "gridColor": "#e6ecf1",
+            "domain": false,
+            "ticks": false,
+            "titlePadding": 14,
+            "labelPadding": 8
+          }
+        },
+        "y2": {
+          "field": "label_y"
+        }
+      },
+      "data": {
+        "values": [
+          {
+            "group": "Small Shire",
+            "expenditure_per_resident": 8366.79,
+            "label_y": 8800,
+            "label": "West Wimmera: $8,367 (highest)"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "point",
+        "shape": "triangle-up",
+        "filled": true,
+        "color": "#526b82",
+        "size": 90,
+        "strokeWidth": 0,
+        "aria": false,
+        "xOffset": {
+          "expr": "-sin(datum.annotation_arrow_angle * PI / 180) * 9"
+        },
+        "yOffset": {
+          "expr": "cos(datum.annotation_arrow_angle * PI / 180) * 9"
+        }
+      },
+      "encoding": {
+        "x": {
+          "field": "group",
+          "type": "nominal",
+          "sort": [
+            "Metro",
+            "Interface",
+            "Regional City",
+            "Large Shire",
+            "Small Shire"
+          ],
+          "axis": {
+            "title": null,
+            "labelAngle": 0,
+            "domain": false,
+            "ticks": false,
+            "labelPadding": 14
+          }
+        },
+        "y": {
+          "field": "expenditure_per_resident",
+          "type": "quantitative",
+          "scale": {
+            "zero": true
+          },
+          "axis": {
+            "title": "Expenditure per resident (AUD)",
+            "format": "$,.0f",
+            "tickCount": 5,
+            "gridColor": "#e6ecf1",
+            "domain": false,
+            "ticks": false,
+            "titlePadding": 14,
+            "labelPadding": 8
+          }
+        },
+        "angle": {
+          "field": "annotation_arrow_angle",
+          "type": "quantitative",
+          "scale": null
+        },
+        "tooltip": null
+      },
+      "data": {
+        "values": [
+          {
+            "group": "Small Shire",
+            "expenditure_per_resident": 8366.79,
+            "label_y": 8800,
+            "label": "West Wimmera: $8,367 (highest)"
+          }
+        ]
+      },
+      "name": "annotation_arrow_4_root_4",
+      "transform": [
+        {
+          "calculate": "atan2(0, (datum.expenditure_per_resident-datum.label_y) * 0.044444444444444446) * 180 / PI",
+          "as": "annotation_arrow_angle"
+        }
+      ]
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "group": "Small Shire",
+            "expenditure_per_resident": 8366.79,
+            "label_y": 8800,
+            "label": "West Wimmera: $8,367 (highest)"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "dx": -8,
+        "dy": -3,
+        "fontSize": 12,
+        "fontWeight": "bold",
+        "color": "#08519c"
+      },
+      "encoding": {
+        "x": {
+          "field": "group",
+          "type": "nominal",
+          "sort": [
+            "Metro",
+            "Interface",
+            "Regional City",
+            "Large Shire",
+            "Small Shire"
+          ],
+          "axis": {
+            "title": null,
+            "labelAngle": 0,
+            "domain": false,
+            "ticks": false,
+            "labelPadding": 14
+          }
+        },
+        "y": {
+          "field": "label_y",
+          "type": "quantitative",
+          "scale": {
+            "zero": true
+          },
+          "axis": {
+            "title": "Expenditure per resident (AUD)",
+            "format": "$,.0f",
+            "tickCount": 5,
+            "gridColor": "#e6ecf1",
+            "domain": false,
+            "ticks": false,
+            "titlePadding": 14,
+            "labelPadding": 8
+          }
+        },
+        "text": {
+          "field": "label"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "rule",
+        "color": "#526b82",
+        "strokeWidth": 1.5
+      },
+      "encoding": {
+        "x": {
+          "field": "group",
+          "type": "nominal",
+          "sort": [
+            "Metro",
+            "Interface",
+            "Regional City",
+            "Large Shire",
+            "Small Shire"
+          ],
+          "axis": {
+            "title": null,
+            "labelAngle": 0,
+            "domain": false,
+            "ticks": false,
+            "labelPadding": 14
+          }
+        },
+        "y": {
+          "field": "expenditure_per_resident",
+          "type": "quantitative",
+          "scale": {
+            "zero": true
+          },
+          "axis": {
+            "title": "Expenditure per resident (AUD)",
+            "format": "$,.0f",
+            "tickCount": 5,
+            "gridColor": "#e6ecf1",
+            "domain": false,
+            "ticks": false,
+            "titlePadding": 14,
+            "labelPadding": 8
+          }
+        },
+        "y2": {
+          "field": "label_y"
+        }
+      },
+      "data": {
+        "values": [
+          {
+            "group": "Metro",
+            "expenditure_per_resident": 1488.005,
+            "label_y": 2700,
+            "label": "Metro median: $1,488"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "point",
+        "shape": "triangle-up",
+        "filled": true,
+        "color": "#526b82",
+        "size": 90,
+        "strokeWidth": 0,
+        "aria": false,
+        "xOffset": {
+          "expr": "-sin(datum.annotation_arrow_angle * PI / 180) * 9"
+        },
+        "yOffset": {
+          "expr": "cos(datum.annotation_arrow_angle * PI / 180) * 9"
+        }
+      },
+      "encoding": {
+        "x": {
+          "field": "group",
+          "type": "nominal",
+          "sort": [
+            "Metro",
+            "Interface",
+            "Regional City",
+            "Large Shire",
+            "Small Shire"
+          ],
+          "axis": {
+            "title": null,
+            "labelAngle": 0,
+            "domain": false,
+            "ticks": false,
+            "labelPadding": 14
+          }
+        },
+        "y": {
+          "field": "expenditure_per_resident",
+          "type": "quantitative",
+          "scale": {
+            "zero": true
+          },
+          "axis": {
+            "title": "Expenditure per resident (AUD)",
+            "format": "$,.0f",
+            "tickCount": 5,
+            "gridColor": "#e6ecf1",
+            "domain": false,
+            "ticks": false,
+            "titlePadding": 14,
+            "labelPadding": 8
+          }
+        },
+        "angle": {
+          "field": "annotation_arrow_angle",
+          "type": "quantitative",
+          "scale": null
+        },
+        "tooltip": null
+      },
+      "data": {
+        "values": [
+          {
+            "group": "Metro",
+            "expenditure_per_resident": 1488.005,
+            "label_y": 2700,
+            "label": "Metro median: $1,488"
+          }
+        ]
+      },
+      "name": "annotation_arrow_4_root_7",
+      "transform": [
+        {
+          "calculate": "atan2(0, (datum.expenditure_per_resident-datum.label_y) * 0.044444444444444446) * 180 / PI",
+          "as": "annotation_arrow_angle"
+        }
+      ]
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "group": "Metro",
+            "expenditure_per_resident": 1488.005,
+            "label_y": 2700,
+            "label": "Metro median: $1,488"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 8,
+        "dy": -3,
+        "fontSize": 12,
+        "fontWeight": "bold",
+        "color": "#08519c"
+      },
+      "encoding": {
+        "x": {
+          "field": "group",
+          "type": "nominal",
+          "sort": [
+            "Metro",
+            "Interface",
+            "Regional City",
+            "Large Shire",
+            "Small Shire"
+          ],
+          "axis": {
+            "title": null,
+            "labelAngle": 0,
+            "domain": false,
+            "ticks": false,
+            "labelPadding": 14
+          }
+        },
+        "y": {
+          "field": "label_y",
+          "type": "quantitative",
+          "scale": {
+            "zero": true
+          },
+          "axis": {
+            "title": "Expenditure per resident (AUD)",
+            "format": "$,.0f",
+            "tickCount": 5,
+            "gridColor": "#e6ecf1",
+            "domain": false,
+            "ticks": false,
+            "titlePadding": 14,
+            "labelPadding": 8
+          }
+        },
+        "text": {
+          "field": "label"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "rule",
+        "color": "#526b82",
+        "strokeWidth": 1.5
+      },
+      "encoding": {
+        "x": {
+          "field": "group",
+          "type": "nominal",
+          "sort": [
+            "Metro",
+            "Interface",
+            "Regional City",
+            "Large Shire",
+            "Small Shire"
+          ],
+          "axis": {
+            "title": null,
+            "labelAngle": 0,
+            "domain": false,
+            "ticks": false,
+            "labelPadding": 14
+          }
+        },
+        "y": {
+          "field": "expenditure_per_resident",
+          "type": "quantitative",
+          "scale": {
+            "zero": true
+          },
+          "axis": {
+            "title": "Expenditure per resident (AUD)",
+            "format": "$,.0f",
+            "tickCount": 5,
+            "gridColor": "#e6ecf1",
+            "domain": false,
+            "ticks": false,
+            "titlePadding": 14,
+            "labelPadding": 8
+          }
+        },
+        "y2": {
+          "field": "label_y"
+        }
+      },
+      "data": {
+        "values": [
+          {
+            "group": "Small Shire",
+            "expenditure_per_resident": 3324.47,
+            "label_y": 6100,
+            "label": "Small Shire median: $3,324 (2.2\u00d7 Metro)"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "point",
+        "shape": "triangle-up",
+        "filled": true,
+        "color": "#526b82",
+        "size": 90,
+        "strokeWidth": 0,
+        "aria": false,
+        "xOffset": {
+          "expr": "-sin(datum.annotation_arrow_angle * PI / 180) * 9"
+        },
+        "yOffset": {
+          "expr": "cos(datum.annotation_arrow_angle * PI / 180) * 9"
+        }
+      },
+      "encoding": {
+        "x": {
+          "field": "group",
+          "type": "nominal",
+          "sort": [
+            "Metro",
+            "Interface",
+            "Regional City",
+            "Large Shire",
+            "Small Shire"
+          ],
+          "axis": {
+            "title": null,
+            "labelAngle": 0,
+            "domain": false,
+            "ticks": false,
+            "labelPadding": 14
+          }
+        },
+        "y": {
+          "field": "expenditure_per_resident",
+          "type": "quantitative",
+          "scale": {
+            "zero": true
+          },
+          "axis": {
+            "title": "Expenditure per resident (AUD)",
+            "format": "$,.0f",
+            "tickCount": 5,
+            "gridColor": "#e6ecf1",
+            "domain": false,
+            "ticks": false,
+            "titlePadding": 14,
+            "labelPadding": 8
+          }
+        },
+        "angle": {
+          "field": "annotation_arrow_angle",
+          "type": "quantitative",
+          "scale": null
+        },
+        "tooltip": null
+      },
+      "data": {
+        "values": [
+          {
+            "group": "Small Shire",
+            "expenditure_per_resident": 3324.47,
+            "label_y": 6100,
+            "label": "Small Shire median: $3,324 (2.2\u00d7 Metro)"
+          }
+        ]
+      },
+      "name": "annotation_arrow_4_root_10",
+      "transform": [
+        {
+          "calculate": "atan2(0, (datum.expenditure_per_resident-datum.label_y) * 0.044444444444444446) * 180 / PI",
+          "as": "annotation_arrow_angle"
+        }
+      ]
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "group": "Small Shire",
+            "expenditure_per_resident": 3324.47,
+            "label_y": 6100,
+            "label": "Small Shire median: $3,324 (2.2\u00d7 Metro)"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "dx": -8,
+        "dy": -3,
+        "fontSize": 12,
+        "fontWeight": "bold",
+        "color": "#08519c"
+      },
+      "encoding": {
+        "x": {
+          "field": "group",
+          "type": "nominal",
+          "sort": [
+            "Metro",
+            "Interface",
+            "Regional City",
+            "Large Shire",
+            "Small Shire"
+          ],
+          "axis": {
+            "title": null,
+            "labelAngle": 0,
+            "domain": false,
+            "ticks": false,
+            "labelPadding": 14
+          }
+        },
+        "y": {
+          "field": "label_y",
+          "type": "quantitative",
+          "scale": {
+            "zero": true
+          },
+          "axis": {
+            "title": "Expenditure per resident (AUD)",
+            "format": "$,.0f",
+            "tickCount": 5,
+            "gridColor": "#e6ecf1",
+            "domain": false,
+            "ticks": false,
+            "titlePadding": 14,
+            "labelPadding": 8
+          }
+        },
+        "text": {
+          "field": "label"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 65,
+        "color": "#08519c"
+      },
+      "encoding": {
+        "x": {
+          "field": "group",
+          "type": "nominal",
+          "sort": [
+            "Metro",
+            "Interface",
+            "Regional City",
+            "Large Shire",
+            "Small Shire"
+          ],
+          "axis": {
+            "title": null,
+            "labelAngle": 0,
+            "domain": false,
+            "ticks": false,
+            "labelPadding": 14
+          }
+        },
+        "y": {
+          "field": "expenditure_per_resident",
+          "type": "quantitative",
+          "scale": {
+            "zero": true
+          },
+          "axis": {
+            "title": "Expenditure per resident (AUD)",
+            "format": "$,.0f",
+            "tickCount": 5,
+            "gridColor": "#e6ecf1",
+            "domain": false,
+            "ticks": false,
+            "titlePadding": 14,
+            "labelPadding": 8
+          }
+        }
+      },
+      "data": {
+        "values": [
+          {
+            "group": "Small Shire",
+            "expenditure_per_resident": 8366.79,
+            "label_y": 8800,
+            "label": "West Wimmera: $8,367 (highest)"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 65,
+        "color": "#08519c"
+      },
+      "encoding": {
+        "x": {
+          "field": "group",
+          "type": "nominal",
+          "sort": [
+            "Metro",
+            "Interface",
+            "Regional City",
+            "Large Shire",
+            "Small Shire"
+          ],
+          "axis": {
+            "title": null,
+            "labelAngle": 0,
+            "domain": false,
+            "ticks": false,
+            "labelPadding": 14
+          }
+        },
+        "y": {
+          "field": "expenditure_per_resident",
+          "type": "quantitative",
+          "scale": {
+            "zero": true
+          },
+          "axis": {
+            "title": "Expenditure per resident (AUD)",
+            "format": "$,.0f",
+            "tickCount": 5,
+            "gridColor": "#e6ecf1",
+            "domain": false,
+            "ticks": false,
+            "titlePadding": 14,
+            "labelPadding": 8
+          }
+        }
+      },
+      "data": {
+        "values": [
+          {
+            "group": "Metro",
+            "expenditure_per_resident": 1488.005,
+            "label_y": 2700,
+            "label": "Metro median: $1,488"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 65,
+        "color": "#08519c"
+      },
+      "encoding": {
+        "x": {
+          "field": "group",
+          "type": "nominal",
+          "sort": [
+            "Metro",
+            "Interface",
+            "Regional City",
+            "Large Shire",
+            "Small Shire"
+          ],
+          "axis": {
+            "title": null,
+            "labelAngle": 0,
+            "domain": false,
+            "ticks": false,
+            "labelPadding": 14
+          }
+        },
+        "y": {
+          "field": "expenditure_per_resident",
+          "type": "quantitative",
+          "scale": {
+            "zero": true
+          },
+          "axis": {
+            "title": "Expenditure per resident (AUD)",
+            "format": "$,.0f",
+            "tickCount": 5,
+            "gridColor": "#e6ecf1",
+            "domain": false,
+            "ticks": false,
+            "titlePadding": 14,
+            "labelPadding": 8
+          }
+        }
+      },
+      "data": {
+        "values": [
+          {
+            "group": "Small Shire",
+            "expenditure_per_resident": 3324.47,
+            "label_y": 6100,
+            "label": "Small Shire median: $3,324 (2.2\u00d7 Metro)"
+          }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelFontSize": 12,
+      "titleFontSize": 13,
+      "labelColor": "#43566a",
+      "titleColor": "#43566a",
+      "titleFontWeight": "normal"
+    },
+    "title": {
+      "anchor": "start",
+      "color": "#172b40",
+      "subtitleColor": "#526171",
+      "fontSize": 24,
+      "subtitleFontSize": 13,
+      "subtitlePadding": 7,
+      "offset": 22
+    }
+  }
+}

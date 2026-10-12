@@ -1,0 +1,638 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Public Toilet Locations",
+    "subtitle": "1 April 2026 extract \u00b7 Each dot represents one listed facility \u00b7 Victoria",
+    "fontSize": 24,
+    "subtitleFontSize": 13,
+    "anchor": "start"
+  },
+  "description": "National Public Toilet Map extract 2026-04-01. 6090 VIC records; 2 outside Victoria bounding extent excluded (IDs 42775,63363); 6088 unique facility IDs retained. Coordinates checked for numeric values and bounding extent, not spatial council membership. Accessible describes source listing, not verified current availability. Point positions do not measure travel distance, service quality or facility ownership. Insets reuse the same filtered records. Central Melbourne extent: 144.88 to 145.08 E, 37.90 to 37.74 S. Smaller translucent location marks reduce occlusion without aggregating or moving facilities. Council/LGA assigned by point-in-polygon using original unsimplified ABS 2025 boundaries, including unincorporated areas. 6076 matched; 12 unmatched retained as Unmatched location. Region and accessibility filters combine. Opening hours and access notes omitted from tooltip.",
+  "hconcat": [
+    {
+      "width": 530,
+      "height": 400,
+      "title": {
+        "text": "Victoria \u00b7 state-wide",
+        "fontSize": 14,
+        "anchor": "start",
+        "color": "#52697a",
+        "offset": 12
+      },
+      "projection": {
+        "type": "conicEqualArea",
+        "rotate": [
+          -145,
+          0,
+          0
+        ],
+        "center": [
+          0,
+          -37
+        ],
+        "parallels": [
+          -36,
+          -38
+        ]
+      },
+      "layer": [
+        {
+          "data": {
+            "url": "data/maps/victoria_lga_2025.topojson",
+            "format": {
+              "type": "topojson",
+              "feature": "victoria_lga"
+            }
+          },
+          "mark": {
+            "type": "geoshape",
+            "fill": "#edf1f3",
+            "stroke": "white",
+            "strokeWidth": 0.7,
+            "aria": false,
+            "tooltip": true
+          },
+          "encoding": {
+            "tooltip": [
+              {
+                "field": "properties.LGA_NAME25",
+                "title": "Council / LGA"
+              }
+            ]
+          }
+        },
+        {
+          "data": {
+            "url": "data/maps/victoria_facility_regions.topojson",
+            "format": {
+              "type": "topojson",
+              "feature": "facility_regions"
+            }
+          },
+          "mark": {
+            "type": "geoshape",
+            "fill": "#d8e9f5",
+            "stroke": "#245f8c",
+            "strokeWidth": 2,
+            "aria": false
+          },
+          "transform": [
+            {
+              "filter": "facilityRegion !== 'All regions' && datum.properties.LGA_NAME25 === facilityRegion"
+            }
+          ]
+        },
+        {
+          "data": {
+            "url": "data/processed/graph_10_public_toilet_locations.csv"
+          },
+          "transform": [
+            {
+              "filter": "facilityFilter === 'All facilities' || datum.accessible === 'Yes'"
+            },
+            {
+              "filter": "facilityRegion === 'All regions' || datum.region === facilityRegion"
+            }
+          ],
+          "mark": {
+            "type": "circle",
+            "size": 3,
+            "color": "#245f8c",
+            "opacity": 0.32,
+            "aria": false
+          },
+          "encoding": {
+            "longitude": {
+              "field": "longitude",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "latitude",
+              "type": "quantitative"
+            },
+            "tooltip": [
+              {
+                "field": "name",
+                "title": "Facility"
+              },
+              {
+                "field": "region",
+                "title": "Council / LGA"
+              },
+              {
+                "field": "town",
+                "title": "Town"
+              },
+              {
+                "field": "address",
+                "title": "Address"
+              },
+              {
+                "field": "accessible",
+                "title": "Accessible toilet listed"
+              }
+            ]
+          }
+        },
+        {
+          "data": {
+            "values": [
+              {
+                "type": "Feature",
+                "geometry": {
+                  "type": "Polygon",
+                  "coordinates": [
+                    [
+                      [
+                        144.88,
+                        -37.9
+                      ],
+                      [
+                        144.88,
+                        -37.74
+                      ],
+                      [
+                        145.08,
+                        -37.74
+                      ],
+                      [
+                        145.08,
+                        -37.9
+                      ],
+                      [
+                        144.88,
+                        -37.9
+                      ]
+                    ]
+                  ]
+                }
+              }
+            ]
+          },
+          "mark": {
+            "type": "geoshape",
+            "fill": null,
+            "stroke": "#18364a",
+            "strokeWidth": 1.5,
+            "strokeDash": [
+              4,
+              3
+            ],
+            "tooltip": false,
+            "aria": false
+          }
+        },
+        {
+          "name": "council_label_0_halo",
+          "data": {
+            "url": "data/maps/victoria_lga_representative_points.csv"
+          },
+          "transform": [
+            {
+              "filter": "datum.LGA_NAME25 === facilityRegion || (facilityRegion === 'All regions' && datum.AREASQKM >= 3000 && !(datum.longitude > 144.4 && datum.longitude < 145.7 && datum.latitude > -38.4 && datum.latitude < -37.2))"
+            },
+            {
+              "calculate": "split(replace(datum.LGA_NAME25, ' (Vic.)', ''), ' ')",
+              "as": "label_lines"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "font": "Arial",
+            "fontWeight": "bold",
+            "fontSize": 8,
+            "lineHeight": 9,
+            "color": "#29475a",
+            "stroke": "white",
+            "strokeWidth": 2,
+            "strokeOpacity": 0.9,
+            "align": "center",
+            "baseline": "middle",
+            "tooltip": false,
+            "dx": {
+              "expr": "datum.LGA_NAME25 === 'Moyne' ? -10 : datum.LGA_NAME25 === 'Corangamite' ? 10 : 0"
+            },
+            "strokeJoin": "round"
+          },
+          "encoding": {
+            "longitude": {
+              "field": "longitude",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "latitude",
+              "type": "quantitative"
+            },
+            "text": {
+              "field": "label_lines"
+            },
+            "opacity": {
+              "condition": {
+                "test": "facilityRegion === 'All regions' || datum.LGA_NAME25 === facilityRegion",
+                "value": 1
+              },
+              "value": 0.45
+            }
+          }
+        },
+        {
+          "name": "council_label_0_ink",
+          "data": {
+            "url": "data/maps/victoria_lga_representative_points.csv"
+          },
+          "transform": [
+            {
+              "filter": "datum.LGA_NAME25 === facilityRegion || (facilityRegion === 'All regions' && datum.AREASQKM >= 3000 && !(datum.longitude > 144.4 && datum.longitude < 145.7 && datum.latitude > -38.4 && datum.latitude < -37.2))"
+            },
+            {
+              "calculate": "split(replace(datum.LGA_NAME25, ' (Vic.)', ''), ' ')",
+              "as": "label_lines"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "font": "Arial",
+            "fontWeight": "bold",
+            "fontSize": 8,
+            "lineHeight": 9,
+            "color": "#29475a",
+            "align": "center",
+            "baseline": "middle",
+            "tooltip": false,
+            "dx": {
+              "expr": "datum.LGA_NAME25 === 'Moyne' ? -10 : datum.LGA_NAME25 === 'Corangamite' ? 10 : 0"
+            }
+          },
+          "encoding": {
+            "longitude": {
+              "field": "longitude",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "latitude",
+              "type": "quantitative"
+            },
+            "text": {
+              "field": "label_lines"
+            },
+            "opacity": {
+              "condition": {
+                "test": "facilityRegion === 'All regions' || datum.LGA_NAME25 === facilityRegion",
+                "value": 1
+              },
+              "value": 0.45
+            }
+          }
+        }
+      ]
+    },
+    {
+      "width": 340,
+      "height": 344.3297515048597,
+      "title": {
+        "text": "Central Melbourne \u00b7 boxed area",
+        "fontSize": 14,
+        "anchor": "start",
+        "color": "#52697a",
+        "offset": 12
+      },
+      "projection": {
+        "type": "mercator",
+        "center": [
+          144.98000000000002,
+          -37.82004335339846
+        ],
+        "scale": 97402.82517223165,
+        "translate": [
+          170.0,
+          172.16487575242985
+        ]
+      },
+      "layer": [
+        {
+          "data": {
+            "url": "data/maps/graph_10_melbourne_central.topojson",
+            "format": {
+              "type": "topojson",
+              "feature": "melbourne_central"
+            }
+          },
+          "mark": {
+            "type": "geoshape",
+            "fill": "#edf1f3",
+            "stroke": "white",
+            "strokeWidth": 0.7,
+            "aria": false,
+            "tooltip": true,
+            "clip": true
+          },
+          "encoding": {
+            "tooltip": [
+              {
+                "field": "properties.LGA_NAME25",
+                "title": "Council / LGA"
+              }
+            ]
+          }
+        },
+        {
+          "data": {
+            "url": "data/maps/graph_10_melbourne_central.topojson",
+            "format": {
+              "type": "topojson",
+              "feature": "melbourne_central"
+            }
+          },
+          "mark": {
+            "type": "geoshape",
+            "fill": "#d8e9f5",
+            "stroke": "#245f8c",
+            "strokeWidth": 2,
+            "aria": false,
+            "clip": true
+          },
+          "transform": [
+            {
+              "filter": "facilityRegion !== 'All regions' && datum.properties.LGA_NAME25 === facilityRegion"
+            }
+          ]
+        },
+        {
+          "data": {
+            "url": "data/processed/graph_10_public_toilet_locations.csv"
+          },
+          "transform": [
+            {
+              "filter": "facilityFilter === 'All facilities' || datum.accessible === 'Yes'"
+            },
+            {
+              "filter": "datum.longitude >= 144.88 && datum.longitude <= 145.08 && datum.latitude >= -37.9 && datum.latitude <= -37.74"
+            },
+            {
+              "filter": "facilityRegion === 'All regions' || datum.region === facilityRegion"
+            }
+          ],
+          "mark": {
+            "type": "circle",
+            "size": 7,
+            "color": "#245f8c",
+            "opacity": 0.48,
+            "aria": false,
+            "clip": true
+          },
+          "encoding": {
+            "longitude": {
+              "field": "longitude",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "latitude",
+              "type": "quantitative"
+            },
+            "tooltip": [
+              {
+                "field": "name",
+                "title": "Facility"
+              },
+              {
+                "field": "region",
+                "title": "Council / LGA"
+              },
+              {
+                "field": "town",
+                "title": "Town"
+              },
+              {
+                "field": "address",
+                "title": "Address"
+              },
+              {
+                "field": "accessible",
+                "title": "Accessible toilet listed"
+              }
+            ]
+          }
+        },
+        {
+          "name": "council_label_1_halo",
+          "data": {
+            "url": "data/maps/graph_10_central_council_labels.csv"
+          },
+          "transform": [
+            {
+              "calculate": "split(replace(datum.LGA_NAME25, ' (Vic.)', ''), ' ')",
+              "as": "label_lines"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "font": "Arial",
+            "fontWeight": "bold",
+            "fontSize": 9,
+            "lineHeight": 10,
+            "color": "#29475a",
+            "stroke": "white",
+            "strokeWidth": 2,
+            "strokeOpacity": 0.9,
+            "align": {
+              "expr": "indexof(['Manningham', 'Monash'], datum.LGA_NAME25) >= 0 ? 'right' : indexof(['Maribyrnong', 'Hobsons Bay'], datum.LGA_NAME25) >= 0 ? 'left' : 'center'"
+            },
+            "baseline": "middle",
+            "tooltip": false,
+            "clip": true,
+            "strokeJoin": "round"
+          },
+          "encoding": {
+            "longitude": {
+              "field": "longitude",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "latitude",
+              "type": "quantitative"
+            },
+            "text": {
+              "field": "label_lines"
+            },
+            "opacity": {
+              "condition": {
+                "test": "facilityRegion === 'All regions' || datum.LGA_NAME25 === facilityRegion",
+                "value": 1
+              },
+              "value": 0.45
+            }
+          }
+        },
+        {
+          "name": "council_label_1_ink",
+          "data": {
+            "url": "data/maps/graph_10_central_council_labels.csv"
+          },
+          "transform": [
+            {
+              "calculate": "split(replace(datum.LGA_NAME25, ' (Vic.)', ''), ' ')",
+              "as": "label_lines"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "font": "Arial",
+            "fontWeight": "bold",
+            "fontSize": 9,
+            "lineHeight": 10,
+            "color": "#29475a",
+            "align": {
+              "expr": "indexof(['Manningham', 'Monash'], datum.LGA_NAME25) >= 0 ? 'right' : indexof(['Maribyrnong', 'Hobsons Bay'], datum.LGA_NAME25) >= 0 ? 'left' : 'center'"
+            },
+            "baseline": "middle",
+            "tooltip": false,
+            "clip": true
+          },
+          "encoding": {
+            "longitude": {
+              "field": "longitude",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "latitude",
+              "type": "quantitative"
+            },
+            "text": {
+              "field": "label_lines"
+            },
+            "opacity": {
+              "condition": {
+                "test": "facilityRegion === 'All regions' || datum.LGA_NAME25 === facilityRegion",
+                "value": 1
+              },
+              "value": 0.45
+            }
+          }
+        }
+      ],
+      "view": {
+        "stroke": null,
+        "fill": "#ffffff"
+      }
+    }
+  ],
+  "spacing": 48,
+  "resolve": {
+    "scale": {
+      "size": "shared"
+    }
+  },
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "font": "Arial",
+    "background": "white"
+  },
+  "params": [
+    {
+      "name": "facilityFilter",
+      "value": "All facilities",
+      "bind": {
+        "input": "select",
+        "options": [
+          "All facilities",
+          "Accessible facilities"
+        ],
+        "name": "Show facilities: "
+      }
+    },
+    {
+      "name": "facilityRegion",
+      "value": "All regions",
+      "bind": {
+        "input": "select",
+        "options": [
+          "All regions",
+          "Alpine",
+          "Ararat",
+          "Ballarat",
+          "Banyule",
+          "Bass Coast",
+          "Baw Baw",
+          "Bayside (Vic.)",
+          "Benalla",
+          "Boroondara",
+          "Brimbank",
+          "Buloke",
+          "Campaspe",
+          "Cardinia",
+          "Casey",
+          "Central Goldfields",
+          "Colac Otway",
+          "Corangamite",
+          "Darebin",
+          "East Gippsland",
+          "Frankston",
+          "Gannawarra",
+          "Glen Eira",
+          "Glenelg",
+          "Golden Plains",
+          "Greater Bendigo",
+          "Greater Dandenong",
+          "Greater Geelong",
+          "Greater Shepparton",
+          "Hepburn",
+          "Hindmarsh",
+          "Hobsons Bay",
+          "Horsham",
+          "Hume",
+          "Indigo",
+          "Kingston (Vic.)",
+          "Knox",
+          "Latrobe (Vic.)",
+          "Loddon",
+          "Macedon Ranges",
+          "Manningham",
+          "Mansfield",
+          "Maribyrnong",
+          "Maroondah",
+          "Melbourne",
+          "Melton",
+          "Merri-bek",
+          "Mildura",
+          "Mitchell",
+          "Moira",
+          "Monash",
+          "Moonee Valley",
+          "Moorabool",
+          "Mornington Peninsula",
+          "Mount Alexander",
+          "Moyne",
+          "Murrindindi",
+          "Nillumbik",
+          "Northern Grampians",
+          "Port Phillip",
+          "Pyrenees",
+          "Queenscliffe",
+          "South Gippsland",
+          "Southern Grampians",
+          "Stonnington",
+          "Strathbogie",
+          "Surf Coast",
+          "Swan Hill",
+          "Towong",
+          "Unincorporated Vic",
+          "Wangaratta",
+          "Warrnambool",
+          "Wellington",
+          "West Wimmera",
+          "Whitehorse",
+          "Whittlesea",
+          "Wodonga",
+          "Wyndham",
+          "Yarra",
+          "Yarra Ranges",
+          "Yarriambiack",
+          "Unmatched location"
+        ],
+        "name": "Council / LGA: "
+      }
+    }
+  ]
+}
