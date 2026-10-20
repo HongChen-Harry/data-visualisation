@@ -1,0 +1,3 @@
+facility_id,name,latitude,longitude,reason
+42775,Lakewood Shopping Centre,-31.63477920,152.75400170,VIC record with coordinates outside Victoria bounding extent
+63363,Selby Community House,-16.91175920,145.75889500,VIC record with coordinates outside Victoria bounding extent

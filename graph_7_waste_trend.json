@@ -1,0 +1,985 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "EPA VLGAS v2025.03 worksheet only. Sums of reported numeric council collection tonnages; missing records not imputed. Organics coverage changes over time. These are collected amounts, not amounts successfully recycled.",
+  "width": 820,
+  "height": 400,
+  "title": {
+    "text": "Reported Kerbside Waste Collection",
+    "subtitle": "2001\u201302 to 2023\u201324 \u00b7 Reported tonnes collected; record coverage varies by year",
+    "anchor": "start",
+    "color": "#172b40",
+    "subtitleColor": "#526171",
+    "fontSize": 24,
+    "subtitleFontSize": 13,
+    "subtitlePadding": 7,
+    "offset": 22
+  },
+  "data": {
+    "url": "data/processed/graph_7_waste_trend.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "year_start": "number",
+        "collected_tonnes": "number",
+        "councils_with_numeric_records": "number",
+        "council_records": "number",
+        "missing_records": "number"
+      }
+    }
+  },
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "domain": false,
+      "ticks": false,
+      "labelColor": "#43566a",
+      "titleColor": "#43566a",
+      "labelFontSize": 12
+    },
+    "title": {
+      "anchor": "start",
+      "color": "#172b40",
+      "subtitleColor": "#526171",
+      "fontSize": 24,
+      "subtitleFontSize": 13,
+      "subtitlePadding": 7,
+      "offset": 22
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2.5,
+        "point": {
+          "size": 30
+        }
+      },
+      "encoding": {
+        "x": {
+          "field": "year_start",
+          "type": "quantitative",
+          "scale": {
+            "zero": false,
+            "domain": [
+              2001,
+              2023
+            ]
+          },
+          "axis": {
+            "title": "Financial year starting",
+            "format": "d",
+            "values": [
+              2001,
+              2005,
+              2009,
+              2013,
+              2017,
+              2021,
+              2023
+            ],
+            "grid": false
+          }
+        },
+        "y": {
+          "field": "collected_tonnes",
+          "type": "quantitative",
+          "scale": {
+            "zero": true
+          },
+          "axis": {
+            "title": "Reported collection (tonnes)",
+            "format": "~s",
+            "tickCount": 5,
+            "gridColor": "#e6ecf1"
+          }
+        },
+        "color": {
+          "field": "stream",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "Garbage",
+              "Recyclables",
+              "Organics"
+            ],
+            "range": [
+              "#173f65",
+              "#637fa1",
+              "#a7bed3"
+            ]
+          },
+          "legend": {
+            "title": null,
+            "orient": "bottom"
+          }
+        },
+        "strokeDash": {
+          "field": "stream",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "Garbage",
+              "Recyclables",
+              "Organics"
+            ],
+            "range": [
+              [
+                1,
+                0
+              ],
+              [
+                7,
+                3
+              ],
+              [
+                2,
+                3
+              ]
+            ]
+          }
+        },
+        "tooltip": [
+          {
+            "field": "financial_year",
+            "title": "Financial year"
+          },
+          {
+            "field": "stream",
+            "title": "Stream"
+          },
+          {
+            "field": "collected_tonnes",
+            "type": "quantitative",
+            "title": "Reported tonnes",
+            "format": ",.0f"
+          },
+          {
+            "field": "councils_with_numeric_records",
+            "type": "quantitative",
+            "title": "Councils with numeric records"
+          },
+          {
+            "field": "council_records",
+            "type": "quantitative",
+            "title": "Council records in year"
+          },
+          {
+            "field": "missing_records",
+            "type": "quantitative",
+            "title": "Records without a numeric amount"
+          }
+        ]
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.year_start === 2019 && datum.stream === 'Garbage'"
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "year_start",
+          "type": "quantitative",
+          "scale": {
+            "zero": false,
+            "domain": [
+              2001,
+              2023
+            ]
+          },
+          "axis": {
+            "title": "Financial year starting",
+            "format": "d",
+            "values": [
+              2001,
+              2005,
+              2009,
+              2013,
+              2017,
+              2021,
+              2023
+            ],
+            "grid": false
+          }
+        },
+        "y": {
+          "field": "collected_tonnes",
+          "type": "quantitative",
+          "scale": {
+            "zero": true
+          },
+          "axis": {
+            "title": "Reported collection (tonnes)",
+            "format": "~s",
+            "tickCount": 5,
+            "gridColor": "#e6ecf1"
+          }
+        }
+      },
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "color": "#08519c",
+        "size": 110,
+        "stroke": "white",
+        "strokeWidth": 1.5
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.year_start === 2019 && datum.stream === 'Garbage'"
+        },
+        {
+          "calculate": "2018",
+          "as": "annotation_x"
+        },
+        {
+          "calculate": "1280000",
+          "as": "annotation_y"
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "annotation_x",
+          "type": "quantitative",
+          "scale": {
+            "zero": false,
+            "domain": [
+              2001,
+              2023
+            ]
+          },
+          "axis": {
+            "title": "Financial year starting",
+            "format": "d",
+            "values": [
+              2001,
+              2005,
+              2009,
+              2013,
+              2017,
+              2021,
+              2023
+            ],
+            "grid": false
+          }
+        },
+        "y": {
+          "field": "annotation_y",
+          "type": "quantitative",
+          "scale": {
+            "zero": true
+          },
+          "axis": {
+            "title": "Reported collection (tonnes)",
+            "format": "~s",
+            "tickCount": 5,
+            "gridColor": "#e6ecf1"
+          }
+        },
+        "text": {
+          "value": "Garbage peaks at 1.22m tonnes"
+        }
+      },
+      "mark": {
+        "type": "text",
+        "fontSize": 12,
+        "fontWeight": "bold",
+        "color": "#08519c",
+        "dx": -7,
+        "dy": 0,
+        "align": "right"
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.year_start === 2020 && datum.stream === 'Organics'"
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "year_start",
+          "type": "quantitative",
+          "scale": {
+            "zero": false,
+            "domain": [
+              2001,
+              2023
+            ]
+          },
+          "axis": {
+            "title": "Financial year starting",
+            "format": "d",
+            "values": [
+              2001,
+              2005,
+              2009,
+              2013,
+              2017,
+              2021,
+              2023
+            ],
+            "grid": false
+          }
+        },
+        "y": {
+          "field": "collected_tonnes",
+          "type": "quantitative",
+          "scale": {
+            "zero": true
+          },
+          "axis": {
+            "title": "Reported collection (tonnes)",
+            "format": "~s",
+            "tickCount": 5,
+            "gridColor": "#e6ecf1"
+          }
+        }
+      },
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "color": "#08519c",
+        "size": 110,
+        "stroke": "white",
+        "strokeWidth": 1.5
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.year_start === 2020 && datum.stream === 'Organics'"
+        },
+        {
+          "calculate": "2018",
+          "as": "annotation_x"
+        },
+        {
+          "calculate": "490000",
+          "as": "annotation_y"
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "annotation_x",
+          "type": "quantitative",
+          "scale": {
+            "zero": false,
+            "domain": [
+              2001,
+              2023
+            ]
+          },
+          "axis": {
+            "title": "Financial year starting",
+            "format": "d",
+            "values": [
+              2001,
+              2005,
+              2009,
+              2013,
+              2017,
+              2021,
+              2023
+            ],
+            "grid": false
+          }
+        },
+        "y": {
+          "field": "annotation_y",
+          "type": "quantitative",
+          "scale": {
+            "zero": true
+          },
+          "axis": {
+            "title": "Reported collection (tonnes)",
+            "format": "~s",
+            "tickCount": 5,
+            "gridColor": "#e6ecf1"
+          }
+        },
+        "text": {
+          "value": "2020\u201321: organics overtakes recyclables"
+        }
+      },
+      "mark": {
+        "type": "text",
+        "fontSize": 12,
+        "fontWeight": "bold",
+        "color": "#08519c",
+        "dx": -7,
+        "dy": 0,
+        "align": "right"
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.year_start === 2023 && datum.stream === 'Organics'"
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "year_start",
+          "type": "quantitative",
+          "scale": {
+            "zero": false,
+            "domain": [
+              2001,
+              2023
+            ]
+          },
+          "axis": {
+            "title": "Financial year starting",
+            "format": "d",
+            "values": [
+              2001,
+              2005,
+              2009,
+              2013,
+              2017,
+              2021,
+              2023
+            ],
+            "grid": false
+          }
+        },
+        "y": {
+          "field": "collected_tonnes",
+          "type": "quantitative",
+          "scale": {
+            "zero": true
+          },
+          "axis": {
+            "title": "Reported collection (tonnes)",
+            "format": "~s",
+            "tickCount": 5,
+            "gridColor": "#e6ecf1"
+          }
+        }
+      },
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "color": "#08519c",
+        "size": 110,
+        "stroke": "white",
+        "strokeWidth": 1.5
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.year_start === 2023 && datum.stream === 'Organics'"
+        },
+        {
+          "calculate": "2022",
+          "as": "annotation_x"
+        },
+        {
+          "calculate": "790000",
+          "as": "annotation_y"
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "annotation_x",
+          "type": "quantitative",
+          "scale": {
+            "zero": false,
+            "domain": [
+              2001,
+              2023
+            ]
+          },
+          "axis": {
+            "title": "Financial year starting",
+            "format": "d",
+            "values": [
+              2001,
+              2005,
+              2009,
+              2013,
+              2017,
+              2021,
+              2023
+            ],
+            "grid": false
+          }
+        },
+        "y": {
+          "field": "annotation_y",
+          "type": "quantitative",
+          "scale": {
+            "zero": true
+          },
+          "axis": {
+            "title": "Reported collection (tonnes)",
+            "format": "~s",
+            "tickCount": 5,
+            "gridColor": "#e6ecf1"
+          }
+        },
+        "text": {
+          "value": "2023\u201324: organics reaches 718k tonnes"
+        }
+      },
+      "mark": {
+        "type": "text",
+        "fontSize": 12,
+        "fontWeight": "bold",
+        "color": "#08519c",
+        "dx": -7,
+        "dy": 0,
+        "align": "right"
+      }
+    },
+    {
+      "mark": {
+        "type": "rule",
+        "color": "#526b82",
+        "strokeWidth": 1.5
+      },
+      "encoding": {
+        "x": {
+          "field": "year_start",
+          "type": "quantitative",
+          "scale": {
+            "zero": false,
+            "domain": [
+              2001,
+              2023
+            ]
+          },
+          "axis": {
+            "title": "Financial year starting",
+            "format": "d",
+            "values": [
+              2001,
+              2005,
+              2009,
+              2013,
+              2017,
+              2021,
+              2023
+            ],
+            "grid": false
+          }
+        },
+        "y": {
+          "field": "collected_tonnes",
+          "type": "quantitative",
+          "scale": {
+            "zero": true
+          },
+          "axis": {
+            "title": "Reported collection (tonnes)",
+            "format": "~s",
+            "tickCount": 5,
+            "gridColor": "#e6ecf1"
+          }
+        },
+        "x2": {
+          "field": "annotation_x"
+        },
+        "y2": {
+          "field": "annotation_y"
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum.year_start === 2019 && datum.stream === 'Garbage'"
+        },
+        {
+          "calculate": "2018",
+          "as": "annotation_x"
+        },
+        {
+          "calculate": "1280000",
+          "as": "annotation_y"
+        }
+      ]
+    },
+    {
+      "mark": {
+        "type": "point",
+        "shape": "triangle-up",
+        "filled": true,
+        "color": "#526b82",
+        "size": 90,
+        "strokeWidth": 0,
+        "aria": false,
+        "xOffset": {
+          "expr": "-sin(datum.annotation_arrow_angle * PI / 180) * 9"
+        },
+        "yOffset": {
+          "expr": "cos(datum.annotation_arrow_angle * PI / 180) * 9"
+        }
+      },
+      "encoding": {
+        "x": {
+          "field": "year_start",
+          "type": "quantitative",
+          "scale": {
+            "zero": false,
+            "domain": [
+              2001,
+              2023
+            ]
+          },
+          "axis": {
+            "title": "Financial year starting",
+            "format": "d",
+            "values": [
+              2001,
+              2005,
+              2009,
+              2013,
+              2017,
+              2021,
+              2023
+            ],
+            "grid": false
+          }
+        },
+        "y": {
+          "field": "collected_tonnes",
+          "type": "quantitative",
+          "scale": {
+            "zero": true
+          },
+          "axis": {
+            "title": "Reported collection (tonnes)",
+            "format": "~s",
+            "tickCount": 5,
+            "gridColor": "#e6ecf1"
+          }
+        },
+        "angle": {
+          "field": "annotation_arrow_angle",
+          "type": "quantitative",
+          "scale": null
+        },
+        "tooltip": null
+      },
+      "transform": [
+        {
+          "filter": "datum.year_start === 2019 && datum.stream === 'Garbage'"
+        },
+        {
+          "calculate": "2018",
+          "as": "annotation_x"
+        },
+        {
+          "calculate": "1280000",
+          "as": "annotation_y"
+        },
+        {
+          "calculate": "atan2((datum.year_start-datum.annotation_x) * 37.27272727272727, (datum.collected_tonnes-datum.annotation_y) * 0.00028571428571428574) * 180 / PI",
+          "as": "annotation_arrow_angle"
+        }
+      ],
+      "name": "annotation_arrow_7_root_8"
+    },
+    {
+      "mark": {
+        "type": "rule",
+        "color": "#526b82",
+        "strokeWidth": 1.5
+      },
+      "encoding": {
+        "x": {
+          "field": "year_start",
+          "type": "quantitative",
+          "scale": {
+            "zero": false,
+            "domain": [
+              2001,
+              2023
+            ]
+          },
+          "axis": {
+            "title": "Financial year starting",
+            "format": "d",
+            "values": [
+              2001,
+              2005,
+              2009,
+              2013,
+              2017,
+              2021,
+              2023
+            ],
+            "grid": false
+          }
+        },
+        "y": {
+          "field": "collected_tonnes",
+          "type": "quantitative",
+          "scale": {
+            "zero": true
+          },
+          "axis": {
+            "title": "Reported collection (tonnes)",
+            "format": "~s",
+            "tickCount": 5,
+            "gridColor": "#e6ecf1"
+          }
+        },
+        "x2": {
+          "field": "annotation_x"
+        },
+        "y2": {
+          "field": "annotation_y"
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum.year_start === 2020 && datum.stream === 'Organics'"
+        },
+        {
+          "calculate": "2018",
+          "as": "annotation_x"
+        },
+        {
+          "calculate": "490000",
+          "as": "annotation_y"
+        }
+      ]
+    },
+    {
+      "mark": {
+        "type": "point",
+        "shape": "triangle-up",
+        "filled": true,
+        "color": "#526b82",
+        "size": 90,
+        "strokeWidth": 0,
+        "aria": false,
+        "xOffset": {
+          "expr": "-sin(datum.annotation_arrow_angle * PI / 180) * 9"
+        },
+        "yOffset": {
+          "expr": "cos(datum.annotation_arrow_angle * PI / 180) * 9"
+        }
+      },
+      "encoding": {
+        "x": {
+          "field": "year_start",
+          "type": "quantitative",
+          "scale": {
+            "zero": false,
+            "domain": [
+              2001,
+              2023
+            ]
+          },
+          "axis": {
+            "title": "Financial year starting",
+            "format": "d",
+            "values": [
+              2001,
+              2005,
+              2009,
+              2013,
+              2017,
+              2021,
+              2023
+            ],
+            "grid": false
+          }
+        },
+        "y": {
+          "field": "collected_tonnes",
+          "type": "quantitative",
+          "scale": {
+            "zero": true
+          },
+          "axis": {
+            "title": "Reported collection (tonnes)",
+            "format": "~s",
+            "tickCount": 5,
+            "gridColor": "#e6ecf1"
+          }
+        },
+        "angle": {
+          "field": "annotation_arrow_angle",
+          "type": "quantitative",
+          "scale": null
+        },
+        "tooltip": null
+      },
+      "transform": [
+        {
+          "filter": "datum.year_start === 2020 && datum.stream === 'Organics'"
+        },
+        {
+          "calculate": "2018",
+          "as": "annotation_x"
+        },
+        {
+          "calculate": "490000",
+          "as": "annotation_y"
+        },
+        {
+          "calculate": "atan2((datum.year_start-datum.annotation_x) * 37.27272727272727, (datum.collected_tonnes-datum.annotation_y) * 0.00028571428571428574) * 180 / PI",
+          "as": "annotation_arrow_angle"
+        }
+      ],
+      "name": "annotation_arrow_7_root_10"
+    },
+    {
+      "mark": {
+        "type": "rule",
+        "color": "#526b82",
+        "strokeWidth": 1.5
+      },
+      "encoding": {
+        "x": {
+          "field": "year_start",
+          "type": "quantitative",
+          "scale": {
+            "zero": false,
+            "domain": [
+              2001,
+              2023
+            ]
+          },
+          "axis": {
+            "title": "Financial year starting",
+            "format": "d",
+            "values": [
+              2001,
+              2005,
+              2009,
+              2013,
+              2017,
+              2021,
+              2023
+            ],
+            "grid": false
+          }
+        },
+        "y": {
+          "field": "collected_tonnes",
+          "type": "quantitative",
+          "scale": {
+            "zero": true
+          },
+          "axis": {
+            "title": "Reported collection (tonnes)",
+            "format": "~s",
+            "tickCount": 5,
+            "gridColor": "#e6ecf1"
+          }
+        },
+        "x2": {
+          "field": "annotation_x"
+        },
+        "y2": {
+          "field": "annotation_y"
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum.year_start === 2023 && datum.stream === 'Organics'"
+        },
+        {
+          "calculate": "2022",
+          "as": "annotation_x"
+        },
+        {
+          "calculate": "790000",
+          "as": "annotation_y"
+        }
+      ]
+    },
+    {
+      "mark": {
+        "type": "point",
+        "shape": "triangle-up",
+        "filled": true,
+        "color": "#526b82",
+        "size": 90,
+        "strokeWidth": 0,
+        "aria": false,
+        "xOffset": {
+          "expr": "-sin(datum.annotation_arrow_angle * PI / 180) * 9"
+        },
+        "yOffset": {
+          "expr": "cos(datum.annotation_arrow_angle * PI / 180) * 9"
+        }
+      },
+      "encoding": {
+        "x": {
+          "field": "year_start",
+          "type": "quantitative",
+          "scale": {
+            "zero": false,
+            "domain": [
+              2001,
+              2023
+            ]
+          },
+          "axis": {
+            "title": "Financial year starting",
+            "format": "d",
+            "values": [
+              2001,
+              2005,
+              2009,
+              2013,
+              2017,
+              2021,
+              2023
+            ],
+            "grid": false
+          }
+        },
+        "y": {
+          "field": "collected_tonnes",
+          "type": "quantitative",
+          "scale": {
+            "zero": true
+          },
+          "axis": {
+            "title": "Reported collection (tonnes)",
+            "format": "~s",
+            "tickCount": 5,
+            "gridColor": "#e6ecf1"
+          }
+        },
+        "angle": {
+          "field": "annotation_arrow_angle",
+          "type": "quantitative",
+          "scale": null
+        },
+        "tooltip": null
+      },
+      "transform": [
+        {
+          "filter": "datum.year_start === 2023 && datum.stream === 'Organics'"
+        },
+        {
+          "calculate": "2022",
+          "as": "annotation_x"
+        },
+        {
+          "calculate": "790000",
+          "as": "annotation_y"
+        },
+        {
+          "calculate": "atan2((datum.year_start-datum.annotation_x) * 37.27272727272727, (datum.collected_tonnes-datum.annotation_y) * 0.00028571428571428574) * 180 / PI",
+          "as": "annotation_arrow_angle"
+        }
+      ],
+      "name": "annotation_arrow_7_root_12"
+    }
+  ]
+}

@@ -1,0 +1,558 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Community Satisfaction Survey 2025 State-wide report p26: eight selected service areas relevant to this dashboard, not all 28. Performance index scores out of 100, not percentages. Survey covers participating councils, not a census of all 79 councils; p26 notes 56 councils asked. Arts centres and libraries is a combined survey category; no linkage to individual PLV services implied.",
+  "title": {
+    "fontSize": 24,
+    "subtitleFontSize": 13,
+    "subtitlePadding": 7,
+    "offset": 22,
+    "anchor": "start",
+    "color": "#172b40",
+    "subtitleColor": "#526171",
+    "text": "Community Satisfaction with Public Services",
+    "subtitle": "2025 · Eight selected service areas · State-wide performance index out of 100"
+  },
+  "width": 650,
+  "height": {
+    "step": 48
+  },
+  "data": {
+    "url": "data/processed/graph_11_service_satisfaction.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "performance_index": "number"
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "bar",
+        "size": 24,
+        "cornerRadiusEnd": 3
+      },
+      "encoding": {
+        "y": {
+          "field": "service",
+          "type": "nominal",
+          "sort": [
+            "Art centres & libraries",
+            "Appearance of public areas",
+            "Recreational facilities",
+            "Waste management",
+            "Family support services",
+            "Environmental sustainability",
+            "Sealed local roads",
+            "Unsealed roads"
+          ],
+          "axis": {
+            "title": null,
+            "labelLimit": 240,
+            "labelPadding": 10
+          }
+        },
+        "x": {
+          "field": "performance_index",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              100
+            ]
+          },
+          "axis": {
+            "title": "Performance index (0–100)",
+            "values": [
+              0,
+              20,
+              40,
+              60,
+              80,
+              100
+            ]
+          }
+        },
+        "tooltip": [
+          {
+            "field": "service",
+            "title": "Service area"
+          },
+          {
+            "field": "performance_index",
+            "type": "quantitative",
+            "title": "Performance index (out of 100)"
+          },
+          {
+            "field": "survey_year",
+            "title": "Survey year"
+          }
+        ],
+        "color": {
+          "value": "#4c78a8"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 8,
+        "fontSize": 13,
+        "fontWeight": "bold",
+        "color": "#173f65"
+      },
+      "encoding": {
+        "y": {
+          "field": "service",
+          "type": "nominal",
+          "sort": [
+            "Art centres & libraries",
+            "Appearance of public areas",
+            "Recreational facilities",
+            "Waste management",
+            "Family support services",
+            "Environmental sustainability",
+            "Sealed local roads",
+            "Unsealed roads"
+          ],
+          "axis": {
+            "title": null,
+            "labelLimit": 240,
+            "labelPadding": 10
+          }
+        },
+        "x": {
+          "field": "performance_index",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              100
+            ]
+          },
+          "axis": {
+            "title": "Performance index (0–100)",
+            "values": [
+              0,
+              20,
+              40,
+              60,
+              80,
+              100
+            ]
+          }
+        },
+        "tooltip": [
+          {
+            "field": "service",
+            "title": "Service area"
+          },
+          {
+            "field": "performance_index",
+            "type": "quantitative",
+            "title": "Performance index (out of 100)"
+          },
+          {
+            "field": "survey_year",
+            "title": "Survey year"
+          }
+        ],
+        "text": {
+          "field": "performance_index",
+          "format": ".0f"
+        }
+      },
+      "transform": [
+        {
+          "filter": "!(datum.service === 'Art centres & libraries' || datum.service === 'Unsealed roads')"
+        }
+      ]
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "service": "Art centres & libraries",
+            "performance_index": 97,
+            "note": "Highest of all 28 service areas"
+          },
+          {
+            "service": "Unsealed roads",
+            "performance_index": 97,
+            "note": "Lowest of all 28 service areas"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "dy": -9,
+        "fontSize": 11,
+        "color": "#43566a"
+      },
+      "encoding": {
+        "y": {
+          "field": "service",
+          "type": "nominal",
+          "sort": [
+            "Art centres & libraries",
+            "Appearance of public areas",
+            "Recreational facilities",
+            "Waste management",
+            "Family support services",
+            "Environmental sustainability",
+            "Sealed local roads",
+            "Unsealed roads"
+          ],
+          "axis": {
+            "title": null,
+            "labelLimit": 240,
+            "labelPadding": 10
+          }
+        },
+        "x": {
+          "field": "performance_index",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              100
+            ]
+          },
+          "axis": {
+            "title": "Performance index (0–100)",
+            "values": [
+              0,
+              20,
+              40,
+              60,
+              80,
+              100
+            ]
+          }
+        },
+        "tooltip": null,
+        "text": {
+          "field": "note"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "rule",
+        "color": "#526b82",
+        "strokeWidth": 1.5
+      },
+      "encoding": {
+        "x": {
+          "field": "performance_index",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              100
+            ]
+          },
+          "axis": {
+            "title": "Performance index (0–100)",
+            "values": [
+              0,
+              20,
+              40,
+              60,
+              80,
+              100
+            ]
+          }
+        },
+        "y": {
+          "field": "service",
+          "type": "nominal",
+          "sort": [
+            "Art centres & libraries",
+            "Appearance of public areas",
+            "Recreational facilities",
+            "Waste management",
+            "Family support services",
+            "Environmental sustainability",
+            "Sealed local roads",
+            "Unsealed roads"
+          ],
+          "axis": {
+            "title": null,
+            "labelLimit": 240,
+            "labelPadding": 10
+          }
+        },
+        "x2": {
+          "field": "label_x"
+        }
+      },
+      "data": {
+        "values": [
+          {
+            "service": "Art centres & libraries",
+            "performance_index": 73,
+            "label_x": 97
+          },
+          {
+            "service": "Unsealed roads",
+            "performance_index": 38,
+            "label_x": 97
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "point",
+        "shape": "triangle-up",
+        "filled": true,
+        "color": "#526b82",
+        "size": 90,
+        "strokeWidth": 0,
+        "aria": false,
+        "xOffset": {
+          "expr": "-sin(datum.annotation_arrow_angle * PI / 180) * 9"
+        },
+        "yOffset": {
+          "expr": "cos(datum.annotation_arrow_angle * PI / 180) * 9"
+        }
+      },
+      "encoding": {
+        "x": {
+          "field": "performance_index",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              100
+            ]
+          },
+          "axis": {
+            "title": "Performance index (0–100)",
+            "values": [
+              0,
+              20,
+              40,
+              60,
+              80,
+              100
+            ]
+          }
+        },
+        "y": {
+          "field": "service",
+          "type": "nominal",
+          "sort": [
+            "Art centres & libraries",
+            "Appearance of public areas",
+            "Recreational facilities",
+            "Waste management",
+            "Family support services",
+            "Environmental sustainability",
+            "Sealed local roads",
+            "Unsealed roads"
+          ],
+          "axis": {
+            "title": null,
+            "labelLimit": 240,
+            "labelPadding": 10
+          }
+        },
+        "angle": {
+          "field": "annotation_arrow_angle",
+          "type": "quantitative",
+          "scale": null
+        },
+        "tooltip": null
+      },
+      "data": {
+        "values": [
+          {
+            "service": "Art centres & libraries",
+            "performance_index": 73,
+            "label_x": 97
+          },
+          {
+            "service": "Unsealed roads",
+            "performance_index": 38,
+            "label_x": 97
+          }
+        ]
+      },
+      "name": "annotation_arrow_11_root_4",
+      "transform": [
+        {
+          "calculate": "atan2((datum.performance_index-datum.label_x) * 6.5, 0) * 180 / PI",
+          "as": "annotation_arrow_angle"
+        }
+      ]
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "service": "Art centres & libraries",
+            "performance_index": 73,
+            "label_x": 97
+          },
+          {
+            "service": "Unsealed roads",
+            "performance_index": 38,
+            "label_x": 97
+          }
+        ]
+      },
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 45,
+        "color": "#08519c"
+      },
+      "encoding": {
+        "x": {
+          "field": "performance_index",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              100
+            ]
+          },
+          "axis": {
+            "title": "Performance index (0–100)",
+            "values": [
+              0,
+              20,
+              40,
+              60,
+              80,
+              100
+            ]
+          }
+        },
+        "y": {
+          "field": "service",
+          "type": "nominal",
+          "sort": [
+            "Art centres & libraries",
+            "Appearance of public areas",
+            "Recreational facilities",
+            "Waste management",
+            "Family support services",
+            "Environmental sustainability",
+            "Sealed local roads",
+            "Unsealed roads"
+          ],
+          "axis": {
+            "title": null,
+            "labelLimit": 240,
+            "labelPadding": 10
+          }
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 8,
+        "fontSize": 13,
+        "fontWeight": "bold",
+        "color": "#173f65",
+        "dy": 12
+      },
+      "encoding": {
+        "y": {
+          "field": "service",
+          "type": "nominal",
+          "sort": [
+            "Art centres & libraries",
+            "Appearance of public areas",
+            "Recreational facilities",
+            "Waste management",
+            "Family support services",
+            "Environmental sustainability",
+            "Sealed local roads",
+            "Unsealed roads"
+          ],
+          "axis": {
+            "title": null,
+            "labelLimit": 240,
+            "labelPadding": 10
+          }
+        },
+        "x": {
+          "field": "performance_index",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              100
+            ]
+          },
+          "axis": {
+            "title": "Performance index (0–100)",
+            "values": [
+              0,
+              20,
+              40,
+              60,
+              80,
+              100
+            ]
+          }
+        },
+        "tooltip": [
+          {
+            "field": "service",
+            "title": "Service area"
+          },
+          {
+            "field": "performance_index",
+            "type": "quantitative",
+            "title": "Performance index (out of 100)"
+          },
+          {
+            "field": "survey_year",
+            "title": "Survey year"
+          }
+        ],
+        "text": {
+          "field": "performance_index",
+          "format": ".0f"
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum.service === 'Art centres & libraries' || datum.service === 'Unsealed roads'"
+        }
+      ]
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "domain": false,
+      "ticks": false,
+      "gridColor": "#e6ecf1",
+      "labelColor": "#43566a",
+      "titleColor": "#43566a",
+      "labelFontSize": 12,
+      "titleFontSize": 13
+    },
+    "title": {
+      "fontSize": 24,
+      "subtitleFontSize": 13,
+      "subtitlePadding": 7,
+      "offset": 22,
+      "anchor": "start",
+      "color": "#172b40",
+      "subtitleColor": "#526171"
+    }
+  }
+}

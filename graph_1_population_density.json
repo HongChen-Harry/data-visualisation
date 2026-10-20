@@ -1,0 +1,954 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "ABS Regional population 2024\u201325 Table 1: ERP at 30 June 2025, joined by LGA code to ABS 2025 GDA2020 boundaries. Density = population / original AREASQKM; 79 councils, all matched. Blue thresholds: 1, 10, 100, 1000, 3000 residents/km\u00b2. Melbourne detail is spatially clipped, not a separate population dataset. Simplification affects geometry only.",
+  "title": {
+    "text": "Population Density Across Victoria",
+    "subtitle": "30 June 2025 \u00b7 Residents per km\u00b2 \u00b7 Victoria and an enlarged inner Melbourne view",
+    "fontSize": 24,
+    "subtitleFontSize": 13,
+    "anchor": "start",
+    "offset": 20
+  },
+  "spacing": 65,
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "font": "Arial",
+    "background": "white"
+  },
+  "vconcat": [
+    {
+      "hconcat": [
+        {
+          "width": 530,
+          "height": 400,
+          "title": {
+            "text": "Victoria \u00b7 all 79 councils",
+            "anchor": "start",
+            "fontSize": 14,
+            "color": "#52697a",
+            "offset": 12
+          },
+          "projection": {
+            "type": "conicEqualArea",
+            "rotate": [
+              -145,
+              0,
+              0
+            ],
+            "center": [
+              0,
+              -37
+            ],
+            "parallels": [
+              -36,
+              -38
+            ]
+          },
+          "layer": [
+            {
+              "data": {
+                "url": "data/maps/victoria_lga_2025.topojson",
+                "format": {
+                  "type": "topojson",
+                  "feature": "victoria_lga"
+                }
+              },
+              "transform": [
+                {
+                  "lookup": "properties.LGA_CODE25",
+                  "from": {
+                    "data": {
+                      "url": "data/processed/graph_1_population_density.csv",
+                      "format": {
+                        "type": "csv",
+                        "parse": {
+                          "lga_code": "string",
+                          "population_2025": "number",
+                          "area_sqkm": "number",
+                          "population_density": "number"
+                        }
+                      }
+                    },
+                    "key": "lga_code",
+                    "fields": [
+                      "lga_code",
+                      "council",
+                      "population_2025",
+                      "area_sqkm",
+                      "population_density"
+                    ]
+                  }
+                }
+              ],
+              "mark": {
+                "type": "geoshape",
+                "stroke": "#91a7b7",
+                "strokeWidth": 0.65
+              },
+              "encoding": {
+                "color": {
+                  "field": "population_density",
+                  "type": "quantitative",
+                  "scale": {
+                    "type": "threshold",
+                    "domain": [
+                      1,
+                      10,
+                      100,
+                      1000,
+                      3000
+                    ],
+                    "range": [
+                      "#dce9f2",
+                      "#d1e3f1",
+                      "#9bc1df",
+                      "#6299c3",
+                      "#2b6c9f",
+                      "#123f68"
+                    ]
+                  },
+                  "legend": null
+                },
+                "tooltip": [
+                  {
+                    "field": "council",
+                    "type": "nominal",
+                    "title": "Council"
+                  },
+                  {
+                    "field": "population_2025",
+                    "type": "quantitative",
+                    "format": ",.0f",
+                    "title": "Residents (30 June 2025)"
+                  },
+                  {
+                    "field": "area_sqkm",
+                    "type": "quantitative",
+                    "format": ",.1f",
+                    "title": "LGA area (km\u00b2)"
+                  },
+                  {
+                    "field": "population_density",
+                    "type": "quantitative",
+                    "format": ",.2f",
+                    "title": "Residents per km\u00b2"
+                  }
+                ]
+              }
+            },
+            {
+              "data": {
+                "values": [
+                  {
+                    "longitude": 141.2839958249701,
+                    "latitude": -36.78194917086083,
+                    "label_lon": 142.15,
+                    "label_lat": -35.25,
+                    "note": [
+                      "West Wimmera",
+                      "0.43 /km\u00b2 (lowest)"
+                    ]
+                  }
+                ]
+              },
+              "mark": {
+                "type": "rule",
+                "stroke": "#18364a",
+                "strokeWidth": 1.5,
+                "clip": false
+              },
+              "encoding": {
+                "tooltip": null,
+                "x2": {
+                  "value": 50
+                },
+                "y2": {
+                  "value": 428
+                },
+                "x": {
+                  "value": {
+                    "expr": "geoCentroid('density_state_projection', {type: 'Point', coordinates: [datum.longitude, datum.latitude]})[0]"
+                  }
+                },
+                "y": {
+                  "value": {
+                    "expr": "geoCentroid('density_state_projection', {type: 'Point', coordinates: [datum.longitude, datum.latitude]})[1]"
+                  }
+                }
+              }
+            },
+            {
+              "data": {
+                "values": [
+                  {
+                    "longitude": 141.2839958249701,
+                    "latitude": -36.78194917086083,
+                    "label_lon": 142.15,
+                    "label_lat": -35.25,
+                    "note": [
+                      "West Wimmera",
+                      "0.43 /km\u00b2 (lowest)"
+                    ]
+                  }
+                ]
+              },
+              "mark": {
+                "type": "point",
+                "shape": "triangle-up",
+                "filled": true,
+                "color": "#18364a",
+                "size": 90,
+                "strokeWidth": 0,
+                "aria": false,
+                "xOffset": {
+                  "expr": "-sin(datum.annotation_arrow_angle * PI / 180) * 9"
+                },
+                "yOffset": {
+                  "expr": "cos(datum.annotation_arrow_angle * PI / 180) * 9"
+                }
+              },
+              "encoding": {
+                "longitude": {
+                  "field": "longitude",
+                  "type": "quantitative"
+                },
+                "latitude": {
+                  "field": "latitude",
+                  "type": "quantitative"
+                },
+                "tooltip": null,
+                "angle": {
+                  "field": "annotation_arrow_angle",
+                  "type": "quantitative",
+                  "scale": null
+                }
+              },
+              "name": "annotation_arrow_1_root_vconcat_0_hconcat_0_2",
+              "transform": [
+                {
+                  "calculate": "-8",
+                  "as": "annotation_arrow_angle"
+                }
+              ]
+            },
+            {
+              "data": {
+                "values": [
+                  {
+                    "longitude": 141.2839958249701,
+                    "latitude": -36.78194917086083,
+                    "label_lon": 142.15,
+                    "label_lat": -35.25,
+                    "note": [
+                      "West Wimmera",
+                      "0.43 /km\u00b2 (lowest)"
+                    ]
+                  }
+                ]
+              },
+              "mark": {
+                "type": "point",
+                "filled": true,
+                "color": "#18364a",
+                "stroke": "white",
+                "strokeWidth": 1.5,
+                "size": 65
+              },
+              "encoding": {
+                "longitude": {
+                  "field": "longitude",
+                  "type": "quantitative"
+                },
+                "latitude": {
+                  "field": "latitude",
+                  "type": "quantitative"
+                },
+                "tooltip": null
+              }
+            },
+            {
+              "data": {
+                "values": [
+                  {
+                    "longitude": 141.2839958249701,
+                    "latitude": -36.78194917086083,
+                    "label_lon": 142.15,
+                    "label_lat": -35.25,
+                    "note": [
+                      "West Wimmera",
+                      "0.43 /km\u00b2 (lowest)"
+                    ]
+                  }
+                ]
+              },
+              "mark": {
+                "type": "text",
+                "align": "left",
+                "dx": 0,
+                "dy": 0,
+                "fontSize": 11,
+                "fontWeight": "bold",
+                "color": "#123f68",
+                "clip": false,
+                "baseline": "top",
+                "lineHeight": 14
+              },
+              "encoding": {
+                "x": {
+                  "value": 50
+                },
+                "y": {
+                  "value": 436
+                },
+                "text": {
+                  "field": "note"
+                },
+                "tooltip": null
+              }
+            },
+            {
+              "data": {
+                "values": [
+                  {
+                    "type": "Feature",
+                    "geometry": {
+                      "type": "Polygon",
+                      "coordinates": [
+                        [
+                          [
+                            144.75,
+                            -38.05
+                          ],
+                          [
+                            144.75,
+                            -37.55
+                          ],
+                          [
+                            145.3,
+                            -37.55
+                          ],
+                          [
+                            145.3,
+                            -38.05
+                          ],
+                          [
+                            144.75,
+                            -38.05
+                          ]
+                        ]
+                      ]
+                    }
+                  }
+                ]
+              },
+              "mark": {
+                "type": "geoshape",
+                "fill": null,
+                "stroke": "#18364a",
+                "strokeWidth": 1.5,
+                "strokeDash": [
+                  4,
+                  3
+                ],
+                "tooltip": false,
+                "aria": false
+              }
+            },
+            {
+              "name": "overview_label_0_halo",
+              "data": {
+                "url": "data/maps/victoria_lga_representative_points.csv"
+              },
+              "transform": [
+                {
+                  "calculate": "replace(datum.LGA_NAME25, ' (Vic.)', '')",
+                  "as": "council_name"
+                },
+                {
+                  "calculate": "split(datum.council_name, ' ')",
+                  "as": "label_lines"
+                },
+                {
+                  "filter": "datum.AREASQKM >= 3000"
+                }
+              ],
+              "mark": {
+                "type": "text",
+                "font": "Arial",
+                "fontSize": 8,
+                "fontWeight": "bold",
+                "lineHeight": 9,
+                "color": "#18364a",
+                "stroke": "white",
+                "strokeWidth": 2,
+                "strokeOpacity": 0.95,
+                "tooltip": false,
+                "align": "center",
+                "baseline": "middle",
+                "dx": {
+                  "expr": "datum.council_name === 'Moyne' ? -10 : datum.council_name === 'Corangamite' ? 10 : 0"
+                },
+                "strokeJoin": "round"
+              },
+              "encoding": {
+                "longitude": {
+                  "field": "longitude",
+                  "type": "quantitative"
+                },
+                "latitude": {
+                  "field": "latitude",
+                  "type": "quantitative"
+                },
+                "text": {
+                  "field": "label_lines"
+                }
+              }
+            },
+            {
+              "name": "overview_label_0_ink",
+              "data": {
+                "url": "data/maps/victoria_lga_representative_points.csv"
+              },
+              "transform": [
+                {
+                  "calculate": "replace(datum.LGA_NAME25, ' (Vic.)', '')",
+                  "as": "council_name"
+                },
+                {
+                  "calculate": "split(datum.council_name, ' ')",
+                  "as": "label_lines"
+                },
+                {
+                  "filter": "datum.AREASQKM >= 3000"
+                }
+              ],
+              "mark": {
+                "type": "text",
+                "font": "Arial",
+                "fontSize": 8,
+                "fontWeight": "bold",
+                "lineHeight": 9,
+                "color": "#18364a",
+                "tooltip": false,
+                "align": "center",
+                "baseline": "middle",
+                "dx": {
+                  "expr": "datum.council_name === 'Moyne' ? -10 : datum.council_name === 'Corangamite' ? 10 : 0"
+                }
+              },
+              "encoding": {
+                "longitude": {
+                  "field": "longitude",
+                  "type": "quantitative"
+                },
+                "latitude": {
+                  "field": "latitude",
+                  "type": "quantitative"
+                },
+                "text": {
+                  "field": "label_lines"
+                }
+              }
+            }
+          ],
+          "name": "density_state"
+        },
+        {
+          "width": 420,
+          "height": 483.2227162306804,
+          "title": {
+            "text": "Inner Melbourne \u00b7 boxed area",
+            "anchor": "start",
+            "fontSize": 14,
+            "color": "#52697a",
+            "offset": 12
+          },
+          "projection": {
+            "type": "mercator",
+            "center": [
+              145.025,
+              -37.80042307211171
+            ],
+            "scale": 43753.14071908014,
+            "translate": [
+              210.0,
+              241.6113581153402
+            ]
+          },
+          "layer": [
+            {
+              "data": {
+                "url": "data/maps/graph_1_melbourne_inset.topojson",
+                "format": {
+                  "type": "topojson",
+                  "feature": "melbourne_lga"
+                }
+              },
+              "transform": [
+                {
+                  "lookup": "properties.LGA_CODE25",
+                  "from": {
+                    "data": {
+                      "url": "data/processed/graph_1_population_density.csv",
+                      "format": {
+                        "type": "csv",
+                        "parse": {
+                          "lga_code": "string",
+                          "population_2025": "number",
+                          "area_sqkm": "number",
+                          "population_density": "number"
+                        }
+                      }
+                    },
+                    "key": "lga_code",
+                    "fields": [
+                      "lga_code",
+                      "council",
+                      "population_2025",
+                      "area_sqkm",
+                      "population_density"
+                    ]
+                  }
+                }
+              ],
+              "mark": {
+                "type": "geoshape",
+                "stroke": "#91a7b7",
+                "strokeWidth": 0.65,
+                "clip": true
+              },
+              "encoding": {
+                "color": {
+                  "field": "population_density",
+                  "type": "quantitative",
+                  "scale": {
+                    "type": "threshold",
+                    "domain": [
+                      1,
+                      10,
+                      100,
+                      1000,
+                      3000
+                    ],
+                    "range": [
+                      "#dce9f2",
+                      "#d1e3f1",
+                      "#9bc1df",
+                      "#6299c3",
+                      "#2b6c9f",
+                      "#123f68"
+                    ]
+                  },
+                  "legend": null
+                },
+                "tooltip": [
+                  {
+                    "field": "council",
+                    "type": "nominal",
+                    "title": "Council"
+                  },
+                  {
+                    "field": "population_2025",
+                    "type": "quantitative",
+                    "format": ",.0f",
+                    "title": "Residents (30 June 2025)"
+                  },
+                  {
+                    "field": "area_sqkm",
+                    "type": "quantitative",
+                    "format": ",.1f",
+                    "title": "LGA area (km\u00b2)"
+                  },
+                  {
+                    "field": "population_density",
+                    "type": "quantitative",
+                    "format": ",.2f",
+                    "title": "Residents per km\u00b2"
+                  }
+                ]
+              }
+            },
+            {
+              "data": {
+                "values": [
+                  {
+                    "longitude": 144.96732250181736,
+                    "latitude": -37.84549134739761,
+                    "label_lon": 144.82,
+                    "label_lat": -37.94,
+                    "note": [
+                      "Port Phillip",
+                      "5,551 /km\u00b2 (highest)"
+                    ]
+                  }
+                ]
+              },
+              "mark": {
+                "type": "rule",
+                "stroke": "#18364a",
+                "strokeWidth": 1.5,
+                "clip": false
+              },
+              "encoding": {
+                "tooltip": null,
+                "x2": {
+                  "value": 60
+                },
+                "y2": {
+                  "value": 511.2227162306804
+                },
+                "x": {
+                  "value": {
+                    "expr": "geoCentroid('density_detail_projection', {type: 'Point', coordinates: [datum.longitude, datum.latitude]})[0]"
+                  }
+                },
+                "y": {
+                  "value": {
+                    "expr": "geoCentroid('density_detail_projection', {type: 'Point', coordinates: [datum.longitude, datum.latitude]})[1]"
+                  }
+                }
+              }
+            },
+            {
+              "data": {
+                "values": [
+                  {
+                    "longitude": 144.96732250181736,
+                    "latitude": -37.84549134739761,
+                    "label_lon": 144.82,
+                    "label_lat": -37.94,
+                    "note": [
+                      "Port Phillip",
+                      "5,551 /km\u00b2 (highest)"
+                    ]
+                  }
+                ]
+              },
+              "mark": {
+                "type": "point",
+                "shape": "triangle-up",
+                "filled": true,
+                "color": "#18364a",
+                "size": 90,
+                "strokeWidth": 0,
+                "aria": false,
+                "clip": true,
+                "xOffset": {
+                  "expr": "-sin(datum.annotation_arrow_angle * PI / 180) * 9"
+                },
+                "yOffset": {
+                  "expr": "cos(datum.annotation_arrow_angle * PI / 180) * 9"
+                }
+              },
+              "encoding": {
+                "longitude": {
+                  "field": "longitude",
+                  "type": "quantitative"
+                },
+                "latitude": {
+                  "field": "latitude",
+                  "type": "quantitative"
+                },
+                "tooltip": null,
+                "angle": {
+                  "field": "annotation_arrow_angle",
+                  "type": "quantitative",
+                  "scale": null
+                }
+              },
+              "name": "annotation_arrow_1_root_vconcat_0_hconcat_1_2",
+              "transform": [
+                {
+                  "calculate": "25",
+                  "as": "annotation_arrow_angle"
+                }
+              ]
+            },
+            {
+              "data": {
+                "values": [
+                  {
+                    "longitude": 144.96732250181736,
+                    "latitude": -37.84549134739761,
+                    "label_lon": 144.82,
+                    "label_lat": -37.94,
+                    "note": [
+                      "Port Phillip",
+                      "5,551 /km\u00b2 (highest)"
+                    ]
+                  }
+                ]
+              },
+              "mark": {
+                "type": "point",
+                "filled": true,
+                "color": "#18364a",
+                "stroke": "white",
+                "strokeWidth": 1.5,
+                "size": 65,
+                "clip": true
+              },
+              "encoding": {
+                "longitude": {
+                  "field": "longitude",
+                  "type": "quantitative"
+                },
+                "latitude": {
+                  "field": "latitude",
+                  "type": "quantitative"
+                },
+                "tooltip": null
+              }
+            },
+            {
+              "data": {
+                "values": [
+                  {
+                    "longitude": 144.96732250181736,
+                    "latitude": -37.84549134739761,
+                    "label_lon": 144.82,
+                    "label_lat": -37.94,
+                    "note": [
+                      "Port Phillip",
+                      "5,551 /km\u00b2 (highest)"
+                    ]
+                  }
+                ]
+              },
+              "mark": {
+                "type": "text",
+                "align": "left",
+                "dx": 0,
+                "dy": 0,
+                "fontSize": 11,
+                "fontWeight": "bold",
+                "color": "#123f68",
+                "clip": false,
+                "baseline": "top",
+                "lineHeight": 14
+              },
+              "encoding": {
+                "x": {
+                  "value": 60
+                },
+                "y": {
+                  "value": 519.2227162306804
+                },
+                "text": {
+                  "field": "note"
+                },
+                "tooltip": null
+              }
+            },
+            {
+              "name": "overview_label_1_halo",
+              "data": {
+                "url": "data/maps/inner_melbourne_council_labels.csv"
+              },
+              "transform": [
+                {
+                  "calculate": "replace(datum.LGA_NAME25, ' (Vic.)', '')",
+                  "as": "council_name"
+                },
+                {
+                  "calculate": "split(datum.council_name, ' ')",
+                  "as": "label_lines"
+                }
+              ],
+              "mark": {
+                "type": "text",
+                "font": "Arial",
+                "fontSize": 8,
+                "fontWeight": "bold",
+                "lineHeight": 9,
+                "color": "#18364a",
+                "stroke": "white",
+                "strokeWidth": 2,
+                "strokeOpacity": 0.95,
+                "tooltip": false,
+                "align": {
+                  "expr": "indexof(['Casey', 'Knox', 'Maroondah', 'Yarra Ranges'], datum.council_name) >= 0 ? 'right' : indexof(['Melton', 'Wyndham'], datum.council_name) >= 0 ? 'left' : 'center'"
+                },
+                "baseline": "middle",
+                "dy": {
+                  "expr": "datum.council_name === 'Port Phillip' ? -12 : (datum.council_name === 'Melbourne' ? 4 : datum.council_name === 'Yarra' ? -9 : datum.council_name === 'Moonee Valley' ? 5 : 0)"
+                },
+                "dx": {
+                  "expr": "datum.council_name === 'Port Phillip' ? 12 : (datum.council_name === 'Merri-bek' || datum.council_name === 'Port Phillip' ? -4 : datum.council_name === 'Darebin' || datum.council_name === 'Stonnington' ? 4 : 0)"
+                },
+                "clip": true,
+                "strokeJoin": "round"
+              },
+              "encoding": {
+                "longitude": {
+                  "field": "longitude",
+                  "type": "quantitative"
+                },
+                "latitude": {
+                  "field": "latitude",
+                  "type": "quantitative"
+                },
+                "text": {
+                  "field": "label_lines"
+                }
+              }
+            },
+            {
+              "name": "overview_label_1_ink",
+              "data": {
+                "url": "data/maps/inner_melbourne_council_labels.csv"
+              },
+              "transform": [
+                {
+                  "calculate": "replace(datum.LGA_NAME25, ' (Vic.)', '')",
+                  "as": "council_name"
+                },
+                {
+                  "calculate": "split(datum.council_name, ' ')",
+                  "as": "label_lines"
+                }
+              ],
+              "mark": {
+                "type": "text",
+                "font": "Arial",
+                "fontSize": 8,
+                "fontWeight": "bold",
+                "lineHeight": 9,
+                "color": "#18364a",
+                "tooltip": false,
+                "align": {
+                  "expr": "indexof(['Casey', 'Knox', 'Maroondah', 'Yarra Ranges'], datum.council_name) >= 0 ? 'right' : indexof(['Melton', 'Wyndham'], datum.council_name) >= 0 ? 'left' : 'center'"
+                },
+                "baseline": "middle",
+                "dy": {
+                  "expr": "datum.council_name === 'Port Phillip' ? -12 : (datum.council_name === 'Melbourne' ? 4 : datum.council_name === 'Yarra' ? -9 : datum.council_name === 'Moonee Valley' ? 5 : 0)"
+                },
+                "dx": {
+                  "expr": "datum.council_name === 'Port Phillip' ? 12 : (datum.council_name === 'Merri-bek' || datum.council_name === 'Port Phillip' ? -4 : datum.council_name === 'Darebin' || datum.council_name === 'Stonnington' ? 4 : 0)"
+                },
+                "clip": true
+              },
+              "encoding": {
+                "longitude": {
+                  "field": "longitude",
+                  "type": "quantitative"
+                },
+                "latitude": {
+                  "field": "latitude",
+                  "type": "quantitative"
+                },
+                "text": {
+                  "field": "label_lines"
+                }
+              }
+            }
+          ],
+          "view": {
+            "stroke": null,
+            "fill": "#ffffff"
+          },
+          "name": "density_detail"
+        }
+      ],
+      "spacing": 48,
+      "resolve": {
+        "scale": {
+          "color": "shared"
+        },
+        "legend": {
+          "color": "shared"
+        }
+      }
+    },
+    {
+      "width": 894,
+      "height": 14,
+      "title": {
+        "text": "Residents per km\u00b2",
+        "anchor": "start",
+        "fontSize": 12,
+        "offset": 8
+      },
+      "data": {
+        "values": [
+          {
+            "label": "< 1"
+          },
+          {
+            "label": "1\u2013<10"
+          },
+          {
+            "label": "10\u2013<100"
+          },
+          {
+            "label": "100\u2013<1,000"
+          },
+          {
+            "label": "1,000\u2013<3,000"
+          },
+          {
+            "label": "\u2265 3,000"
+          }
+        ]
+      },
+      "mark": {
+        "type": "rect",
+        "stroke": "white",
+        "strokeWidth": 2
+      },
+      "encoding": {
+        "x": {
+          "field": "label",
+          "type": "nominal",
+          "sort": [
+            "< 1",
+            "1\u2013<10",
+            "10\u2013<100",
+            "100\u2013<1,000",
+            "1,000\u2013<3,000",
+            "\u2265 3,000"
+          ],
+          "axis": {
+            "title": null,
+            "labelAngle": 0,
+            "domain": false,
+            "ticks": false,
+            "labelPadding": 8,
+            "labelFontSize": 11
+          }
+        },
+        "y": {
+          "value": 0
+        },
+        "y2": {
+          "value": 14
+        },
+        "color": {
+          "field": "label",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "< 1",
+              "1\u2013<10",
+              "10\u2013<100",
+              "100\u2013<1,000",
+              "1,000\u2013<3,000",
+              "\u2265 3,000"
+            ],
+            "range": [
+              "#dce9f2",
+              "#d1e3f1",
+              "#9bc1df",
+              "#6299c3",
+              "#2b6c9f",
+              "#123f68"
+            ]
+          },
+          "legend": null
+        }
+      }
+    }
+  ]
+}

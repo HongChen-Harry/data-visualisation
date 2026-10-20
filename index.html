@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="A visual story about council spending, waste services, libraries and community satisfaction across Victoria.">
+  <title>Public Services Across Victoria</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+  <script defer src="app.js"></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#story">Skip to the visual story</a>
+  <header class="masthead" id="top">
+    <div class="shell masthead-inner"><a class="wordmark" href="#top"><span class="brand-mark"
+          aria-hidden="true"></span>Victoria <span>/ Public services</span></a><span class="edition">A visual study ·
+        2026</span></div>
+  </header>
+  <main>
+    <section class="hero shell" aria-labelledby="page-title"><img class="hero-map-decoration"
+        src="assets/victoria-decoration.svg" alt="" aria-hidden="true">
+      <div class="hero-copy">
+        <p class="eyebrow">Local government. Everyday life.</p>
+        <h1 id="page-title">Public Services<br>Across <em>Victoria.</em></h1>
+        <p class="hero-intro">Everyday services connect councils to their communities. Follow the money, compare local
+          services, and see how residents experience them.</p><a class="story-link" href="#geography">Explore the story
+          <span aria-hidden="true">↓</span></a>
+      </div>
+      <aside class="hero-facts" aria-label="Key findings">
+        <p class="eyebrow">The story in three numbers</p>
+        <div class="hero-stat"><span class="stat-value">$12.18<span>bn</span></span>
+          <p>Expenditure across 79 councils<span>2024–25 · ten service categories</span></p>
+        </div>
+        <div class="hero-stat"><span class="stat-value">2.2<span>×</span></span>
+          <p>Small Shire median spending per resident<span>Compared with Metro councils · 2024–25</span></p>
+        </div>
+        <div class="hero-stat"><span class="stat-value">35<span>points</span></span>
+          <p>Gap between the top and bottom service ratings<span>Arts & libraries: 73 · Unsealed roads: 38 · 2025</span>
+          </p>
+        </div>
+      </aside>
+    </section>
+    <nav class="chapter-nav" aria-label="Story chapters">
+      <div class="shell nav-inner"><a href="#geography" aria-current="location"><span>01</span> Place</a><a
+          href="#spending"><span>02</span> Spending</a><a href="#waste"><span>03</span> Waste</a><a
+          href="#libraries"><span>04</span> Libraries</a><a href="#experience"><span>05</span> Experience</a></div>
+      <div class="reading-progress" aria-hidden="true"><span id="reading-progress"></span></div>
+    </nav>
+    <div class="shell story" id="story">
+      <section class="chapter" id="geography" aria-labelledby="geography-title">
+        <header class="chapter-heading"><span class="chapter-number">01<svg class="chapter-icon" viewBox="0 0 24 24"
+              aria-hidden="true">
+              <path d="M12 21s7-6 7-12a7 7 0 0 0-14 0c0 6 7 12 7 12Z" />
+              <circle cx="12" cy="9" r="2.5" />
+            </svg></span>
+          <div>
+            <p class="eyebrow">Start with place</p>
+            <h2 id="geography-title">Different places, different needs.</h2>
+            <p>Population and geography provide the context for local services. Begin with where residents live and
+              where council spending is concentrated.</p>
+          </div>
+        </header>
+        <div class="chart-stack" data-charts="1"></div>
+        <div class="chart-stack" data-charts="2"></div>
+        <div class="story-narrative">
+          <h3>From population concentration to spending intensity</h3>
+          <p>The density map establishes a strong contrast between inner Melbourne and sparsely populated regional
+            councils. Melbourne also records the largest total expenditure, at about $715 million. Yet a large total
+            budget does not tell us how much is spent for each resident. The next comparison shifts from total spending
+            to spending per person, revealing a different pattern.</p>
+        </div>
+      </section>
+      <section class="chapter" id="spending" aria-labelledby="spending-title">
+        <header class="chapter-heading"><span class="chapter-number">02<svg class="chapter-icon" viewBox="0 0 24 24"
+              aria-hidden="true">
+              <path d="M3 21h18M5 9h14M4 7l8-4 8 4M6 10v8m6-8v8m6-8v8" />
+            </svg></span>
+          <div>
+            <p class="eyebrow">Follow the money</p>
+            <h2 id="spending-title">One state. Uneven spending.</h2>
+            <p>Governance and recreation & culture account for about 43% of expenditure. Spending per resident also
+              differs substantially between council groups.</p>
+          </div>
+        </header>
+        <div class="chart-stack" data-charts="3,4"></div>
+        <div class="story-narrative">
+          <h3>The spending pattern changes when population is considered</h3>
+          <p>Governance and recreation & culture account for about 43% of the $12.18 billion spent across councils.
+            Within that overall budget, expenditure per resident is higher in Small Shires: their median is about
+            $3,324, compared with $1,488 for Metro councils. Small Shires also show a wider spread, including West
+            Wimmera at about $8,367. This distribution is consistent with the challenge of serving smaller populations
+            across large areas, although these charts do not isolate the causes of higher costs. To understand what
+            spending means for services, we next examine waste collection and diversion.</p>
+        </div>
+      </section>
+      <section class="chapter" id="waste" aria-labelledby="waste-title">
+        <header class="chapter-heading"><span class="chapter-number">03<svg class="chapter-icon" viewBox="0 0 24 24"
+              aria-hidden="true">
+              <path d="m9 4 3-2 4 7m0-4v4h-4M20 11l2 3-4 7m3-3-3 3-2-3M14 21H6l-4-7m1 4-1-4 4-1" />
+            </svg></span>
+          <div>
+            <p class="eyebrow">A closer look at waste</p>
+            <h2 id="waste-title">Cost is only part of the picture.</h2>
+            <p>Alpine records the highest landfill diversion in 2024–25, while Melbourne has the highest garbage
+              collection cost per bin. Compare this snapshot with council histories and the changing mix of collected
+              waste.</p>
+          </div>
+        </header>
+        <div class="chart-stack" data-charts="5,6,7"></div>
+        <div class="story-narrative">
+          <h3>Waste outcomes change over time, beyond the cost snapshot</h3>
+          <p>The 2024–25 comparison shows that a high collection cost can coexist with a relatively low diversion rate:
+            Melbourne records $475.77 per bin and 28.5% diversion, while Alpine records $112.55 and 74.1%. These
+            examples motivate looking beyond price, rather than proving a statewide relationship. The five-year heatmap
+            adds a local time perspective: in the default Metro view, Knox rises from 52.1% to 71.2% diversion. The
+            longer collection series shows organics overtaking recyclables in 2020–21 and reaching about 718,000 tonnes
+            in 2023–24, while garbage peaks in 2019–20. Together, these records show changes in both diversion and the
+            mix of collected waste; changing reporting coverage limits direct comparisons of annual statewide totals.
+          </p>
+        </div>
+      </section>
+      <section class="chapter" id="libraries" aria-labelledby="libraries-title">
+        <header class="chapter-heading"><span class="chapter-number">04<svg class="chapter-icon" viewBox="0 0 24 24"
+              aria-hidden="true">
+              <path d="M12 5v16M3 4c4-1 7 0 9 2 2-2 5-3 9-2v15c-4-1-7 0-9 2-2-2-5-3-9-2Z" />
+            </svg></span>
+          <div>
+            <p class="eyebrow">Beyond the budget</p>
+            <h2 id="libraries-title">Libraries bring services into use.</h2>
+            <p>Funding, borrowing, visits and attendance describe different parts of a library service. Yarra leads
+              branch visits per resident in 2024–25; Indigo rises from rank 23 to rank 6 over the three years shown.</p>
+          </div>
+        </header>
+        <div class="chart-stack" data-charts="8,9"></div>
+        <div class="story-narrative">
+          <h3>Library use reveals movement that budgets alone cannot show</h3>
+          <p>The library profiles separate funding, borrowing, visits and attendance, allowing services to differ across
+            measures without combining them into a single score. The ranking chart then introduces change over time.
+            Yarra returns to first place for visits per resident in 2024–25 after ranking third the previous year.
+            Indigo rises from 23rd to sixth; its visits increase from 3.12 to 5.15 per resident, so the movement
+            reflects growth in the underlying measure as well as a change in rank. This leads to the final perspective:
+            where facilities are located and how residents rate service areas.</p>
+        </div>
+      </section>
+      <section class="chapter" id="experience" aria-labelledby="experience-title">
+        <header class="chapter-heading"><span class="chapter-number">05<svg class="chapter-icon" viewBox="0 0 24 24"
+              aria-hidden="true">
+              <circle cx="12" cy="6" r="3" />
+              <path d="M7 21v-7a5 5 0 0 1 10 0v7M4 12l-2 4m18-4 2 4" />
+            </svg></span>
+          <div>
+            <p class="eyebrow">Access and experience</p>
+            <h2 id="experience-title">Services matter where people use them.</h2>
+            <p>Physical access adds another perspective to spending and usage. Finish with residents’ ratings: arts &
+              libraries lead the survey’s 28 service areas, while unsealed roads receive the lowest rating.</p>
+          </div>
+        </header>
+        <div class="chart-stack" data-charts="10"></div>
+        <div class="chart-stack" data-charts="11"></div>
+        <aside class="closing-note">
+          <p class="eyebrow">What the evidence adds up to</p>
+          <h3>Public services vary in cost, use and residents’ experience.</h3>
+          <p>The story begins with geography: dense metropolitan councils and sparsely populated shires serve very
+            different places. That contrast appears again in spending, with the Small Shire median expenditure per
+            resident about 2.2 times the Metro median. This is evidence of uneven spending intensity, rather than a
+            ranking of service quality.</p>
+          <p>The time series add a second conclusion: service activity is changing. Knox’s landfill diversion increases
+            by 19.1 percentage points over five years, reported organics collection overtakes recyclables, and Indigo’s
+            library visits rise from 3.12 to 5.15 per resident. These examples show why a single-year budget cannot
+            capture the direction of service outcomes and use.</p>
+          <p>The final maps and ratings bring the story back to people. Listed facility locations show spatial
+            distribution, while the survey reveals a 35-point gap between arts centres & libraries (73) and unsealed
+            roads (38). Taken together, the data support assessing public services through several lenses: local
+            context, spending per resident, change over time, usage and residents’ ratings.</p><a href="#top">Return to
+            the beginning <span aria-hidden="true">↑</span></a>
+        </aside>
+      </section>
+      <section class="data-notes" aria-labelledby="data-title">
+        <h2 id="data-title">Data sources</h2>
+        <div class="source-urls">
+          <div class="source-item"><span class="source-name">ABS — Regional Population</span><a
+              href="https://www.abs.gov.au/statistics/people/population/regional-population/2024-25" target="_blank"
+              rel="noopener noreferrer">https://www.abs.gov.au/statistics/people/population/regional-population/2024-25</a>
+          </div>
+          <div class="source-item"><span class="source-name">ABS — Local Government Area Boundaries</span><a
+              href="https://www.abs.gov.au/statistics/standards/australian-statistical-geography-standard-asgs/edition-3-july-2021-june-2026/access-and-downloads/digital-boundary-files"
+              target="_blank"
+              rel="noopener noreferrer">https://www.abs.gov.au/statistics/standards/australian-statistical-geography-standard-asgs/edition-3-july-2021-june-2026/access-and-downloads/digital-boundary-files</a>
+          </div>
+          <div class="source-item"><span class="source-name">Victoria Grants Commission — Council Expenditure and
+              Revenue</span><a
+              href="https://www.localgovernment.vic.gov.au/funding-programs/victoria-grants-commission/publications"
+              target="_blank"
+              rel="noopener noreferrer">https://www.localgovernment.vic.gov.au/funding-programs/victoria-grants-commission/publications</a>
+          </div>
+          <div class="source-item"><span class="source-name">Victorian Government — Council Performance
+              Reporting</span><a
+              href="https://www.localgovernment.vic.gov.au/strengthening-councils/performance-reporting?mode=start"
+              target="_blank"
+              rel="noopener noreferrer">https://www.localgovernment.vic.gov.au/strengthening-councils/performance-reporting?mode=start</a>
+          </div>
+          <div class="source-item"><span class="source-name">EPA Victoria — Council Waste and Recycling Data</span><a
+              href="https://www.epa.vic.gov.au/data-hub" target="_blank"
+              rel="noopener noreferrer">https://www.epa.vic.gov.au/data-hub</a></div>
+          <div class="source-item"><span class="source-name">Public Libraries Victoria — Annual Library
+              Statistics</span><a href="https://www.plv.org.au/resources/" target="_blank"
+              rel="noopener noreferrer">https://www.plv.org.au/resources/</a></div>
+          <div class="source-item"><span class="source-name">Australian Government — National Public Toilet Map</span><a
+              href="https://data.gov.au/data/en/dataset/national-public-toilet-map" target="_blank"
+              rel="noopener noreferrer">https://data.gov.au/data/en/dataset/national-public-toilet-map</a></div>
+          <div class="source-item"><span class="source-name">Victorian Government — Community Satisfaction Survey
+              2025</span><a
+              href="https://www.localgovernment.vic.gov.au/__data/assets/pdf_file/0025/217708/CSS-State-wide-Report.-2025.pdf"
+              target="_blank"
+              rel="noopener noreferrer">https://www.localgovernment.vic.gov.au/__data/assets/pdf_file/0025/217708/CSS-State-wide-Report.-2025.pdf</a>
+          </div>
+
+        </div>
+      </section>
+    </div>
+  </main>
+  <noscript>
+    <p class="noscript-note">Enable JavaScript to view the interactive charts.</p>
+  </noscript>
+</body>
+
+</html>

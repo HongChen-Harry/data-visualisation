@@ -1,0 +1,6089 @@
+facility_id,lga_code,region
+252,22980,Hindmarsh
+253,22980,Hindmarsh
+254,22980,Hindmarsh
+255,22980,Hindmarsh
+256,22980,Hindmarsh
+257,22980,Hindmarsh
+258,22980,Hindmarsh
+259,25810,Northern Grampians
+260,25810,Northern Grampians
+261,25810,Northern Grampians
+262,25810,Northern Grampians
+263,25810,Northern Grampians
+264,25810,Northern Grampians
+265,25810,Northern Grampians
+269,25810,Northern Grampians
+270,25810,Northern Grampians
+543,25490,Moyne
+544,25490,Moyne
+546,25490,Moyne
+547,25490,Moyne
+548,25490,Moyne
+549,25490,Moyne
+550,25490,Moyne
+551,25490,Moyne
+552,25490,Moyne
+553,,Unmatched location
+554,25490,Moyne
+555,25490,Moyne
+556,25490,Moyne
+557,25490,Moyne
+559,25490,Moyne
+560,25490,Moyne
+561,23190,Horsham
+562,23190,Horsham
+563,23190,Horsham
+565,23190,Horsham
+566,23190,Horsham
+567,23190,Horsham
+568,23190,Horsham
+569,23190,Horsham
+571,23190,Horsham
+572,23190,Horsham
+573,23190,Horsham
+574,23190,Horsham
+576,23190,Horsham
+577,23190,Horsham
+578,23190,Horsham
+579,23190,Horsham
+761,23350,Indigo
+762,23350,Indigo
+763,23350,Indigo
+764,23350,Indigo
+765,23350,Indigo
+766,23350,Indigo
+767,23350,Indigo
+768,23350,Indigo
+769,23350,Indigo
+770,23350,Indigo
+771,23350,Indigo
+772,23350,Indigo
+773,23350,Indigo
+774,23350,Indigo
+775,23350,Indigo
+776,23350,Indigo
+777,23350,Indigo
+778,23350,Indigo
+779,25150,Moorabool
+780,25150,Moorabool
+781,25150,Moorabool
+782,25150,Moorabool
+783,25150,Moorabool
+785,25150,Moorabool
+786,25150,Moorabool
+787,25150,Moorabool
+788,25150,Moorabool
+891,26170,South Gippsland
+892,26170,South Gippsland
+893,26170,South Gippsland
+896,26170,South Gippsland
+897,26170,South Gippsland
+898,26170,South Gippsland
+899,26170,South Gippsland
+900,26170,South Gippsland
+902,26170,South Gippsland
+903,26170,South Gippsland
+904,26170,South Gippsland
+906,26170,South Gippsland
+907,26170,South Gippsland
+909,26170,South Gippsland
+910,26170,South Gippsland
+911,26170,South Gippsland
+912,26170,South Gippsland
+913,26170,South Gippsland
+914,26170,South Gippsland
+915,26170,South Gippsland
+916,26170,South Gippsland
+917,26170,South Gippsland
+918,26170,South Gippsland
+920,26170,South Gippsland
+921,26170,South Gippsland
+922,26170,South Gippsland
+923,26170,South Gippsland
+974,27170,Wodonga
+976,27170,Wodonga
+977,27170,Wodonga
+978,27170,Wodonga
+980,27170,Wodonga
+982,27170,Wodonga
+983,27170,Wodonga
+986,27170,Wodonga
+990,27170,Wodonga
+991,27170,Wodonga
+992,27170,Wodonga
+993,27170,Wodonga
+1078,21180,Brimbank
+1079,21180,Brimbank
+1080,21180,Brimbank
+1082,21180,Brimbank
+1086,26350,Stonnington
+1087,26350,Stonnington
+1088,26350,Stonnington
+1089,26350,Stonnington
+1090,26350,Stonnington
+1091,26350,Stonnington
+1092,26350,Stonnington
+1093,26350,Stonnington
+1094,26350,Stonnington
+1095,26350,Stonnington
+1096,26350,Stonnington
+1098,26350,Stonnington
+1099,26350,Stonnington
+1101,26350,Stonnington
+1102,26350,Stonnington
+1103,26350,Stonnington
+1104,26350,Stonnington
+1105,26350,Stonnington
+1106,26350,Stonnington
+1107,26350,Stonnington
+1108,26350,Stonnington
+1110,26350,Stonnington
+1111,26350,Stonnington
+1114,26350,Stonnington
+1238,20110,Alpine
+1239,20110,Alpine
+1241,20110,Alpine
+1242,20110,Alpine
+1243,20110,Alpine
+1244,20110,Alpine
+1245,20110,Alpine
+1246,20110,Alpine
+1247,20110,Alpine
+1248,20110,Alpine
+1249,20110,Alpine
+1250,20110,Alpine
+1251,20110,Alpine
+1252,20110,Alpine
+1253,20110,Alpine
+1334,22310,Glen Eira
+1335,22310,Glen Eira
+1337,22310,Glen Eira
+1338,22310,Glen Eira
+1340,22310,Glen Eira
+1341,22310,Glen Eira
+1342,22310,Glen Eira
+1343,22310,Glen Eira
+1344,22310,Glen Eira
+1345,22310,Glen Eira
+1346,22310,Glen Eira
+1347,22310,Glen Eira
+1348,22310,Glen Eira
+1349,22310,Glen Eira
+1351,22310,Glen Eira
+1353,22310,Glen Eira
+1358,22310,Glen Eira
+1360,22310,Glen Eira
+1361,22310,Glen Eira
+1362,22310,Glen Eira
+1411,26260,Southern Grampians
+1412,26260,Southern Grampians
+1413,26260,Southern Grampians
+1414,26260,Southern Grampians
+1415,26260,Southern Grampians
+1418,26260,Southern Grampians
+1419,26260,Southern Grampians
+1421,26260,Southern Grampians
+1422,26260,Southern Grampians
+1423,26260,Southern Grampians
+1425,26260,Southern Grampians
+1427,26260,Southern Grampians
+1428,26260,Southern Grampians
+1432,26260,Southern Grampians
+1433,26260,Southern Grampians
+1434,26260,Southern Grampians
+1436,26260,Southern Grampians
+1437,26260,Southern Grampians
+1479,23940,Loddon
+1485,23940,Loddon
+1486,23940,Loddon
+1487,23940,Loddon
+1488,23940,Loddon
+1489,23940,Loddon
+1490,23940,Loddon
+1491,23940,Loddon
+1696,24780,Mildura
+1697,24780,Mildura
+1700,24780,Mildura
+1702,24780,Mildura
+1703,24780,Mildura
+1704,24780,Mildura
+1705,24780,Mildura
+1706,24780,Mildura
+1707,24780,Mildura
+1708,24780,Mildura
+1709,24780,Mildura
+1711,24780,Mildura
+1712,24780,Mildura
+1713,24780,Mildura
+1714,24780,Mildura
+1715,24780,Mildura
+1716,24780,Mildura
+1717,24780,Mildura
+1718,24780,Mildura
+1720,24780,Mildura
+1722,24780,Mildura
+1723,24780,Mildura
+1724,24780,Mildura
+1725,24780,Mildura
+1728,24780,Mildura
+1730,24780,Mildura
+1731,24780,Mildura
+1732,24780,Mildura
+1733,24780,Mildura
+1734,24780,Mildura
+1735,24780,Mildura
+1736,24780,Mildura
+1737,24780,Mildura
+1738,24780,Mildura
+1740,24780,Mildura
+1741,24780,Mildura
+1742,24780,Mildura
+1743,24780,Mildura
+1744,24780,Mildura
+1745,24780,Mildura
+1746,24780,Mildura
+1747,24780,Mildura
+1748,24780,Mildura
+1749,24780,Mildura
+1750,24780,Mildura
+1845,20260,Ararat
+1846,20260,Ararat
+1847,20260,Ararat
+1848,20260,Ararat
+1849,20260,Ararat
+1851,20260,Ararat
+1852,20260,Ararat
+1853,20260,Ararat
+1854,20260,Ararat
+1855,20260,Ararat
+1856,20260,Ararat
+1857,22750,Greater Geelong
+1858,22750,Greater Geelong
+1859,22750,Greater Geelong
+1860,22750,Greater Geelong
+1861,22750,Greater Geelong
+1862,22750,Greater Geelong
+1864,22750,Greater Geelong
+1865,22750,Greater Geelong
+1866,22750,Greater Geelong
+1867,22750,Greater Geelong
+1870,22750,Greater Geelong
+1871,22750,Greater Geelong
+1872,22750,Greater Geelong
+1873,22750,Greater Geelong
+1874,22750,Greater Geelong
+1875,22750,Greater Geelong
+1876,22750,Greater Geelong
+1877,22750,Greater Geelong
+1878,22750,Greater Geelong
+1880,22750,Greater Geelong
+1882,22750,Greater Geelong
+1883,22750,Greater Geelong
+1884,22750,Greater Geelong
+1885,22750,Greater Geelong
+1886,22750,Greater Geelong
+1887,22750,Greater Geelong
+1888,22750,Greater Geelong
+1889,22750,Greater Geelong
+1891,22750,Greater Geelong
+1892,22750,Greater Geelong
+1893,22750,Greater Geelong
+1894,22750,Greater Geelong
+1895,22750,Greater Geelong
+1896,22750,Greater Geelong
+1897,22750,Greater Geelong
+1898,22750,Greater Geelong
+1899,22750,Greater Geelong
+1900,22750,Greater Geelong
+1901,22750,Greater Geelong
+1902,22750,Greater Geelong
+1903,22750,Greater Geelong
+1904,22750,Greater Geelong
+1905,22750,Greater Geelong
+1906,22750,Greater Geelong
+1907,22750,Greater Geelong
+1908,22750,Greater Geelong
+1909,22750,Greater Geelong
+1910,22750,Greater Geelong
+1912,22750,Greater Geelong
+1913,22750,Greater Geelong
+1915,22750,Greater Geelong
+1916,22750,Greater Geelong
+1917,22750,Greater Geelong
+1918,22750,Greater Geelong
+1919,22750,Greater Geelong
+1920,22750,Greater Geelong
+1922,22750,Greater Geelong
+1923,22750,Greater Geelong
+1924,22750,Greater Geelong
+1925,22750,Greater Geelong
+1926,22750,Greater Geelong
+1928,22750,Greater Geelong
+1929,22750,Greater Geelong
+1930,22750,Greater Geelong
+1931,22750,Greater Geelong
+1932,22750,Greater Geelong
+1933,22750,Greater Geelong
+1934,22750,Greater Geelong
+1935,22750,Greater Geelong
+1936,22750,Greater Geelong
+1937,22750,Greater Geelong
+1938,22750,Greater Geelong
+1941,22750,Greater Geelong
+1944,22750,Greater Geelong
+1945,22750,Greater Geelong
+1947,22750,Greater Geelong
+1948,22750,Greater Geelong
+1949,22750,Greater Geelong
+1950,22750,Greater Geelong
+1952,22750,Greater Geelong
+1953,22750,Greater Geelong
+1954,22750,Greater Geelong
+1955,22750,Greater Geelong
+1956,22750,Greater Geelong
+1957,22750,Greater Geelong
+1958,22750,Greater Geelong
+1959,22750,Greater Geelong
+1960,22750,Greater Geelong
+1961,22750,Greater Geelong
+1962,22750,Greater Geelong
+1963,22750,Greater Geelong
+1964,22750,Greater Geelong
+1965,22750,Greater Geelong
+1966,22750,Greater Geelong
+1967,22750,Greater Geelong
+1968,22750,Greater Geelong
+1969,22750,Greater Geelong
+1972,22750,Greater Geelong
+1973,22750,Greater Geelong
+1974,22750,Greater Geelong
+1975,22750,Greater Geelong
+1976,22750,Greater Geelong
+1977,22750,Greater Geelong
+1979,22750,Greater Geelong
+1980,22750,Greater Geelong
+1981,22750,Greater Geelong
+1982,22750,Greater Geelong
+1983,22750,Greater Geelong
+1984,22750,Greater Geelong
+1986,22750,Greater Geelong
+1987,22750,Greater Geelong
+1988,22750,Greater Geelong
+1989,22750,Greater Geelong
+1990,22750,Greater Geelong
+1993,22750,Greater Geelong
+1994,22750,Greater Geelong
+1995,22750,Greater Geelong
+1996,22750,Greater Geelong
+1997,22750,Greater Geelong
+1998,22750,Greater Geelong
+1999,22750,Greater Geelong
+2001,22750,Greater Geelong
+2002,22750,Greater Geelong
+2003,22750,Greater Geelong
+2004,22750,Greater Geelong
+2006,22750,Greater Geelong
+2143,20660,Banyule
+2144,20660,Banyule
+2145,20660,Banyule
+2147,20660,Banyule
+2148,20660,Banyule
+2149,20660,Banyule
+2150,20660,Banyule
+2151,20660,Banyule
+2152,20660,Banyule
+2153,20660,Banyule
+2154,20660,Banyule
+2155,20660,Banyule
+2156,20660,Banyule
+2157,20660,Banyule
+2158,20660,Banyule
+2159,20660,Banyule
+2160,20660,Banyule
+2161,20660,Banyule
+2162,20660,Banyule
+2165,20660,Banyule
+2166,20660,Banyule
+2167,20660,Banyule
+2169,20660,Banyule
+2170,20660,Banyule
+2172,20660,Banyule
+2173,20660,Banyule
+2174,20660,Banyule
+2175,20660,Banyule
+2176,20660,Banyule
+2177,20660,Banyule
+2179,20660,Banyule
+2181,20660,Banyule
+2182,20660,Banyule
+2183,20660,Banyule
+2184,20660,Banyule
+2185,20660,Banyule
+2187,20660,Banyule
+2188,20660,Banyule
+2189,20660,Banyule
+2190,20660,Banyule
+2192,20660,Banyule
+2193,20660,Banyule
+2194,20660,Banyule
+2195,20660,Banyule
+2197,20660,Banyule
+2198,20660,Banyule
+2199,20660,Banyule
+2260,24970,Monash
+2261,24970,Monash
+2262,24970,Monash
+2263,24970,Monash
+2264,24970,Monash
+2266,24970,Monash
+2268,24970,Monash
+2269,24970,Monash
+2270,24970,Monash
+2271,24970,Monash
+2272,24970,Monash
+2273,24970,Monash
+2351,24650,Melton
+2352,24650,Melton
+2353,24650,Melton
+2354,24650,Melton
+2355,24650,Melton
+2356,24650,Melton
+2357,24650,Melton
+2359,25710,Nillumbik
+2360,25710,Nillumbik
+2362,25710,Nillumbik
+2363,25710,Nillumbik
+2364,25710,Nillumbik
+2365,25710,Nillumbik
+2366,25710,Nillumbik
+2368,25710,Nillumbik
+2369,25710,Nillumbik
+2370,25710,Nillumbik
+2371,25710,Nillumbik
+2372,25710,Nillumbik
+2373,25710,Nillumbik
+2375,25710,Nillumbik
+2377,25710,Nillumbik
+2378,25710,Nillumbik
+2379,25710,Nillumbik
+2380,25710,Nillumbik
+2381,25710,Nillumbik
+2383,25710,Nillumbik
+2386,25710,Nillumbik
+2388,25710,Nillumbik
+2506,26700,Wangaratta
+2508,26700,Wangaratta
+2509,26700,Wangaratta
+2510,26700,Wangaratta
+2511,26700,Wangaratta
+2512,26700,Wangaratta
+2513,26700,Wangaratta
+2514,26700,Wangaratta
+2515,26700,Wangaratta
+2516,26700,Wangaratta
+2517,26700,Wangaratta
+2518,26700,Wangaratta
+2519,26700,Wangaratta
+2520,26700,Wangaratta
+2521,26700,Wangaratta
+2522,26700,Wangaratta
+2523,26700,Wangaratta
+2524,26700,Wangaratta
+2596,21110,Boroondara
+2597,21110,Boroondara
+2599,21110,Boroondara
+2600,21110,Boroondara
+2602,21110,Boroondara
+2603,21110,Boroondara
+2604,21110,Boroondara
+2607,21110,Boroondara
+2610,21110,Boroondara
+2611,21110,Boroondara
+2612,21110,Boroondara
+2615,21110,Boroondara
+2616,21110,Boroondara
+2617,21110,Boroondara
+2618,21110,Boroondara
+2619,21110,Boroondara
+2623,21110,Boroondara
+2625,21110,Boroondara
+2627,21110,Boroondara
+2628,21110,Boroondara
+2630,21110,Boroondara
+2631,21110,Boroondara
+2635,21110,Boroondara
+2637,21110,Boroondara
+2638,21110,Boroondara
+2639,21110,Boroondara
+2640,21110,Boroondara
+2641,21110,Boroondara
+2642,21110,Boroondara
+2645,22670,Greater Dandenong
+2646,22670,Greater Dandenong
+2647,22670,Greater Dandenong
+2648,22670,Greater Dandenong
+2650,22670,Greater Dandenong
+2651,22670,Greater Dandenong
+2652,22670,Greater Dandenong
+2653,22670,Greater Dandenong
+2655,22670,Greater Dandenong
+2656,22670,Greater Dandenong
+2657,22670,Greater Dandenong
+2658,22670,Greater Dandenong
+2659,22670,Greater Dandenong
+2660,22670,Greater Dandenong
+2661,22670,Greater Dandenong
+2662,22670,Greater Dandenong
+2664,22670,Greater Dandenong
+2935,25620,Murrindindi
+2936,25620,Murrindindi
+2937,25620,Murrindindi
+2939,25620,Murrindindi
+2940,25620,Murrindindi
+2941,25620,Murrindindi
+2942,25620,Murrindindi
+2943,25620,Murrindindi
+2944,25620,Murrindindi
+2945,25620,Murrindindi
+2946,25620,Murrindindi
+2947,25620,Murrindindi
+2948,25620,Murrindindi
+2949,25620,Murrindindi
+2950,25620,Murrindindi
+2951,25620,Murrindindi
+2952,25620,Murrindindi
+2953,25620,Murrindindi
+2954,25620,Murrindindi
+3090,21450,Cardinia
+3091,21450,Cardinia
+3092,21450,Cardinia
+3093,21450,Cardinia
+3095,21450,Cardinia
+3097,21450,Cardinia
+3098,21450,Cardinia
+3099,21450,Cardinia
+3100,21450,Cardinia
+3101,21450,Cardinia
+3103,21450,Cardinia
+3104,21450,Cardinia
+3105,21450,Cardinia
+3109,20740,Bass Coast
+3110,20740,Bass Coast
+3111,20740,Bass Coast
+3112,20740,Bass Coast
+3114,20740,Bass Coast
+3115,20740,Bass Coast
+3116,20740,Bass Coast
+3117,20740,Bass Coast
+3118,20740,Bass Coast
+3119,20740,Bass Coast
+3121,20740,Bass Coast
+3122,20740,Bass Coast
+3123,20740,Bass Coast
+3124,20740,Bass Coast
+3125,20740,Bass Coast
+3126,20740,Bass Coast
+3127,20740,Bass Coast
+3129,20740,Bass Coast
+3130,20740,Bass Coast
+3131,20740,Bass Coast
+3132,20740,Bass Coast
+3134,20740,Bass Coast
+3136,20740,Bass Coast
+3137,20740,Bass Coast
+3138,20740,Bass Coast
+3140,20740,Bass Coast
+3141,20740,Bass Coast
+3142,20740,Bass Coast
+3143,20740,Bass Coast
+3144,20740,Bass Coast
+3145,20740,Bass Coast
+3146,20740,Bass Coast
+3147,20740,Bass Coast
+3148,20740,Bass Coast
+3266,25060,Moonee Valley
+3272,25060,Moonee Valley
+3274,25060,Moonee Valley
+3278,25060,Moonee Valley
+3279,25060,Moonee Valley
+3280,25060,Moonee Valley
+3284,25060,Moonee Valley
+3291,25060,Moonee Valley
+3293,25060,Moonee Valley
+3295,25060,Moonee Valley
+3296,25060,Moonee Valley
+3297,25060,Moonee Valley
+3298,25060,Moonee Valley
+3301,25060,Moonee Valley
+3303,25060,Moonee Valley
+3353,24330,Maribyrnong
+3360,24330,Maribyrnong
+3361,24330,Maribyrnong
+3362,24330,Maribyrnong
+3363,24330,Maribyrnong
+3469,27260,Wyndham
+3470,27260,Wyndham
+3472,27260,Wyndham
+3475,27260,Wyndham
+3476,27260,Wyndham
+3477,27260,Wyndham
+3478,27260,Wyndham
+3479,27260,Wyndham
+3480,27260,Wyndham
+3483,27260,Wyndham
+3486,27260,Wyndham
+3487,26430,Strathbogie
+3488,26430,Strathbogie
+3490,26430,Strathbogie
+3491,26430,Strathbogie
+3492,26430,Strathbogie
+3493,26430,Strathbogie
+3495,26430,Strathbogie
+3498,26430,Strathbogie
+3500,26430,Strathbogie
+3501,26430,Strathbogie
+3507,21610,Casey
+3538,21610,Casey
+3539,21610,Casey
+3540,21610,Casey
+3541,21610,Casey
+3542,21610,Casey
+3543,21610,Casey
+3544,21610,Casey
+3545,21610,Casey
+3546,21610,Casey
+3547,21610,Casey
+3548,21610,Casey
+3549,21610,Casey
+3550,21610,Casey
+3551,21610,Casey
+3552,21610,Casey
+3553,21610,Casey
+3554,21610,Casey
+3555,21610,Casey
+3556,21610,Casey
+3557,21610,Casey
+3705,21010,Benalla
+3706,21010,Benalla
+3707,21010,Benalla
+3708,21010,Benalla
+3710,24250,Mansfield
+3711,24250,Mansfield
+3712,24250,Mansfield
+3713,24250,Mansfield
+3714,24250,Mansfield
+3715,24250,Mansfield
+3716,24250,Mansfield
+3720,24250,Mansfield
+3812,23430,Kingston (Vic.)
+3813,23430,Kingston (Vic.)
+3815,23430,Kingston (Vic.)
+3816,23430,Kingston (Vic.)
+3817,23430,Kingston (Vic.)
+3818,23430,Kingston (Vic.)
+3820,23430,Kingston (Vic.)
+3822,23430,Kingston (Vic.)
+3823,23430,Kingston (Vic.)
+3824,23430,Kingston (Vic.)
+3825,23430,Kingston (Vic.)
+3826,23430,Kingston (Vic.)
+3827,23430,Kingston (Vic.)
+3828,23430,Kingston (Vic.)
+3829,23430,Kingston (Vic.)
+3830,23430,Kingston (Vic.)
+3832,23430,Kingston (Vic.)
+3833,23430,Kingston (Vic.)
+3834,23430,Kingston (Vic.)
+3835,23430,Kingston (Vic.)
+3836,23430,Kingston (Vic.)
+3838,23430,Kingston (Vic.)
+3839,23430,Kingston (Vic.)
+3842,23430,Kingston (Vic.)
+3844,23430,Kingston (Vic.)
+3851,23430,Kingston (Vic.)
+3853,23430,Kingston (Vic.)
+3854,23430,Kingston (Vic.)
+3857,23430,Kingston (Vic.)
+3864,22410,Glenelg
+3865,22410,Glenelg
+3866,22410,Glenelg
+3867,22410,Glenelg
+3868,22410,Glenelg
+3869,22410,Glenelg
+3870,22410,Glenelg
+3871,22410,Glenelg
+3873,22410,Glenelg
+3877,22410,Glenelg
+3878,22410,Glenelg
+3879,22410,Glenelg
+3881,22410,Glenelg
+3882,22410,Glenelg
+3883,22410,Glenelg
+3885,22410,Glenelg
+3888,23670,Knox
+3889,23670,Knox
+3890,23670,Knox
+3891,23670,Knox
+3892,23670,Knox
+3893,23670,Knox
+3894,23670,Knox
+3895,23670,Knox
+3896,23670,Knox
+3897,23670,Knox
+3898,23670,Knox
+3899,23670,Knox
+3900,23670,Knox
+3901,23670,Knox
+3902,23670,Knox
+3903,23670,Knox
+3904,23670,Knox
+3905,23670,Knox
+3906,23670,Knox
+3908,23670,Knox
+3909,23670,Knox
+3910,23670,Knox
+3911,23670,Knox
+3912,23670,Knox
+3913,23670,Knox
+3996,22910,Hepburn
+3997,22910,Hepburn
+3998,22910,Hepburn
+3999,22910,Hepburn
+4000,22910,Hepburn
+4001,22910,Hepburn
+4002,22910,Hepburn
+4003,22910,Hepburn
+4005,22910,Hepburn
+4006,22910,Hepburn
+4007,22910,Hepburn
+4008,22910,Hepburn
+4009,22910,Hepburn
+4011,22910,Hepburn
+4013,22910,Hepburn
+4031,24210,Manningham
+4032,24210,Manningham
+4033,24210,Manningham
+4034,24210,Manningham
+4035,24210,Manningham
+4036,24210,Manningham
+4037,24210,Manningham
+4038,24210,Manningham
+4039,24210,Manningham
+4040,24210,Manningham
+4041,24210,Manningham
+4042,24210,Manningham
+4043,24210,Manningham
+4044,24210,Manningham
+4045,24210,Manningham
+4193,26080,Queenscliffe
+4194,26080,Queenscliffe
+4195,26080,Queenscliffe
+4198,26080,Queenscliffe
+4199,26080,Queenscliffe
+4200,26080,Queenscliffe
+4202,26080,Queenscliffe
+4203,26080,Queenscliffe
+4216,24130,Macedon Ranges
+4218,24130,Macedon Ranges
+4221,24130,Macedon Ranges
+4222,24130,Macedon Ranges
+4223,24130,Macedon Ranges
+4225,24130,Macedon Ranges
+4227,24130,Macedon Ranges
+4228,24130,Macedon Ranges
+4229,24130,Macedon Ranges
+4230,24130,Macedon Ranges
+4232,24130,Macedon Ranges
+4234,24130,Macedon Ranges
+4235,24130,Macedon Ranges
+4236,24130,Macedon Ranges
+4238,24130,Macedon Ranges
+4240,24130,Macedon Ranges
+4242,24130,Macedon Ranges
+4243,24130,Macedon Ranges
+4245,24130,Macedon Ranges
+4246,24130,Macedon Ranges
+4247,24130,Macedon Ranges
+4249,24130,Macedon Ranges
+4330,27450,Yarra Ranges
+4331,23670,Knox
+4332,23670,Knox
+4333,27450,Yarra Ranges
+4334,27450,Yarra Ranges
+4335,24410,Maroondah
+4337,26980,Whitehorse
+4339,21110,Boroondara
+4340,21110,Boroondara
+4341,21110,Boroondara
+4342,27350,Yarra
+4343,26350,Stonnington
+4344,24970,Monash
+4345,24970,Monash
+4346,23670,Knox
+4347,25710,Nillumbik
+4348,25710,Nillumbik
+4349,25710,Nillumbik
+4350,20660,Banyule
+4351,20660,Banyule
+4352,20660,Banyule
+4353,20660,Banyule
+4354,20660,Banyule
+4355,27070,Whittlesea
+4356,27070,Whittlesea
+4357,21890,Darebin
+4359,21890,Darebin
+4361,24600,Melbourne
+4362,27350,Yarra
+4363,24600,Melbourne
+4364,24600,Melbourne
+4365,25060,Moonee Valley
+4366,24600,Melbourne
+4367,24600,Melbourne
+4368,23430,Kingston (Vic.)
+4369,23430,Kingston (Vic.)
+4370,23110,Hobsons Bay
+4371,24600,Melbourne
+4372,24970,Monash
+4373,21450,Cardinia
+4374,24600,Melbourne
+4375,21180,Brimbank
+4376,20910,Bayside (Vic.)
+4377,26350,Stonnington
+4378,22670,Greater Dandenong
+4379,21180,Brimbank
+4380,27260,Wyndham
+4381,23110,Hobsons Bay
+4382,22310,Glen Eira
+4383,21610,Casey
+4385,23270,Hume
+4386,23430,Kingston (Vic.)
+4387,22310,Glen Eira
+4388,23430,Kingston (Vic.)
+4389,24970,Monash
+4390,24700,Merri-bek
+4391,21610,Casey
+4392,22670,Greater Dandenong
+4393,22310,Glen Eira
+4394,25060,Moonee Valley
+4395,24600,Melbourne
+4396,24330,Maribyrnong
+4397,22170,Frankston
+4398,24700,Merri-bek
+4399,24700,Merri-bek
+4400,23110,Hobsons Bay
+4616,24130,Macedon Ranges
+4617,24130,Macedon Ranges
+4618,25430,Mount Alexander
+4619,25810,Northern Grampians
+4621,25810,Northern Grampians
+4622,25810,Northern Grampians
+4623,26260,Southern Grampians
+4624,23190,Horsham
+4625,23190,Horsham
+4770,21750,Colac Otway
+4805,26490,Surf Coast
+4807,26490,Surf Coast
+4808,26490,Surf Coast
+5083,27070,Whittlesea
+5092,27070,Whittlesea
+5093,27070,Whittlesea
+5094,27070,Whittlesea
+5102,27070,Whittlesea
+5103,27070,Whittlesea
+5104,27070,Whittlesea
+5105,27070,Whittlesea
+5108,27070,Whittlesea
+5109,27070,Whittlesea
+5110,27070,Whittlesea
+5111,27070,Whittlesea
+5112,27070,Whittlesea
+5113,27070,Whittlesea
+5138,23810,Latrobe (Vic.)
+5142,23810,Latrobe (Vic.)
+5143,23810,Latrobe (Vic.)
+5146,23810,Latrobe (Vic.)
+5155,23810,Latrobe (Vic.)
+5158,23810,Latrobe (Vic.)
+5159,23810,Latrobe (Vic.)
+5160,23810,Latrobe (Vic.)
+5161,23810,Latrobe (Vic.)
+5162,23810,Latrobe (Vic.)
+5163,23810,Latrobe (Vic.)
+5165,23810,Latrobe (Vic.)
+5166,23810,Latrobe (Vic.)
+5168,23810,Latrobe (Vic.)
+5407,25150,Moorabool
+5408,24650,Melton
+5409,25150,Moorabool
+5410,25150,Moorabool
+5411,25150,Moorabool
+5412,22110,East Gippsland
+5413,22110,East Gippsland
+5415,22110,East Gippsland
+5416,22110,East Gippsland
+5418,22110,East Gippsland
+5419,22110,East Gippsland
+5420,22110,East Gippsland
+5421,22110,East Gippsland
+5422,22110,East Gippsland
+5423,22110,East Gippsland
+5426,22110,East Gippsland
+5427,22110,East Gippsland
+5430,22110,East Gippsland
+5431,22110,East Gippsland
+5432,22110,East Gippsland
+5433,22110,East Gippsland
+5434,22110,East Gippsland
+5436,22110,East Gippsland
+5437,22110,East Gippsland
+5438,22110,East Gippsland
+5441,22110,East Gippsland
+5442,22110,East Gippsland
+5443,22110,East Gippsland
+5445,22110,East Gippsland
+5448,22110,East Gippsland
+5449,22110,East Gippsland
+5450,22110,East Gippsland
+5451,22110,East Gippsland
+5454,22110,East Gippsland
+5456,22110,East Gippsland
+5457,22110,East Gippsland
+5458,22110,East Gippsland
+5460,22110,East Gippsland
+5461,22110,East Gippsland
+5462,22110,East Gippsland
+5463,22110,East Gippsland
+5465,22110,East Gippsland
+5466,22110,East Gippsland
+5468,22110,East Gippsland
+5469,22110,East Gippsland
+5470,22110,East Gippsland
+5472,22110,East Gippsland
+5540,23270,Hume
+5542,23270,Hume
+5543,23270,Hume
+5544,23270,Hume
+5545,23270,Hume
+5546,23270,Hume
+5547,23270,Hume
+5548,23270,Hume
+5552,23270,Hume
+5553,23270,Hume
+5554,23270,Hume
+5555,23270,Hume
+5556,23270,Hume
+5557,23270,Hume
+5559,23270,Hume
+5560,23270,Hume
+5561,23270,Hume
+5564,23270,Hume
+5565,23270,Hume
+5566,23270,Hume
+5567,23270,Hume
+5568,23270,Hume
+5751,22830,Greater Shepparton
+5752,22830,Greater Shepparton
+5753,22830,Greater Shepparton
+5754,22830,Greater Shepparton
+5755,22830,Greater Shepparton
+5756,22830,Greater Shepparton
+5757,22830,Greater Shepparton
+5758,22830,Greater Shepparton
+5759,22830,Greater Shepparton
+5760,22830,Greater Shepparton
+5761,22830,Greater Shepparton
+5762,22830,Greater Shepparton
+5763,22830,Greater Shepparton
+5764,22830,Greater Shepparton
+5765,22830,Greater Shepparton
+5767,22830,Greater Shepparton
+5768,22830,Greater Shepparton
+6042,22170,Frankston
+6045,22170,Frankston
+6047,22170,Frankston
+6051,22170,Frankston
+6052,22170,Frankston
+6053,22170,Frankston
+6055,22170,Frankston
+6056,22170,Frankston
+6057,22170,Frankston
+6059,22170,Frankston
+6061,22170,Frankston
+6063,22170,Frankston
+6064,22170,Frankston
+6065,22170,Frankston
+6071,22170,Frankston
+6072,22170,Frankston
+6073,22170,Frankston
+6074,22170,Frankston
+6075,22170,Frankston
+6079,22170,Frankston
+6080,22170,Frankston
+6081,22170,Frankston
+6082,22170,Frankston
+6087,22170,Frankston
+6088,22170,Frankston
+6091,22170,Frankston
+6092,22170,Frankston
+6095,22170,Frankston
+6097,22170,Frankston
+6098,22170,Frankston
+6139,22250,Gannawarra
+6140,22250,Gannawarra
+6141,22250,Gannawarra
+6142,22250,Gannawarra
+6143,22250,Gannawarra
+6144,22250,Gannawarra
+6145,22250,Gannawarra
+6146,22250,Gannawarra
+6147,22250,Gannawarra
+6148,22250,Gannawarra
+6149,22250,Gannawarra
+6150,22250,Gannawarra
+6151,22250,Gannawarra
+6152,22250,Gannawarra
+6155,22250,Gannawarra
+6156,22250,Gannawarra
+6157,22250,Gannawarra
+6158,22250,Gannawarra
+6238,26490,Surf Coast
+6239,26490,Surf Coast
+6240,26490,Surf Coast
+6242,26490,Surf Coast
+6243,26490,Surf Coast
+6246,26490,Surf Coast
+6248,26490,Surf Coast
+6249,26490,Surf Coast
+6250,26490,Surf Coast
+6251,26490,Surf Coast
+6252,26490,Surf Coast
+6253,26490,Surf Coast
+6254,26490,Surf Coast
+6255,26490,Surf Coast
+6257,26490,Surf Coast
+6258,26490,Surf Coast
+6259,20570,Ballarat
+6260,20570,Ballarat
+6261,20570,Ballarat
+6262,20570,Ballarat
+6263,20570,Ballarat
+6265,20570,Ballarat
+6266,20570,Ballarat
+6267,20570,Ballarat
+6269,20570,Ballarat
+6270,20570,Ballarat
+6271,20570,Ballarat
+6272,20570,Ballarat
+6273,20570,Ballarat
+6274,20570,Ballarat
+6276,20570,Ballarat
+6277,20570,Ballarat
+6280,20570,Ballarat
+6282,20570,Ballarat
+6283,20570,Ballarat
+6284,20570,Ballarat
+6286,20570,Ballarat
+6290,20570,Ballarat
+6291,20570,Ballarat
+6292,20570,Ballarat
+6295,20570,Ballarat
+6296,20570,Ballarat
+6297,20570,Ballarat
+6299,20570,Ballarat
+6302,20570,Ballarat
+6303,20570,Ballarat
+6304,20570,Ballarat
+6347,26730,Warrnambool
+6348,26730,Warrnambool
+6349,26730,Warrnambool
+6351,26730,Warrnambool
+6353,26730,Warrnambool
+6354,26730,Warrnambool
+6355,26730,Warrnambool
+6356,26730,Warrnambool
+6358,26730,Warrnambool
+6359,26730,Warrnambool
+6360,26730,Warrnambool
+6361,26730,Warrnambool
+6425,20830,Baw Baw
+6433,24850,Mitchell
+6434,24850,Mitchell
+6435,24850,Mitchell
+6436,24850,Mitchell
+6439,23350,Indigo
+6441,23270,Hume
+6451,24250,Mansfield
+6453,24250,Mansfield
+6456,26810,Wellington
+6458,26810,Wellington
+6460,26810,Wellington
+6462,22110,East Gippsland
+6464,22110,East Gippsland
+6465,22110,East Gippsland
+6466,22110,East Gippsland
+6467,22110,East Gippsland
+6468,22110,East Gippsland
+6469,22110,East Gippsland
+6470,26670,Towong
+6475,26610,Swan Hill
+6477,22980,Hindmarsh
+6479,22620,Greater Bendigo
+6485,20260,Ararat
+6488,21750,Colac Otway
+6489,21750,Colac Otway
+6491,26490,Surf Coast
+6493,26490,Surf Coast
+6494,26490,Surf Coast
+6496,20570,Ballarat
+6580,26670,Towong
+6581,26670,Towong
+6582,26670,Towong
+6584,26670,Towong
+6585,26670,Towong
+6586,26670,Towong
+6587,26670,Towong
+6588,26670,Towong
+6589,26670,Towong
+6590,26670,Towong
+6591,26670,Towong
+6592,26670,Towong
+6593,26670,Towong
+6594,26670,Towong
+6595,26670,Towong
+6596,27350,Yarra
+6597,27350,Yarra
+6598,27350,Yarra
+6599,27350,Yarra
+6601,27350,Yarra
+6602,27350,Yarra
+6604,27350,Yarra
+6605,27350,Yarra
+6607,27350,Yarra
+6610,27350,Yarra
+6611,27350,Yarra
+6612,27350,Yarra
+6613,27350,Yarra
+6614,27350,Yarra
+6615,27350,Yarra
+6616,27350,Yarra
+6617,27350,Yarra
+6618,27350,Yarra
+6619,27350,Yarra
+6648,26610,Swan Hill
+6649,26610,Swan Hill
+6650,26610,Swan Hill
+6651,26610,Swan Hill
+6652,26610,Swan Hill
+6653,26610,Swan Hill
+6654,26610,Swan Hill
+6655,26610,Swan Hill
+6656,26610,Swan Hill
+6659,26610,Swan Hill
+6660,26610,Swan Hill
+6661,26610,Swan Hill
+6662,26610,Swan Hill
+6663,26610,Swan Hill
+6664,26610,Swan Hill
+6665,26610,Swan Hill
+6666,26610,Swan Hill
+6667,26610,Swan Hill
+6669,26610,Swan Hill
+6670,26610,Swan Hill
+6672,26610,Swan Hill
+6786,24900,Moira
+6787,24900,Moira
+6789,24900,Moira
+6790,24900,Moira
+6791,24900,Moira
+6792,24900,Moira
+6794,24900,Moira
+6795,24900,Moira
+6796,24900,Moira
+6798,24900,Moira
+6801,24900,Moira
+6803,24900,Moira
+6804,24900,Moira
+6806,24900,Moira
+6808,24900,Moira
+6809,24900,Moira
+6810,24900,Moira
+6811,24900,Moira
+6812,24900,Moira
+6815,24900,Moira
+6819,25620,Murrindindi
+6820,25620,Murrindindi
+6821,24250,Mansfield
+6822,24250,Mansfield
+6823,24250,Mansfield
+6824,24250,Mansfield
+6826,26430,Strathbogie
+6827,21370,Campaspe
+6828,21370,Campaspe
+6829,21370,Campaspe
+6830,21370,Campaspe
+6831,21010,Benalla
+6832,26700,Wangaratta
+6833,26700,Wangaratta
+6836,20110,Alpine
+6837,21010,Benalla
+6838,21010,Benalla
+6863,20830,Baw Baw
+6864,20830,Baw Baw
+6865,26810,Wellington
+6866,26810,Wellington
+6867,26810,Wellington
+6868,23810,Latrobe (Vic.)
+7115,20830,Baw Baw
+7406,21890,Darebin
+7407,21890,Darebin
+7408,21890,Darebin
+7410,21890,Darebin
+7411,21890,Darebin
+7412,21890,Darebin
+7413,21890,Darebin
+7415,21890,Darebin
+7416,21890,Darebin
+7417,21890,Darebin
+7418,21890,Darebin
+7419,21890,Darebin
+7421,21890,Darebin
+7433,23810,Latrobe (Vic.)
+7554,22490,Golden Plains
+7555,22490,Golden Plains
+7556,22490,Golden Plains
+7557,22490,Golden Plains
+7558,22490,Golden Plains
+7559,22490,Golden Plains
+7560,22490,Golden Plains
+7561,22490,Golden Plains
+7562,22490,Golden Plains
+7563,22490,Golden Plains
+7564,22490,Golden Plains
+7565,22490,Golden Plains
+7566,22490,Golden Plains
+7567,22490,Golden Plains
+7568,22490,Golden Plains
+7569,22490,Golden Plains
+7570,22490,Golden Plains
+7632,26890,West Wimmera
+7633,26890,West Wimmera
+7634,26890,West Wimmera
+7635,26890,West Wimmera
+7636,26890,West Wimmera
+7637,26890,West Wimmera
+7638,26890,West Wimmera
+7639,26890,West Wimmera
+7701,26810,Wellington
+7707,26810,Wellington
+7711,26810,Wellington
+7714,26810,Wellington
+7716,26810,Wellington
+7717,26810,Wellington
+7718,26810,Wellington
+7724,26810,Wellington
+7725,26810,Wellington
+7726,26810,Wellington
+7727,26810,Wellington
+7732,26810,Wellington
+7733,26810,Wellington
+7734,26810,Wellington
+7736,26810,Wellington
+7737,26810,Wellington
+7744,26810,Wellington
+7749,26810,Wellington
+7750,26810,Wellington
+7751,26810,Wellington
+7752,26810,Wellington
+7755,26810,Wellington
+8035,24700,Merri-bek
+8037,24700,Merri-bek
+8038,24700,Merri-bek
+8039,24700,Merri-bek
+8040,24700,Merri-bek
+8041,24700,Merri-bek
+8051,24700,Merri-bek
+8052,24700,Merri-bek
+8056,24700,Merri-bek
+8058,24700,Merri-bek
+8059,24700,Merri-bek
+8060,24700,Merri-bek
+8061,24700,Merri-bek
+8063,24700,Merri-bek
+8064,24700,Merri-bek
+8067,24700,Merri-bek
+8068,24700,Merri-bek
+8070,24700,Merri-bek
+8071,24700,Merri-bek
+8072,24700,Merri-bek
+8075,24700,Merri-bek
+8078,24700,Merri-bek
+8261,27450,Yarra Ranges
+8262,27450,Yarra Ranges
+8263,27450,Yarra Ranges
+8264,27450,Yarra Ranges
+8265,27450,Yarra Ranges
+8266,27450,Yarra Ranges
+8267,27450,Yarra Ranges
+8269,27450,Yarra Ranges
+8270,27450,Yarra Ranges
+8271,27450,Yarra Ranges
+8273,27450,Yarra Ranges
+8274,27450,Yarra Ranges
+8275,27450,Yarra Ranges
+8276,27450,Yarra Ranges
+8277,21450,Cardinia
+8278,27450,Yarra Ranges
+8279,27450,Yarra Ranges
+8280,27450,Yarra Ranges
+8283,27450,Yarra Ranges
+8284,27450,Yarra Ranges
+8285,27450,Yarra Ranges
+8287,27450,Yarra Ranges
+8290,27450,Yarra Ranges
+8291,27450,Yarra Ranges
+8294,27450,Yarra Ranges
+8295,27450,Yarra Ranges
+8299,27450,Yarra Ranges
+8300,27450,Yarra Ranges
+8301,27450,Yarra Ranges
+8302,27450,Yarra Ranges
+8305,27450,Yarra Ranges
+8306,27450,Yarra Ranges
+8307,27450,Yarra Ranges
+8308,27450,Yarra Ranges
+8310,27450,Yarra Ranges
+8311,27450,Yarra Ranges
+8312,27450,Yarra Ranges
+8313,27450,Yarra Ranges
+8314,27450,Yarra Ranges
+8315,27450,Yarra Ranges
+8318,27450,Yarra Ranges
+8319,27450,Yarra Ranges
+8321,27450,Yarra Ranges
+8322,27450,Yarra Ranges
+8324,27450,Yarra Ranges
+8326,27450,Yarra Ranges
+8327,27450,Yarra Ranges
+8328,27450,Yarra Ranges
+8329,27450,Yarra Ranges
+8330,27450,Yarra Ranges
+8331,27450,Yarra Ranges
+8332,27450,Yarra Ranges
+8334,23110,Hobsons Bay
+8335,23110,Hobsons Bay
+8336,23110,Hobsons Bay
+8337,23110,Hobsons Bay
+8339,23110,Hobsons Bay
+8340,23110,Hobsons Bay
+8341,23110,Hobsons Bay
+8342,23110,Hobsons Bay
+8344,23110,Hobsons Bay
+8345,23110,Hobsons Bay
+8346,23110,Hobsons Bay
+8347,23110,Hobsons Bay
+8349,23110,Hobsons Bay
+8351,23110,Hobsons Bay
+8354,23110,Hobsons Bay
+8356,23110,Hobsons Bay
+8361,23110,Hobsons Bay
+8362,23110,Hobsons Bay
+8365,23110,Hobsons Bay
+8366,23110,Hobsons Bay
+8369,23110,Hobsons Bay
+8370,23110,Hobsons Bay
+8371,23110,Hobsons Bay
+8373,23110,Hobsons Bay
+8374,23110,Hobsons Bay
+8375,23110,Hobsons Bay
+8376,25340,Mornington Peninsula
+8380,25340,Mornington Peninsula
+8381,25340,Mornington Peninsula
+8383,25340,Mornington Peninsula
+8384,25340,Mornington Peninsula
+8385,25340,Mornington Peninsula
+8386,25340,Mornington Peninsula
+8388,25340,Mornington Peninsula
+8390,25340,Mornington Peninsula
+8391,25340,Mornington Peninsula
+8392,25340,Mornington Peninsula
+8394,25340,Mornington Peninsula
+8395,25340,Mornington Peninsula
+8396,25340,Mornington Peninsula
+8397,25340,Mornington Peninsula
+8398,25340,Mornington Peninsula
+8399,25340,Mornington Peninsula
+8401,25340,Mornington Peninsula
+8402,25340,Mornington Peninsula
+8404,25340,Mornington Peninsula
+8405,25340,Mornington Peninsula
+8406,25340,Mornington Peninsula
+8407,25340,Mornington Peninsula
+8410,25340,Mornington Peninsula
+8411,25340,Mornington Peninsula
+8412,25340,Mornington Peninsula
+8413,25340,Mornington Peninsula
+8414,25340,Mornington Peninsula
+8415,25340,Mornington Peninsula
+8417,25340,Mornington Peninsula
+8419,25340,Mornington Peninsula
+8421,25340,Mornington Peninsula
+8422,25340,Mornington Peninsula
+8423,25340,Mornington Peninsula
+8424,25340,Mornington Peninsula
+8425,25340,Mornington Peninsula
+8426,25340,Mornington Peninsula
+8428,25340,Mornington Peninsula
+8429,25340,Mornington Peninsula
+8430,25340,Mornington Peninsula
+8432,25340,Mornington Peninsula
+8433,25340,Mornington Peninsula
+8435,25340,Mornington Peninsula
+8436,25340,Mornington Peninsula
+8437,25340,Mornington Peninsula
+8439,25340,Mornington Peninsula
+8440,25340,Mornington Peninsula
+8441,25340,Mornington Peninsula
+8442,25340,Mornington Peninsula
+8443,25340,Mornington Peninsula
+8444,25340,Mornington Peninsula
+8445,25340,Mornington Peninsula
+8446,25340,Mornington Peninsula
+8447,25340,Mornington Peninsula
+8448,25340,Mornington Peninsula
+8449,25340,Mornington Peninsula
+8450,25340,Mornington Peninsula
+8451,25340,Mornington Peninsula
+8455,25340,Mornington Peninsula
+8457,25340,Mornington Peninsula
+8458,25340,Mornington Peninsula
+8459,25340,Mornington Peninsula
+8462,25340,Mornington Peninsula
+8463,25340,Mornington Peninsula
+8465,25340,Mornington Peninsula
+8466,25340,Mornington Peninsula
+8467,25340,Mornington Peninsula
+8468,25340,Mornington Peninsula
+8469,25340,Mornington Peninsula
+8470,25340,Mornington Peninsula
+8471,25340,Mornington Peninsula
+8472,25340,Mornington Peninsula
+8473,25340,Mornington Peninsula
+8474,25340,Mornington Peninsula
+8475,25340,Mornington Peninsula
+8477,25340,Mornington Peninsula
+8480,25340,Mornington Peninsula
+8481,25340,Mornington Peninsula
+8482,25340,Mornington Peninsula
+8483,25340,Mornington Peninsula
+8484,25340,Mornington Peninsula
+8485,25340,Mornington Peninsula
+8486,25340,Mornington Peninsula
+8487,25340,Mornington Peninsula
+8488,25340,Mornington Peninsula
+8489,25340,Mornington Peninsula
+8490,25340,Mornington Peninsula
+8491,25340,Mornington Peninsula
+8492,25340,Mornington Peninsula
+8493,25340,Mornington Peninsula
+8494,25340,Mornington Peninsula
+8495,25340,Mornington Peninsula
+8497,25340,Mornington Peninsula
+8498,25340,Mornington Peninsula
+8499,25340,Mornington Peninsula
+8501,25340,Mornington Peninsula
+8502,25340,Mornington Peninsula
+8503,25340,Mornington Peninsula
+8504,25340,Mornington Peninsula
+8505,25340,Mornington Peninsula
+8506,25340,Mornington Peninsula
+8507,25340,Mornington Peninsula
+8508,25340,Mornington Peninsula
+8509,25340,Mornington Peninsula
+8937,22110,East Gippsland
+9040,25430,Mount Alexander
+9041,25430,Mount Alexander
+9042,25430,Mount Alexander
+9043,25430,Mount Alexander
+9044,25430,Mount Alexander
+9045,25430,Mount Alexander
+9046,25430,Mount Alexander
+9047,25430,Mount Alexander
+9048,25430,Mount Alexander
+9049,25430,Mount Alexander
+9050,25430,Mount Alexander
+9052,25430,Mount Alexander
+9053,25430,Mount Alexander
+9054,25430,Mount Alexander
+9057,25430,Mount Alexander
+9058,25430,Mount Alexander
+9120,26980,Whitehorse
+9218,21370,Campaspe
+9219,21370,Campaspe
+9220,21370,Campaspe
+9222,21370,Campaspe
+9223,21370,Campaspe
+9224,21370,Campaspe
+9228,21370,Campaspe
+9229,21370,Campaspe
+9231,21370,Campaspe
+9232,21370,Campaspe
+9239,21370,Campaspe
+9240,21370,Campaspe
+9245,21370,Campaspe
+9247,21370,Campaspe
+9249,21370,Campaspe
+9252,21370,Campaspe
+9253,21370,Campaspe
+9255,21370,Campaspe
+9256,21370,Campaspe
+9260,21370,Campaspe
+9261,21370,Campaspe
+9407,20830,Baw Baw
+9408,20830,Baw Baw
+9409,20830,Baw Baw
+9410,20830,Baw Baw
+9411,20830,Baw Baw
+9412,20830,Baw Baw
+9413,20830,Baw Baw
+9414,20830,Baw Baw
+9415,20830,Baw Baw
+9416,20830,Baw Baw
+9418,20830,Baw Baw
+9419,20830,Baw Baw
+9420,20830,Baw Baw
+9421,20830,Baw Baw
+9423,20830,Baw Baw
+9424,20830,Baw Baw
+9426,20830,Baw Baw
+9427,20830,Baw Baw
+9428,20830,Baw Baw
+9429,20830,Baw Baw
+9430,20830,Baw Baw
+9431,20830,Baw Baw
+9432,20830,Baw Baw
+9433,20830,Baw Baw
+9434,20830,Baw Baw
+9751,24780,Mildura
+9823,24410,Maroondah
+9825,24410,Maroondah
+9826,24410,Maroondah
+9828,24410,Maroondah
+9833,24410,Maroondah
+9838,24410,Maroondah
+9839,24410,Maroondah
+9840,24410,Maroondah
+9844,24410,Maroondah
+9846,24410,Maroondah
+9849,24410,Maroondah
+9851,24410,Maroondah
+9854,24410,Maroondah
+9857,24410,Maroondah
+9924,24410,Maroondah
+9933,24410,Maroondah
+9936,24410,Maroondah
+9949,24410,Maroondah
+9952,24410,Maroondah
+10073,20910,Bayside (Vic.)
+10074,20910,Bayside (Vic.)
+10075,20910,Bayside (Vic.)
+10076,20910,Bayside (Vic.)
+10077,20910,Bayside (Vic.)
+10079,20910,Bayside (Vic.)
+10080,20910,Bayside (Vic.)
+10081,20910,Bayside (Vic.)
+10082,20910,Bayside (Vic.)
+10083,20910,Bayside (Vic.)
+10084,20910,Bayside (Vic.)
+10085,20910,Bayside (Vic.)
+10086,20910,Bayside (Vic.)
+10087,20910,Bayside (Vic.)
+10090,20910,Bayside (Vic.)
+10093,20910,Bayside (Vic.)
+10094,20910,Bayside (Vic.)
+10096,20910,Bayside (Vic.)
+10098,20910,Bayside (Vic.)
+10099,20910,Bayside (Vic.)
+10100,20910,Bayside (Vic.)
+10101,20910,Bayside (Vic.)
+10102,20910,Bayside (Vic.)
+10103,20910,Bayside (Vic.)
+10104,20910,Bayside (Vic.)
+10105,20910,Bayside (Vic.)
+10107,20910,Bayside (Vic.)
+10109,20910,Bayside (Vic.)
+10111,20910,Bayside (Vic.)
+10113,20910,Bayside (Vic.)
+10114,20910,Bayside (Vic.)
+10115,20910,Bayside (Vic.)
+10117,20910,Bayside (Vic.)
+10118,20910,Bayside (Vic.)
+10119,20910,Bayside (Vic.)
+10120,20910,Bayside (Vic.)
+10121,20910,Bayside (Vic.)
+10122,20910,Bayside (Vic.)
+10123,20910,Bayside (Vic.)
+10124,20910,Bayside (Vic.)
+10127,20910,Bayside (Vic.)
+10128,20910,Bayside (Vic.)
+10129,20910,Bayside (Vic.)
+10130,20910,Bayside (Vic.)
+10131,20910,Bayside (Vic.)
+10135,20910,Bayside (Vic.)
+10138,20910,Bayside (Vic.)
+10141,20910,Bayside (Vic.)
+10143,20910,Bayside (Vic.)
+10405,24850,Mitchell
+10407,24850,Mitchell
+10408,24850,Mitchell
+10410,24850,Mitchell
+10411,24850,Mitchell
+10412,24850,Mitchell
+10413,24850,Mitchell
+10414,24850,Mitchell
+10415,24850,Mitchell
+10416,24850,Mitchell
+10417,24850,Mitchell
+10418,24850,Mitchell
+10419,21830,Corangamite
+10420,21830,Corangamite
+10422,21830,Corangamite
+10424,21830,Corangamite
+10425,21830,Corangamite
+10426,21830,Corangamite
+10427,21830,Corangamite
+10429,21830,Corangamite
+10430,21830,Corangamite
+10431,21830,Corangamite
+10432,21830,Corangamite
+10433,21830,Corangamite
+10434,21830,Corangamite
+10435,21830,Corangamite
+10436,21830,Corangamite
+10437,21670,Central Goldfields
+10438,21670,Central Goldfields
+10439,21670,Central Goldfields
+10440,21670,Central Goldfields
+10441,21670,Central Goldfields
+10443,21670,Central Goldfields
+10444,21670,Central Goldfields
+10445,21670,Central Goldfields
+10446,21670,Central Goldfields
+10447,21670,Central Goldfields
+10448,21670,Central Goldfields
+10449,21670,Central Goldfields
+10450,21670,Central Goldfields
+10454,21670,Central Goldfields
+10455,21670,Central Goldfields
+10456,21670,Central Goldfields
+10489,22750,Greater Geelong
+10490,25620,Murrindindi
+10491,25900,Port Phillip
+10493,25900,Port Phillip
+10495,25900,Port Phillip
+10497,25900,Port Phillip
+10499,25900,Port Phillip
+10500,25900,Port Phillip
+10501,25900,Port Phillip
+10502,22110,East Gippsland
+10503,26810,Wellington
+10504,26700,Wangaratta
+10505,26810,Wellington
+10510,20110,Alpine
+10516,26170,South Gippsland
+10520,24210,Manningham
+10521,24210,Manningham
+10522,22910,Hepburn
+10523,22910,Hepburn
+10524,22410,Glenelg
+10526,22410,Glenelg
+10527,22410,Glenelg
+10530,22490,Golden Plains
+10531,20260,Ararat
+10532,25810,Northern Grampians
+10533,25810,Northern Grampians
+10534,25810,Northern Grampians
+10535,25810,Northern Grampians
+10537,26890,West Wimmera
+10538,22980,Hindmarsh
+10539,23190,Horsham
+10548,26260,Southern Grampians
+10599,22620,Greater Bendigo
+10602,22620,Greater Bendigo
+10604,22620,Greater Bendigo
+10608,22620,Greater Bendigo
+10610,22620,Greater Bendigo
+10613,22620,Greater Bendigo
+10614,22620,Greater Bendigo
+10615,22620,Greater Bendigo
+10616,22620,Greater Bendigo
+10617,22620,Greater Bendigo
+10618,22620,Greater Bendigo
+10620,22620,Greater Bendigo
+10621,22620,Greater Bendigo
+10622,22620,Greater Bendigo
+10623,22620,Greater Bendigo
+10625,22620,Greater Bendigo
+10626,22620,Greater Bendigo
+10627,22620,Greater Bendigo
+10628,22620,Greater Bendigo
+10629,22620,Greater Bendigo
+10630,22620,Greater Bendigo
+10632,22620,Greater Bendigo
+11046,24780,Mildura
+11047,24780,Mildura
+11048,26490,Surf Coast
+11049,26490,Surf Coast
+11050,25490,Moyne
+11051,21750,Colac Otway
+11052,21750,Colac Otway
+11053,,Unmatched location
+11054,21750,Colac Otway
+11055,21750,Colac Otway
+11056,21830,Corangamite
+11057,21830,Corangamite
+11060,21830,Corangamite
+11062,25490,Moyne
+11063,21180,Brimbank
+11064,21180,Brimbank
+11065,22750,Greater Geelong
+11066,22750,Greater Geelong
+11068,22750,Greater Geelong
+11070,22490,Golden Plains
+11071,23270,Hume
+11073,23270,Hume
+11074,23270,Hume
+11075,23270,Hume
+11077,25620,Murrindindi
+11078,25620,Murrindindi
+11079,25620,Murrindindi
+11080,25620,Murrindindi
+11081,25620,Murrindindi
+11082,25620,Murrindindi
+11083,25620,Murrindindi
+11086,27450,Yarra Ranges
+11088,24900,Moira
+11089,23350,Indigo
+11090,23350,Indigo
+11092,25810,Northern Grampians
+11093,22250,Gannawarra
+11094,23940,Loddon
+11095,23940,Loddon
+11096,25430,Mount Alexander
+11097,25430,Mount Alexander
+11098,25430,Mount Alexander
+11099,25430,Mount Alexander
+11100,21370,Campaspe
+11101,23940,Loddon
+11102,27350,Yarra
+11103,25340,Mornington Peninsula
+11104,,Unmatched location
+11107,22670,Greater Dandenong
+11108,23430,Kingston (Vic.)
+11109,27260,Wyndham
+11110,27260,Wyndham
+11112,27260,Wyndham
+11113,27260,Wyndham
+11114,27260,Wyndham
+11115,27260,Wyndham
+11117,22110,East Gippsland
+11118,26170,South Gippsland
+11120,26170,South Gippsland
+11122,26810,Wellington
+11123,27450,Yarra Ranges
+11124,27450,Yarra Ranges
+11125,27450,Yarra Ranges
+11126,27450,Yarra Ranges
+11127,27450,Yarra Ranges
+11128,21610,Casey
+11129,23670,Knox
+11131,23670,Knox
+11132,23430,Kingston (Vic.)
+11134,25710,Nillumbik
+11135,25710,Nillumbik
+11136,27070,Whittlesea
+11139,25710,Nillumbik
+11140,20110,Alpine
+11141,25710,Nillumbik
+11142,25710,Nillumbik
+11143,25710,Nillumbik
+11144,27070,Whittlesea
+11145,27070,Whittlesea
+11146,25810,Northern Grampians
+11147,22980,Hindmarsh
+11148,25150,Moorabool
+11149,26490,Surf Coast
+11150,22410,Glenelg
+11151,22410,Glenelg
+11152,22410,Glenelg
+11153,25490,Moyne
+11154,25490,Moyne
+11155,25490,Moyne
+11156,22410,Glenelg
+11157,21750,Colac Otway
+11158,25430,Mount Alexander
+11160,25340,Mornington Peninsula
+11167,25340,Mornington Peninsula
+11176,25340,Mornington Peninsula
+11184,25340,Mornington Peninsula
+11190,22110,East Gippsland
+11191,20740,Bass Coast
+11193,27450,Yarra Ranges
+11195,27450,Yarra Ranges
+11196,27450,Yarra Ranges
+11197,27450,Yarra Ranges
+11198,27450,Yarra Ranges
+11199,22910,Hepburn
+11200,24780,Mildura
+11203,21750,Colac Otway
+11205,21180,Brimbank
+11206,21180,Brimbank
+11207,21180,Brimbank
+11208,21180,Brimbank
+11209,21180,Brimbank
+11210,23270,Hume
+11211,23270,Hume
+11212,23270,Hume
+11213,23270,Hume
+11214,25150,Moorabool
+11215,24130,Macedon Ranges
+11216,24130,Macedon Ranges
+11217,24130,Macedon Ranges
+11218,25150,Moorabool
+11219,22750,Greater Geelong
+11220,22750,Greater Geelong
+11221,22750,Greater Geelong
+11222,22750,Greater Geelong
+11223,25620,Murrindindi
+11224,25620,Murrindindi
+11226,25710,Nillumbik
+11233,27450,Yarra Ranges
+11237,27450,Yarra Ranges
+11240,27450,Yarra Ranges
+11242,27450,Yarra Ranges
+11245,24330,Maribyrnong
+11247,24600,Melbourne
+11248,25340,Mornington Peninsula
+11250,25340,Mornington Peninsula
+11251,25340,Mornington Peninsula
+11252,25340,Mornington Peninsula
+11253,25340,Mornington Peninsula
+11254,25340,Mornington Peninsula
+11255,25340,Mornington Peninsula
+11256,25340,Mornington Peninsula
+11257,25340,Mornington Peninsula
+11259,25340,Mornington Peninsula
+11260,25340,Mornington Peninsula
+11261,25340,Mornington Peninsula
+11262,25340,Mornington Peninsula
+11263,25340,Mornington Peninsula
+11264,25340,Mornington Peninsula
+11265,25340,Mornington Peninsula
+11267,25340,Mornington Peninsula
+11268,25340,Mornington Peninsula
+11269,27260,Wyndham
+11274,22110,East Gippsland
+11275,24250,Mansfield
+11276,26810,Wellington
+11277,24250,Mansfield
+11278,26810,Wellington
+11279,20110,Alpine
+11280,20110,Alpine
+11282,20110,Alpine
+11284,20110,Alpine
+11285,20110,Alpine
+11287,20110,Alpine
+11288,20110,Alpine
+11295,22110,East Gippsland
+11296,26810,Wellington
+11297,22110,East Gippsland
+11298,22110,East Gippsland
+11300,26810,Wellington
+11303,20830,Baw Baw
+11305,20830,Baw Baw
+11306,20830,Baw Baw
+11307,23810,Latrobe (Vic.)
+11308,20830,Baw Baw
+11309,20830,Baw Baw
+11310,26810,Wellington
+11311,26810,Wellington
+11312,26810,Wellington
+11313,26810,Wellington
+11314,20830,Baw Baw
+11316,26170,South Gippsland
+11317,26170,South Gippsland
+11318,26170,South Gippsland
+11319,,Unmatched location
+11320,26170,South Gippsland
+11321,27450,Yarra Ranges
+11322,27450,Yarra Ranges
+11326,27450,Yarra Ranges
+11329,27450,Yarra Ranges
+11331,27450,Yarra Ranges
+11335,27450,Yarra Ranges
+11341,27450,Yarra Ranges
+11344,27450,Yarra Ranges
+11346,23430,Kingston (Vic.)
+11347,23430,Kingston (Vic.)
+11348,23430,Kingston (Vic.)
+11350,21450,Cardinia
+11352,21450,Cardinia
+11353,21450,Cardinia
+11354,21450,Cardinia
+11355,21450,Cardinia
+11356,21450,Cardinia
+11357,24970,Monash
+11358,24970,Monash
+11359,24970,Monash
+11361,24970,Monash
+11362,21610,Casey
+11363,21610,Casey
+11366,26980,Whitehorse
+11367,21110,Boroondara
+11368,27350,Yarra
+11373,27350,Yarra
+11375,27350,Yarra
+11377,27350,Yarra
+11379,21110,Boroondara
+11380,21110,Boroondara
+11381,27350,Yarra
+11382,27350,Yarra
+11383,24210,Manningham
+11384,24210,Manningham
+11385,24210,Manningham
+11387,24210,Manningham
+11388,24210,Manningham
+11389,24210,Manningham
+11390,24210,Manningham
+11392,26490,Surf Coast
+11470,27630,Yarriambiack
+11471,27630,Yarriambiack
+11472,27630,Yarriambiack
+11473,27630,Yarriambiack
+11474,27630,Yarriambiack
+11476,27630,Yarriambiack
+11477,27630,Yarriambiack
+11479,27630,Yarriambiack
+11480,27630,Yarriambiack
+11481,27630,Yarriambiack
+11482,27630,Yarriambiack
+11483,27630,Yarriambiack
+11484,27630,Yarriambiack
+11485,27630,Yarriambiack
+11487,27630,Yarriambiack
+11517,24600,Melbourne
+11518,24600,Melbourne
+11520,24600,Melbourne
+11521,24600,Melbourne
+11522,24600,Melbourne
+11525,24600,Melbourne
+11528,24600,Melbourne
+11530,24600,Melbourne
+11532,24600,Melbourne
+11533,24600,Melbourne
+11534,24600,Melbourne
+11535,24600,Melbourne
+11536,24600,Melbourne
+11538,24600,Melbourne
+11951,24600,Melbourne
+11954,24600,Melbourne
+11956,21610,Casey
+11960,25900,Port Phillip
+11961,25900,Port Phillip
+11964,25900,Port Phillip
+11965,25900,Port Phillip
+11966,25900,Port Phillip
+11967,25900,Port Phillip
+11968,25900,Port Phillip
+11969,25900,Port Phillip
+11970,25900,Port Phillip
+11971,25900,Port Phillip
+11972,25900,Port Phillip
+11976,25900,Port Phillip
+11978,25900,Port Phillip
+11979,25900,Port Phillip
+11980,25900,Port Phillip
+11981,25900,Port Phillip
+11982,25900,Port Phillip
+11983,25900,Port Phillip
+11984,25900,Port Phillip
+11985,25900,Port Phillip
+11986,25900,Port Phillip
+11987,25900,Port Phillip
+11988,25900,Port Phillip
+11989,25900,Port Phillip
+11990,25900,Port Phillip
+11992,25900,Port Phillip
+11993,25900,Port Phillip
+11994,25900,Port Phillip
+12582,24600,Melbourne
+12584,24600,Melbourne
+12592,24600,Melbourne
+12593,24600,Melbourne
+12594,24600,Melbourne
+12595,24600,Melbourne
+12596,24600,Melbourne
+12598,24600,Melbourne
+12599,24600,Melbourne
+12601,24600,Melbourne
+12602,24600,Melbourne
+12604,24600,Melbourne
+12606,24600,Melbourne
+12608,24600,Melbourne
+12797,21750,Colac Otway
+12798,21750,Colac Otway
+12799,21750,Colac Otway
+12800,21750,Colac Otway
+12801,21750,Colac Otway
+12802,21750,Colac Otway
+12804,21750,Colac Otway
+12805,21750,Colac Otway
+12806,21750,Colac Otway
+12807,21750,Colac Otway
+12809,21750,Colac Otway
+12810,21750,Colac Otway
+12811,21750,Colac Otway
+12812,21750,Colac Otway
+12813,21750,Colac Otway
+12815,21750,Colac Otway
+12816,21750,Colac Otway
+12817,21750,Colac Otway
+12818,21750,Colac Otway
+12819,21750,Colac Otway
+12820,21750,Colac Otway
+12821,21750,Colac Otway
+12822,21750,Colac Otway
+12823,21750,Colac Otway
+12824,21750,Colac Otway
+12825,21750,Colac Otway
+12826,21750,Colac Otway
+12827,21750,Colac Otway
+12830,21750,Colac Otway
+12832,26980,Whitehorse
+12834,26980,Whitehorse
+12835,26980,Whitehorse
+12836,26980,Whitehorse
+12839,26980,Whitehorse
+12840,26980,Whitehorse
+12841,26980,Whitehorse
+12844,26980,Whitehorse
+12847,26980,Whitehorse
+12848,26980,Whitehorse
+12849,26980,Whitehorse
+12850,26980,Whitehorse
+12851,26980,Whitehorse
+12852,26980,Whitehorse
+12854,26980,Whitehorse
+12855,26980,Whitehorse
+12858,26980,Whitehorse
+12859,26980,Whitehorse
+12860,26980,Whitehorse
+12862,26980,Whitehorse
+12863,26980,Whitehorse
+12864,26980,Whitehorse
+12865,26980,Whitehorse
+12866,26980,Whitehorse
+13369,26730,Warrnambool
+13405,21830,Corangamite
+13409,22750,Greater Geelong
+13410,26730,Warrnambool
+13411,21450,Cardinia
+13416,22750,Greater Geelong
+13450,22750,Greater Geelong
+13452,22110,East Gippsland
+13460,25990,Pyrenees
+13461,25990,Pyrenees
+13463,25990,Pyrenees
+13464,25990,Pyrenees
+13466,25990,Pyrenees
+13467,25990,Pyrenees
+13470,25990,Pyrenees
+13625,25900,Port Phillip
+13626,25900,Port Phillip
+16886,22310,Glen Eira
+16887,22310,Glen Eira
+16892,22170,Frankston
+16893,22170,Frankston
+16895,22170,Frankston
+16897,22170,Frankston
+16898,22170,Frankston
+16899,22170,Frankston
+16900,22170,Frankston
+16901,23430,Kingston (Vic.)
+16902,22170,Frankston
+16930,23430,Kingston (Vic.)
+16932,23430,Kingston (Vic.)
+16933,23430,Kingston (Vic.)
+16934,23430,Kingston (Vic.)
+16974,24600,Melbourne
+16984,23270,Hume
+17001,22750,Greater Geelong
+17003,24850,Mitchell
+17005,24850,Mitchell
+17019,26980,Whitehorse
+17033,24970,Monash
+17053,22410,Glenelg
+17059,24780,Mildura
+17067,24780,Mildura
+17088,25490,Moyne
+17106,22490,Golden Plains
+17108,22490,Golden Plains
+17110,22490,Golden Plains
+17111,23350,Indigo
+17112,22490,Golden Plains
+17114,22490,Golden Plains
+17115,26350,Stonnington
+17117,26350,Stonnington
+17118,22490,Golden Plains
+17119,26350,Stonnington
+17120,22490,Golden Plains
+17123,26350,Stonnington
+17127,23810,Latrobe (Vic.)
+17131,23810,Latrobe (Vic.)
+17133,23810,Latrobe (Vic.)
+17136,20660,Banyule
+17137,23810,Latrobe (Vic.)
+17160,25810,Northern Grampians
+17162,22620,Greater Bendigo
+17164,22620,Greater Bendigo
+17166,22620,Greater Bendigo
+17168,22620,Greater Bendigo
+17174,22620,Greater Bendigo
+17216,26080,Queenscliffe
+17218,26080,Queenscliffe
+17220,26080,Queenscliffe
+17271,24650,Melton
+17273,24650,Melton
+17275,24650,Melton
+17277,24650,Melton
+17320,22980,Hindmarsh
+17333,24600,Melbourne
+17368,21110,Boroondara
+17390,21110,Boroondara
+17400,21450,Cardinia
+17404,21450,Cardinia
+17408,21450,Cardinia
+17502,24700,Merri-bek
+17586,21830,Corangamite
+17608,24600,Melbourne
+17616,22670,Greater Dandenong
+17622,22670,Greater Dandenong
+17626,22670,Greater Dandenong
+17628,22670,Greater Dandenong
+17632,22670,Greater Dandenong
+17634,22670,Greater Dandenong
+17636,22670,Greater Dandenong
+17638,22670,Greater Dandenong
+17642,22670,Greater Dandenong
+17646,21610,Casey
+17652,22670,Greater Dandenong
+17668,24600,Melbourne
+17670,24600,Melbourne
+17672,24600,Melbourne
+17674,24600,Melbourne
+17676,24600,Melbourne
+17678,24600,Melbourne
+17704,24130,Macedon Ranges
+17706,27350,Yarra
+17708,24900,Moira
+17710,24900,Moira
+17716,24900,Moira
+17718,24900,Moira
+17722,24900,Moira
+17726,24900,Moira
+17728,24900,Moira
+17732,24900,Moira
+17736,24900,Moira
+17740,24900,Moira
+17744,24900,Moira
+17746,24900,Moira
+17748,24900,Moira
+17754,24900,Moira
+17856,23810,Latrobe (Vic.)
+17966,26170,South Gippsland
+17974,23940,Loddon
+17984,25490,Moyne
+17996,26700,Wangaratta
+18010,22110,East Gippsland
+18022,21110,Boroondara
+18084,25430,Mount Alexander
+18086,21610,Casey
+18129,23110,Hobsons Bay
+18135,25340,Mornington Peninsula
+18137,24700,Merri-bek
+18139,22170,Frankston
+18141,22750,Greater Geelong
+18143,22620,Greater Bendigo
+18144,24700,Merri-bek
+18145,23670,Knox
+18147,21180,Brimbank
+18149,24210,Manningham
+18150,22310,Glen Eira
+18151,21110,Boroondara
+18159,24970,Monash
+18163,22620,Greater Bendigo
+18167,24970,Monash
+18168,27630,Yarriambiack
+18169,26980,Whitehorse
+18171,26350,Stonnington
+18173,27450,Yarra Ranges
+18175,24600,Melbourne
+18177,21610,Casey
+18183,22750,Greater Geelong
+18185,25710,Nillumbik
+18187,27070,Whittlesea
+18189,26980,Whitehorse
+18191,26730,Warrnambool
+18192,25620,Murrindindi
+18193,26810,Wellington
+18194,25620,Murrindindi
+18195,23270,Hume
+18196,25620,Murrindindi
+18197,20660,Banyule
+18198,25620,Murrindindi
+18199,24330,Maribyrnong
+18200,26610,Swan Hill
+18203,27260,Wyndham
+18205,23190,Horsham
+18207,26350,Stonnington
+18209,22170,Frankston
+18211,26980,Whitehorse
+18213,23670,Knox
+18215,23430,Kingston (Vic.)
+18217,27450,Yarra Ranges
+18219,26350,Stonnington
+18221,23810,Latrobe (Vic.)
+18223,24780,Mildura
+18224,27070,Whittlesea
+18225,26980,Whitehorse
+18229,22670,Greater Dandenong
+18231,25340,Mornington Peninsula
+18232,24410,Maroondah
+18233,26350,Stonnington
+18235,21890,Darebin
+18237,24600,Melbourne
+18239,24600,Melbourne
+18241,22830,Greater Shepparton
+18243,20660,Banyule
+18244,25340,Mornington Peninsula
+18245,24210,Manningham
+18247,23810,Latrobe (Vic.)
+18249,20570,Ballarat
+18255,27350,Yarra
+18257,21180,Brimbank
+18259,22750,Greater Geelong
+18261,23430,Kingston (Vic.)
+18263,24650,Melton
+18264,21270,Buloke
+18266,21270,Buloke
+18268,21270,Buloke
+18270,21270,Buloke
+18272,21270,Buloke
+18274,21270,Buloke
+18278,21270,Buloke
+18280,21270,Buloke
+18282,21270,Buloke
+18284,21270,Buloke
+18286,21270,Buloke
+18288,21270,Buloke
+18290,21270,Buloke
+18294,22750,Greater Geelong
+18296,22750,Greater Geelong
+18298,22750,Greater Geelong
+18302,22750,Greater Geelong
+18304,22750,Greater Geelong
+18306,22750,Greater Geelong
+18314,21450,Cardinia
+18316,21450,Cardinia
+18318,21450,Cardinia
+18359,24600,Melbourne
+18367,21010,Benalla
+18369,21010,Benalla
+18370,25150,Moorabool
+18371,21010,Benalla
+18391,26170,South Gippsland
+18392,24600,Melbourne
+18393,26170,South Gippsland
+18396,21890,Darebin
+18397,25810,Northern Grampians
+18398,26490,Surf Coast
+18399,25810,Northern Grampians
+18401,25810,Northern Grampians
+18403,25810,Northern Grampians
+18404,26980,Whitehorse
+18405,22910,Hepburn
+18427,20910,Bayside (Vic.)
+18429,20910,Bayside (Vic.)
+18431,20910,Bayside (Vic.)
+18433,20910,Bayside (Vic.)
+18437,22110,East Gippsland
+18440,26980,Whitehorse
+18447,26260,Southern Grampians
+18453,22910,Hepburn
+18455,25060,Moonee Valley
+18475,22110,East Gippsland
+18478,21180,Brimbank
+18481,21270,Buloke
+18483,21270,Buloke
+18488,21830,Corangamite
+18491,25060,Moonee Valley
+18512,24700,Merri-bek
+18514,21890,Darebin
+18592,25340,Mornington Peninsula
+18594,25340,Mornington Peninsula
+18596,21750,Colac Otway
+18608,23430,Kingston (Vic.)
+18646,27070,Whittlesea
+18648,27070,Whittlesea
+18668,25150,Moorabool
+18692,26670,Towong
+18694,26670,Towong
+18698,21450,Cardinia
+18699,26170,South Gippsland
+18706,20110,Alpine
+18712,23810,Latrobe (Vic.)
+18715,22110,East Gippsland
+18726,20110,Alpine
+18728,20110,Alpine
+18736,23110,Hobsons Bay
+18738,23110,Hobsons Bay
+18754,25490,Moyne
+18760,21890,Darebin
+18762,21890,Darebin
+18764,21890,Darebin
+18766,21890,Darebin
+18768,21890,Darebin
+18770,21890,Darebin
+18774,21890,Darebin
+18776,21890,Darebin
+18778,21890,Darebin
+18908,22310,Glen Eira
+18912,22310,Glen Eira
+18942,25150,Moorabool
+18944,22490,Golden Plains
+18960,22310,Glen Eira
+18970,26260,Southern Grampians
+18972,26260,Southern Grampians
+18974,26260,Southern Grampians
+18976,26260,Southern Grampians
+18978,26260,Southern Grampians
+18982,26260,Southern Grampians
+18986,26260,Southern Grampians
+18988,26260,Southern Grampians
+18990,26260,Southern Grampians
+19018,24700,Merri-bek
+19082,26490,Surf Coast
+19092,21610,Casey
+19100,21610,Casey
+19108,25340,Mornington Peninsula
+19110,27630,Yarriambiack
+19112,20910,Bayside (Vic.)
+19114,27630,Yarriambiack
+19120,27260,Wyndham
+19122,24780,Mildura
+19142,24850,Mitchell
+19192,24650,Melton
+19194,24650,Melton
+19196,24650,Melton
+19198,24650,Melton
+19200,24650,Melton
+19206,26610,Swan Hill
+19218,26610,Swan Hill
+19220,26610,Swan Hill
+19222,26610,Swan Hill
+19276,26170,South Gippsland
+19278,21890,Darebin
+19288,21180,Brimbank
+19310,24600,Melbourne
+19314,24600,Melbourne
+19316,24600,Melbourne
+19318,27350,Yarra
+19324,24600,Melbourne
+19326,26980,Whitehorse
+19336,21180,Brimbank
+19338,21180,Brimbank
+19637,23940,Loddon
+19641,22310,Glen Eira
+19655,22110,East Gippsland
+19713,25150,Moorabool
+19925,26490,Surf Coast
+19927,26490,Surf Coast
+19929,26490,Surf Coast
+19931,26490,Surf Coast
+19933,26490,Surf Coast
+19935,26490,Surf Coast
+19937,26490,Surf Coast
+19939,26490,Surf Coast
+19941,26490,Surf Coast
+19943,26490,Surf Coast
+19945,26490,Surf Coast
+19947,26490,Surf Coast
+19949,26490,Surf Coast
+19951,26490,Surf Coast
+19953,26490,Surf Coast
+19955,26490,Surf Coast
+19957,26490,Surf Coast
+19959,26490,Surf Coast
+19961,26490,Surf Coast
+19963,26490,Surf Coast
+19965,26490,Surf Coast
+19967,26490,Surf Coast
+19969,26490,Surf Coast
+19973,22310,Glen Eira
+20067,25900,Port Phillip
+20073,25900,Port Phillip
+20077,26670,Towong
+20079,26670,Towong
+20081,24250,Mansfield
+20083,24250,Mansfield
+20085,26700,Wangaratta
+20087,26700,Wangaratta
+20089,24250,Mansfield
+20091,22110,East Gippsland
+20093,24250,Mansfield
+20095,26810,Wellington
+20097,22110,East Gippsland
+20099,20110,Alpine
+20103,22110,East Gippsland
+20105,22110,East Gippsland
+20107,26700,Wangaratta
+20109,22110,East Gippsland
+20111,22110,East Gippsland
+20113,20110,Alpine
+20115,20110,Alpine
+20117,26670,Towong
+20119,26810,Wellington
+20121,20110,Alpine
+20123,20110,Alpine
+20125,22110,East Gippsland
+20127,26810,Wellington
+20129,26810,Wellington
+20131,26810,Wellington
+20133,20110,Alpine
+20135,22110,East Gippsland
+20137,22110,East Gippsland
+20139,22110,East Gippsland
+20141,22110,East Gippsland
+20143,22110,East Gippsland
+20151,26700,Wangaratta
+20153,24250,Mansfield
+20155,24250,Mansfield
+20159,22110,East Gippsland
+20163,22110,East Gippsland
+20165,22110,East Gippsland
+20167,20110,Alpine
+20169,26670,Towong
+20171,20110,Alpine
+20173,26700,Wangaratta
+20175,24250,Mansfield
+20177,26810,Wellington
+20179,20110,Alpine
+20181,22110,East Gippsland
+20183,26700,Wangaratta
+20185,22110,East Gippsland
+20187,20110,Alpine
+20189,22110,East Gippsland
+20191,22110,East Gippsland
+20193,26700,Wangaratta
+20195,22110,East Gippsland
+20197,22110,East Gippsland
+20199,20110,Alpine
+20201,22910,Hepburn
+20207,26810,Wellington
+20209,20830,Baw Baw
+20211,20830,Baw Baw
+20213,20830,Baw Baw
+20215,22110,East Gippsland
+20217,24780,Mildura
+20219,22980,Hindmarsh
+20221,25810,Northern Grampians
+20223,23190,Horsham
+20225,23430,Kingston (Vic.)
+20227,23430,Kingston (Vic.)
+20229,22750,Greater Geelong
+20231,25150,Moorabool
+20233,22490,Golden Plains
+20237,22750,Greater Geelong
+20239,22490,Golden Plains
+20241,22750,Greater Geelong
+20243,21450,Cardinia
+20245,21450,Cardinia
+20247,20830,Baw Baw
+20249,21450,Cardinia
+20251,26670,Towong
+20253,26670,Towong
+20255,26670,Towong
+20257,22110,East Gippsland
+20259,22110,East Gippsland
+20261,22110,East Gippsland
+20263,22110,East Gippsland
+20265,26170,South Gippsland
+20267,22410,Glenelg
+20271,25620,Murrindindi
+20277,24900,Moira
+20279,24900,Moira
+20281,24900,Moira
+20283,25430,Mount Alexander
+20287,22910,Hepburn
+20289,22110,East Gippsland
+20291,22110,East Gippsland
+20293,22110,East Gippsland
+20295,22110,East Gippsland
+20297,22110,East Gippsland
+20299,22110,East Gippsland
+20301,22110,East Gippsland
+20303,22110,East Gippsland
+20305,22110,East Gippsland
+20307,22110,East Gippsland
+20309,22110,East Gippsland
+20311,22110,East Gippsland
+20321,27450,Yarra Ranges
+20327,24970,Monash
+20331,24970,Monash
+20333,22830,Greater Shepparton
+20335,26890,West Wimmera
+20339,22410,Glenelg
+20341,22410,Glenelg
+20345,22410,Glenelg
+20347,22410,Glenelg
+20349,22410,Glenelg
+20351,22410,Glenelg
+20353,22410,Glenelg
+20355,22110,East Gippsland
+20357,22110,East Gippsland
+20359,22110,East Gippsland
+20361,22110,East Gippsland
+20363,29399,Unincorporated Vic
+20365,26170,South Gippsland
+20367,22110,East Gippsland
+20369,22110,East Gippsland
+20371,,Unmatched location
+20373,26810,Wellington
+20375,26810,Wellington
+20377,22110,East Gippsland
+20379,26810,Wellington
+20381,22110,East Gippsland
+20385,25810,Northern Grampians
+20387,25810,Northern Grampians
+20389,25810,Northern Grampians
+20391,26260,Southern Grampians
+20395,25810,Northern Grampians
+20397,20260,Ararat
+20399,20260,Ararat
+20401,20260,Ararat
+20403,25810,Northern Grampians
+20407,25810,Northern Grampians
+20409,25810,Northern Grampians
+20411,26260,Southern Grampians
+20413,25810,Northern Grampians
+20415,20260,Ararat
+20417,25810,Northern Grampians
+20419,25810,Northern Grampians
+20421,26810,Wellington
+20423,21750,Colac Otway
+20425,21750,Colac Otway
+20427,26490,Surf Coast
+20431,26490,Surf Coast
+20435,26490,Surf Coast
+20437,21750,Colac Otway
+20439,26490,Surf Coast
+20441,22620,Greater Bendigo
+20445,22620,Greater Bendigo
+20447,24780,Mildura
+20449,22620,Greater Bendigo
+20451,22910,Hepburn
+20455,25810,Northern Grampians
+20457,25810,Northern Grampians
+20459,25810,Northern Grampians
+33973,20260,Ararat
+33975,22110,East Gippsland
+33977,22110,East Gippsland
+33981,21270,Buloke
+33983,24900,Moira
+33987,26670,Towong
+33989,22980,Hindmarsh
+33991,26810,Wellington
+33997,22110,East Gippsland
+33999,25810,Northern Grampians
+34001,22110,East Gippsland
+34005,22980,Hindmarsh
+34007,22110,East Gippsland
+34009,22110,East Gippsland
+34015,26810,Wellington
+34023,26730,Warrnambool
+34025,22110,East Gippsland
+34073,22620,Greater Bendigo
+34077,26810,Wellington
+34079,26810,Wellington
+34081,26810,Wellington
+34083,26890,West Wimmera
+34085,20740,Bass Coast
+34087,25620,Murrindindi
+34089,25620,Murrindindi
+34091,22980,Hindmarsh
+34093,22980,Hindmarsh
+34095,20260,Ararat
+34097,25620,Murrindindi
+34099,24250,Mansfield
+34101,25620,Murrindindi
+34103,25620,Murrindindi
+34105,25620,Murrindindi
+34107,25620,Murrindindi
+34109,25620,Murrindindi
+34111,25620,Murrindindi
+34113,25620,Murrindindi
+34115,25620,Murrindindi
+34117,25620,Murrindindi
+34119,25620,Murrindindi
+34121,22980,Hindmarsh
+34123,22110,East Gippsland
+34125,22110,East Gippsland
+34127,22110,East Gippsland
+34129,22110,East Gippsland
+34131,22110,East Gippsland
+34133,20260,Ararat
+34135,25150,Moorabool
+34137,22980,Hindmarsh
+34139,22980,Hindmarsh
+34141,22980,Hindmarsh
+34143,22980,Hindmarsh
+34145,22980,Hindmarsh
+34147,22980,Hindmarsh
+34151,24250,Mansfield
+34153,24250,Mansfield
+34155,24250,Mansfield
+34157,22980,Hindmarsh
+34159,22980,Hindmarsh
+34161,22980,Hindmarsh
+34163,22410,Glenelg
+34165,22410,Glenelg
+34167,22410,Glenelg
+34169,22410,Glenelg
+34171,22410,Glenelg
+34173,22410,Glenelg
+34175,22410,Glenelg
+34177,22410,Glenelg
+34179,22410,Glenelg
+34181,22410,Glenelg
+34183,22410,Glenelg
+34185,22410,Glenelg
+34187,22410,Glenelg
+34189,22410,Glenelg
+34191,22410,Glenelg
+34193,22410,Glenelg
+34195,22410,Glenelg
+34197,22410,Glenelg
+34199,22410,Glenelg
+34201,22410,Glenelg
+34203,22410,Glenelg
+34205,22410,Glenelg
+34207,22410,Glenelg
+34209,22410,Glenelg
+34211,24130,Macedon Ranges
+34213,24130,Macedon Ranges
+34215,22110,East Gippsland
+34217,21180,Brimbank
+34219,21180,Brimbank
+34221,21180,Brimbank
+34225,22110,East Gippsland
+34227,22110,East Gippsland
+34229,26670,Towong
+34231,22910,Hepburn
+34233,25990,Pyrenees
+34235,25990,Pyrenees
+34237,25990,Pyrenees
+34239,20110,Alpine
+34241,20110,Alpine
+34243,20110,Alpine
+34245,20110,Alpine
+34247,20110,Alpine
+34249,20110,Alpine
+34251,20110,Alpine
+34253,20110,Alpine
+34255,20110,Alpine
+34257,26670,Towong
+34259,26670,Towong
+34261,26670,Towong
+34263,26670,Towong
+34265,24250,Mansfield
+34267,21010,Benalla
+34269,24250,Mansfield
+34271,21010,Benalla
+34273,22110,East Gippsland
+34275,22110,East Gippsland
+34277,22110,East Gippsland
+34279,24780,Mildura
+34281,24780,Mildura
+34283,24780,Mildura
+34285,24780,Mildura
+34287,24780,Mildura
+34289,24780,Mildura
+34291,24780,Mildura
+34295,26810,Wellington
+34297,22750,Greater Geelong
+34299,21180,Brimbank
+34301,22110,East Gippsland
+34303,21670,Central Goldfields
+34305,21670,Central Goldfields
+34307,22110,East Gippsland
+34309,26260,Southern Grampians
+34311,27260,Wyndham
+34313,25340,Mornington Peninsula
+34317,22110,East Gippsland
+34319,24900,Moira
+34323,,Unmatched location
+34325,26430,Strathbogie
+34327,22830,Greater Shepparton
+34329,22110,East Gippsland
+34331,22110,East Gippsland
+34333,22110,East Gippsland
+34335,22110,East Gippsland
+34337,22110,East Gippsland
+34339,22110,East Gippsland
+34341,22110,East Gippsland
+34343,22110,East Gippsland
+34345,25810,Northern Grampians
+34347,25810,Northern Grampians
+34355,26810,Wellington
+34357,26810,Wellington
+34359,26810,Wellington
+34361,26810,Wellington
+34363,26810,Wellington
+34365,24900,Moira
+34367,27070,Whittlesea
+34369,22110,East Gippsland
+34371,21010,Benalla
+34373,21010,Benalla
+34375,26700,Wangaratta
+34377,21010,Benalla
+34381,26980,Whitehorse
+34383,25150,Moorabool
+34385,21370,Campaspe
+34387,26170,South Gippsland
+34389,26170,South Gippsland
+34391,,Unmatched location
+34393,26170,South Gippsland
+34395,26170,South Gippsland
+34397,26170,South Gippsland
+34399,26170,South Gippsland
+34401,24780,Mildura
+34403,27630,Yarriambiack
+34405,24780,Mildura
+34407,27350,Yarra
+34411,27450,Yarra Ranges
+34413,25620,Murrindindi
+34415,24210,Manningham
+34419,24900,Moira
+34421,22750,Greater Geelong
+34423,22980,Hindmarsh
+34425,22980,Hindmarsh
+34427,25990,Pyrenees
+34429,25430,Mount Alexander
+34431,25620,Murrindindi
+34433,25620,Murrindindi
+34435,25620,Murrindindi
+34437,22110,East Gippsland
+34439,22110,East Gippsland
+34441,22110,East Gippsland
+34443,22110,East Gippsland
+34445,22110,East Gippsland
+34447,22110,East Gippsland
+34449,22110,East Gippsland
+34515,22910,Hepburn
+34557,25710,Nillumbik
+34559,21110,Boroondara
+34585,24970,Monash
+34599,24410,Maroondah
+34601,24410,Maroondah
+34609,23810,Latrobe (Vic.)
+34613,22170,Frankston
+34617,27260,Wyndham
+34619,22310,Glen Eira
+34621,27070,Whittlesea
+34623,27070,Whittlesea
+34625,27070,Whittlesea
+34695,24600,Melbourne
+34697,24600,Melbourne
+34699,24600,Melbourne
+34701,24600,Melbourne
+34705,21610,Casey
+34707,21610,Casey
+34719,20110,Alpine
+34721,20110,Alpine
+34783,26730,Warrnambool
+34833,20830,Baw Baw
+34839,21830,Corangamite
+34841,22910,Hepburn
+34847,25340,Mornington Peninsula
+34969,20740,Bass Coast
+34973,20740,Bass Coast
+34975,26730,Warrnambool
+34979,25340,Mornington Peninsula
+34981,26730,Warrnambool
+34985,21750,Colac Otway
+34987,25340,Mornington Peninsula
+34993,21830,Corangamite
+34997,25340,Mornington Peninsula
+35001,22750,Greater Geelong
+35003,22750,Greater Geelong
+35005,23810,Latrobe (Vic.)
+35007,22750,Greater Geelong
+35009,22750,Greater Geelong
+35011,22170,Frankston
+35015,22170,Frankston
+35017,22170,Frankston
+35023,21610,Casey
+35025,21610,Casey
+35029,22170,Frankston
+35031,25490,Moyne
+35033,21610,Casey
+35037,21450,Cardinia
+35039,21610,Casey
+35041,22410,Glenelg
+35045,23430,Kingston (Vic.)
+35049,21610,Casey
+35051,22750,Greater Geelong
+35053,22750,Greater Geelong
+35055,23430,Kingston (Vic.)
+35063,22670,Greater Dandenong
+35065,23430,Kingston (Vic.)
+35069,20910,Bayside (Vic.)
+35071,23430,Kingston (Vic.)
+35073,24970,Monash
+35077,27450,Yarra Ranges
+35079,24970,Monash
+35081,24970,Monash
+35087,24970,Monash
+35091,26350,Stonnington
+35095,21110,Boroondara
+35097,26350,Stonnington
+35099,26980,Whitehorse
+35101,26980,Whitehorse
+35103,26350,Stonnington
+35105,23110,Hobsons Bay
+35107,27260,Wyndham
+35109,25900,Port Phillip
+35113,27350,Yarra
+35115,26980,Whitehorse
+35117,24600,Melbourne
+35121,22110,East Gippsland
+35123,27350,Yarra
+35125,23110,Hobsons Bay
+35127,22110,East Gippsland
+35131,27450,Yarra Ranges
+35133,27350,Yarra
+35135,24600,Melbourne
+35137,21110,Boroondara
+35139,27450,Yarra Ranges
+35141,24210,Manningham
+35143,27350,Yarra
+35147,24330,Maribyrnong
+35155,24650,Melton
+35163,24650,Melton
+35165,20660,Banyule
+35171,21890,Darebin
+35177,21180,Brimbank
+35179,21890,Darebin
+35181,21890,Darebin
+35187,25710,Nillumbik
+35191,27070,Whittlesea
+35193,25990,Pyrenees
+35195,23270,Hume
+35197,25710,Nillumbik
+35201,23270,Hume
+35205,21180,Brimbank
+35207,20570,Ballarat
+35209,27070,Whittlesea
+35211,27070,Whittlesea
+35215,26260,Southern Grampians
+35217,23270,Hume
+35221,25150,Moorabool
+35223,23270,Hume
+35227,22410,Glenelg
+35235,20570,Ballarat
+35239,24850,Mitchell
+35241,24850,Mitchell
+35243,22910,Hepburn
+35247,21180,Brimbank
+35249,24130,Macedon Ranges
+35253,25810,Northern Grampians
+35257,24250,Mansfield
+35259,24850,Mitchell
+35263,25430,Mount Alexander
+35267,22620,Greater Bendigo
+35273,22620,Greater Bendigo
+35277,22620,Greater Bendigo
+35281,26430,Strathbogie
+35287,23190,Horsham
+35289,22620,Greater Bendigo
+35291,22620,Greater Bendigo
+35293,23190,Horsham
+35305,22620,Greater Bendigo
+35307,26700,Wangaratta
+35315,22830,Greater Shepparton
+35317,22830,Greater Shepparton
+35321,21270,Buloke
+35323,21370,Campaspe
+35325,21370,Campaspe
+35329,21270,Buloke
+35339,26670,Towong
+35349,27170,Wodonga
+35363,27630,Yarriambiack
+35365,24900,Moira
+35373,22250,Gannawarra
+35393,27630,Yarriambiack
+35401,26610,Swan Hill
+35419,26610,Swan Hill
+38461,26700,Wangaratta
+38463,21010,Benalla
+38465,25340,Mornington Peninsula
+38471,21110,Boroondara
+38475,26980,Whitehorse
+38477,23670,Knox
+38479,24970,Monash
+38481,24410,Maroondah
+38483,27450,Yarra Ranges
+38487,24970,Monash
+38507,22490,Golden Plains
+38513,23430,Kingston (Vic.)
+38515,23670,Knox
+38517,26730,Warrnambool
+38519,23430,Kingston (Vic.)
+38521,26730,Warrnambool
+38567,21110,Boroondara
+38569,21110,Boroondara
+38575,23110,Hobsons Bay
+38577,24210,Manningham
+38579,21180,Brimbank
+38581,22670,Greater Dandenong
+38583,21180,Brimbank
+38587,23430,Kingston (Vic.)
+38591,24410,Maroondah
+38597,20570,Ballarat
+38599,21670,Central Goldfields
+38603,20260,Ararat
+38609,21110,Boroondara
+38613,21890,Darebin
+38619,21370,Campaspe
+38623,22620,Greater Bendigo
+38625,22250,Gannawarra
+38629,26350,Stonnington
+38631,26350,Stonnington
+38633,22310,Glen Eira
+38639,23430,Kingston (Vic.)
+38643,23810,Latrobe (Vic.)
+38645,22110,East Gippsland
+38647,21610,Casey
+38651,23110,Hobsons Bay
+38657,26350,Stonnington
+38683,21610,Casey
+38715,25150,Moorabool
+38753,20110,Alpine
+38763,25710,Nillumbik
+38793,20830,Baw Baw
+38795,20830,Baw Baw
+38797,25340,Mornington Peninsula
+38807,22620,Greater Bendigo
+38809,22620,Greater Bendigo
+38813,22670,Greater Dandenong
+38815,22670,Greater Dandenong
+38845,26430,Strathbogie
+38847,22310,Glen Eira
+38851,22310,Glen Eira
+38855,22310,Glen Eira
+38857,22310,Glen Eira
+38859,22310,Glen Eira
+38863,22310,Glen Eira
+38869,23810,Latrobe (Vic.)
+38877,27070,Whittlesea
+38899,23670,Knox
+38905,22310,Glen Eira
+38913,21610,Casey
+38921,24970,Monash
+38923,24410,Maroondah
+38927,22750,Greater Geelong
+38933,21610,Casey
+38939,21450,Cardinia
+38941,23670,Knox
+38943,26490,Surf Coast
+38945,22910,Hepburn
+38949,25340,Mornington Peninsula
+38953,20830,Baw Baw
+38955,26980,Whitehorse
+38957,23670,Knox
+38959,26810,Wellington
+38969,26260,Southern Grampians
+38971,21610,Casey
+38973,25340,Mornington Peninsula
+38977,24210,Manningham
+38979,24650,Melton
+38985,25990,Pyrenees
+38987,24780,Mildura
+39107,25430,Mount Alexander
+39125,26980,Whitehorse
+39193,27070,Whittlesea
+39195,23670,Knox
+39197,27070,Whittlesea
+39199,21610,Casey
+39205,24700,Merri-bek
+39207,21610,Casey
+39209,26980,Whitehorse
+39469,24330,Maribyrnong
+39475,21610,Casey
+39555,26730,Warrnambool
+39557,26730,Warrnambool
+39559,26730,Warrnambool
+39561,26730,Warrnambool
+39573,20570,Ballarat
+39585,22110,East Gippsland
+39589,22110,East Gippsland
+39591,22110,East Gippsland
+39593,22110,East Gippsland
+39595,22110,East Gippsland
+39597,22110,East Gippsland
+39609,21110,Boroondara
+39613,26490,Surf Coast
+39623,21610,Casey
+39625,21610,Casey
+39645,22910,Hepburn
+39651,22910,Hepburn
+39653,22910,Hepburn
+39655,22910,Hepburn
+39657,22910,Hepburn
+39659,22910,Hepburn
+39661,22910,Hepburn
+39683,22170,Frankston
+39687,21450,Cardinia
+39693,23350,Indigo
+39707,25490,Moyne
+39715,27070,Whittlesea
+39717,27070,Whittlesea
+39721,27070,Whittlesea
+39755,24780,Mildura
+39775,23270,Hume
+39845,22670,Greater Dandenong
+39901,23350,Indigo
+39993,21180,Brimbank
+40003,21110,Boroondara
+40017,24600,Melbourne
+40061,24330,Maribyrnong
+40063,21610,Casey
+40075,22250,Gannawarra
+40093,24850,Mitchell
+40095,24600,Melbourne
+40097,24600,Melbourne
+40141,21110,Boroondara
+40145,24210,Manningham
+40147,24210,Manningham
+40149,24210,Manningham
+40151,24210,Manningham
+40153,24210,Manningham
+40155,25810,Northern Grampians
+40159,24210,Manningham
+40161,24210,Manningham
+40163,24210,Manningham
+40189,23940,Loddon
+40191,23940,Loddon
+40219,24600,Melbourne
+40223,24600,Melbourne
+40225,24600,Melbourne
+40227,24600,Melbourne
+40251,21110,Boroondara
+40267,24600,Melbourne
+40271,21110,Boroondara
+40347,23190,Horsham
+40349,23190,Horsham
+40351,23190,Horsham
+40353,23190,Horsham
+40355,23190,Horsham
+40371,26610,Swan Hill
+40373,21180,Brimbank
+40401,24600,Melbourne
+40403,21610,Casey
+40417,26490,Surf Coast
+40485,21180,Brimbank
+40497,24600,Melbourne
+40499,24330,Maribyrnong
+40501,23270,Hume
+40503,21110,Boroondara
+40505,23270,Hume
+40509,24700,Merri-bek
+40515,22620,Greater Bendigo
+40517,22620,Greater Bendigo
+40519,22620,Greater Bendigo
+40521,22620,Greater Bendigo
+40523,22620,Greater Bendigo
+40525,22620,Greater Bendigo
+40527,22620,Greater Bendigo
+40529,22620,Greater Bendigo
+40583,24600,Melbourne
+40599,26980,Whitehorse
+40609,24700,Merri-bek
+40611,24700,Merri-bek
+40613,24700,Merri-bek
+40615,24700,Merri-bek
+40617,24700,Merri-bek
+40619,24700,Merri-bek
+40621,24700,Merri-bek
+40629,21830,Corangamite
+40631,21750,Colac Otway
+40633,21010,Benalla
+40645,21890,Darebin
+40651,21890,Darebin
+40657,20260,Ararat
+40683,20830,Baw Baw
+40693,25900,Port Phillip
+40699,25900,Port Phillip
+40701,25900,Port Phillip
+40709,25900,Port Phillip
+40711,25900,Port Phillip
+40713,25900,Port Phillip
+40715,25900,Port Phillip
+40717,25900,Port Phillip
+40719,25900,Port Phillip
+40721,25900,Port Phillip
+40723,25900,Port Phillip
+40725,25900,Port Phillip
+40727,25900,Port Phillip
+40783,27070,Whittlesea
+40785,27070,Whittlesea
+40787,27070,Whittlesea
+40789,27070,Whittlesea
+40791,27070,Whittlesea
+40795,22670,Greater Dandenong
+40797,22670,Greater Dandenong
+40799,22670,Greater Dandenong
+40801,22670,Greater Dandenong
+40803,22670,Greater Dandenong
+40805,22670,Greater Dandenong
+40807,22670,Greater Dandenong
+40809,22670,Greater Dandenong
+40811,22670,Greater Dandenong
+40815,22670,Greater Dandenong
+40863,25060,Moonee Valley
+40875,23940,Loddon
+40879,23940,Loddon
+40881,23940,Loddon
+40883,23940,Loddon
+40885,23940,Loddon
+40891,20570,Ballarat
+40893,27630,Yarriambiack
+40901,22490,Golden Plains
+40929,23430,Kingston (Vic.)
+40931,23430,Kingston (Vic.)
+40935,24600,Melbourne
+40965,25990,Pyrenees
+40999,27450,Yarra Ranges
+41031,22830,Greater Shepparton
+41035,27350,Yarra
+41037,22830,Greater Shepparton
+41041,22830,Greater Shepparton
+41043,22830,Greater Shepparton
+41045,22830,Greater Shepparton
+41169,24600,Melbourne
+41171,24600,Melbourne
+41183,26260,Southern Grampians
+41205,20570,Ballarat
+41207,20570,Ballarat
+41209,20570,Ballarat
+41251,24900,Moira
+41255,26980,Whitehorse
+41257,21110,Boroondara
+41259,21110,Boroondara
+41453,20570,Ballarat
+41541,22750,Greater Geelong
+41663,20830,Baw Baw
+41689,21610,Casey
+41735,21110,Boroondara
+41741,21450,Cardinia
+41743,26260,Southern Grampians
+41745,26260,Southern Grampians
+41747,26260,Southern Grampians
+41779,22830,Greater Shepparton
+41819,21890,Darebin
+41829,26810,Wellington
+41833,26810,Wellington
+41835,26810,Wellington
+41837,26810,Wellington
+41841,26810,Wellington
+41843,26810,Wellington
+41845,26810,Wellington
+41847,26810,Wellington
+41851,26810,Wellington
+41853,26810,Wellington
+41875,24330,Maribyrnong
+41901,25900,Port Phillip
+41927,25620,Murrindindi
+41929,23270,Hume
+41931,26610,Swan Hill
+41933,26610,Swan Hill
+41939,26610,Swan Hill
+41941,26610,Swan Hill
+41945,26610,Swan Hill
+41955,25620,Murrindindi
+41957,25620,Murrindindi
+41959,25620,Murrindindi
+41961,25620,Murrindindi
+41963,25620,Murrindindi
+41971,27070,Whittlesea
+41989,25060,Moonee Valley
+41995,26700,Wangaratta
+42035,21450,Cardinia
+42043,27260,Wyndham
+42113,25620,Murrindindi
+42115,25620,Murrindindi
+42117,25620,Murrindindi
+42119,25620,Murrindindi
+42121,25620,Murrindindi
+42123,25620,Murrindindi
+42139,25620,Murrindindi
+42141,25620,Murrindindi
+42167,22750,Greater Geelong
+42169,22750,Greater Geelong
+42171,22750,Greater Geelong
+42185,24600,Melbourne
+42275,25340,Mornington Peninsula
+42277,25340,Mornington Peninsula
+42279,21450,Cardinia
+42291,26430,Strathbogie
+42375,26810,Wellington
+42381,21750,Colac Otway
+42383,22410,Glenelg
+42385,22750,Greater Geelong
+42395,22750,Greater Geelong
+42397,20830,Baw Baw
+42399,22410,Glenelg
+42401,23430,Kingston (Vic.)
+42403,21830,Corangamite
+42409,27450,Yarra Ranges
+42423,23270,Hume
+42435,20570,Ballarat
+42439,25990,Pyrenees
+42469,24130,Macedon Ranges
+42471,25620,Murrindindi
+42475,25810,Northern Grampians
+42477,25990,Pyrenees
+42479,25430,Mount Alexander
+42481,25810,Northern Grampians
+42483,25430,Mount Alexander
+42485,20110,Alpine
+42487,22830,Greater Shepparton
+42489,20110,Alpine
+42491,22980,Hindmarsh
+42493,21370,Campaspe
+42505,26610,Swan Hill
+42777,22110,East Gippsland
+43025,27630,Yarriambiack
+43029,27630,Yarriambiack
+43031,27630,Yarriambiack
+43191,24600,Melbourne
+43193,24600,Melbourne
+43195,24600,Melbourne
+43197,24600,Melbourne
+43201,24600,Melbourne
+43203,24600,Melbourne
+43239,,Unmatched location
+43497,27450,Yarra Ranges
+43499,25340,Mornington Peninsula
+43655,21010,Benalla
+43787,20830,Baw Baw
+43813,21010,Benalla
+43885,20570,Ballarat
+43887,25340,Mornington Peninsula
+43931,21610,Casey
+43975,23190,Horsham
+44057,25060,Moonee Valley
+44071,27070,Whittlesea
+44073,27070,Whittlesea
+44077,27070,Whittlesea
+44089,27070,Whittlesea
+44109,24900,Moira
+44115,24900,Moira
+44117,24900,Moira
+44171,26610,Swan Hill
+44173,26610,Swan Hill
+44179,22250,Gannawarra
+44181,22250,Gannawarra
+44183,22250,Gannawarra
+44185,22250,Gannawarra
+44191,22110,East Gippsland
+44193,22110,East Gippsland
+44335,25900,Port Phillip
+44437,24700,Merri-bek
+44443,24700,Merri-bek
+44521,24410,Maroondah
+44523,24330,Maribyrnong
+44525,24410,Maroondah
+44537,23670,Knox
+44539,23670,Knox
+44541,27350,Yarra
+44559,23670,Knox
+44561,23270,Hume
+44563,22750,Greater Geelong
+44565,24700,Merri-bek
+44567,21450,Cardinia
+44569,21450,Cardinia
+44571,23270,Hume
+44573,21180,Brimbank
+44575,27070,Whittlesea
+44577,24850,Mitchell
+44579,23670,Knox
+44593,24650,Melton
+44595,24970,Monash
+44627,27170,Wodonga
+44641,22170,Frankston
+44663,21890,Darebin
+44665,21450,Cardinia
+44677,21830,Corangamite
+44689,24130,Macedon Ranges
+44713,21830,Corangamite
+44755,22670,Greater Dandenong
+44797,27260,Wyndham
+44801,22620,Greater Bendigo
+44825,26170,South Gippsland
+44827,24330,Maribyrnong
+44833,26170,South Gippsland
+44875,24970,Monash
+44877,20740,Bass Coast
+44905,26170,South Gippsland
+44913,26170,South Gippsland
+44977,23810,Latrobe (Vic.)
+44989,26170,South Gippsland
+44999,22830,Greater Shepparton
+45007,24970,Monash
+45015,22750,Greater Geelong
+45021,24410,Maroondah
+45041,23110,Hobsons Bay
+45043,23110,Hobsons Bay
+45065,21610,Casey
+45071,25490,Moyne
+45089,24650,Melton
+45095,26980,Whitehorse
+45101,23670,Knox
+45131,22830,Greater Shepparton
+45147,26670,Towong
+45165,27450,Yarra Ranges
+45173,26170,South Gippsland
+45209,22310,Glen Eira
+45269,24330,Maribyrnong
+45285,20740,Bass Coast
+45289,24130,Macedon Ranges
+45293,26810,Wellington
+45299,27260,Wyndham
+45305,20570,Ballarat
+45307,20570,Ballarat
+45309,20570,Ballarat
+45311,20570,Ballarat
+45331,26810,Wellington
+45333,22110,East Gippsland
+45387,22830,Greater Shepparton
+45419,23810,Latrobe (Vic.)
+45445,25900,Port Phillip
+45449,23110,Hobsons Bay
+45455,21750,Colac Otway
+45463,25060,Moonee Valley
+45469,25060,Moonee Valley
+45473,22490,Golden Plains
+45475,25340,Mornington Peninsula
+45477,24410,Maroondah
+45503,21610,Casey
+45549,25620,Murrindindi
+45587,22170,Frankston
+45605,21270,Buloke
+45609,23430,Kingston (Vic.)
+45611,23430,Kingston (Vic.)
+45639,24700,Merri-bek
+45691,26670,Towong
+45695,23270,Hume
+45697,21610,Casey
+45703,22670,Greater Dandenong
+45705,22670,Greater Dandenong
+45707,20830,Baw Baw
+45715,21180,Brimbank
+45719,25710,Nillumbik
+45727,22670,Greater Dandenong
+45753,25620,Murrindindi
+45759,25710,Nillumbik
+45767,27070,Whittlesea
+45795,22170,Frankston
+45811,22750,Greater Geelong
+45813,22750,Greater Geelong
+45821,24970,Monash
+45831,22620,Greater Bendigo
+45847,23270,Hume
+45861,21110,Boroondara
+45863,27450,Yarra Ranges
+45871,22620,Greater Bendigo
+45877,21180,Brimbank
+45883,24970,Monash
+45897,23270,Hume
+45951,22670,Greater Dandenong
+46013,27450,Yarra Ranges
+46045,27450,Yarra Ranges
+46047,24410,Maroondah
+46089,20830,Baw Baw
+46097,20830,Baw Baw
+46121,24250,Mansfield
+46161,24780,Mildura
+46225,24970,Monash
+46253,22750,Greater Geelong
+46263,22750,Greater Geelong
+46265,24700,Merri-bek
+46287,20110,Alpine
+46305,22410,Glenelg
+46315,22410,Glenelg
+46317,22410,Glenelg
+46351,21830,Corangamite
+46355,22670,Greater Dandenong
+46357,22670,Greater Dandenong
+46389,22670,Greater Dandenong
+46391,22670,Greater Dandenong
+46393,27070,Whittlesea
+46395,27070,Whittlesea
+46441,26430,Strathbogie
+46443,26430,Strathbogie
+46445,23670,Knox
+46529,20660,Banyule
+46573,22980,Hindmarsh
+46575,22670,Greater Dandenong
+46613,22110,East Gippsland
+46617,22110,East Gippsland
+46619,22110,East Gippsland
+46621,22110,East Gippsland
+46625,22110,East Gippsland
+46629,22110,East Gippsland
+46631,22110,East Gippsland
+46633,22110,East Gippsland
+46635,22110,East Gippsland
+46637,22110,East Gippsland
+46639,22110,East Gippsland
+46641,22110,East Gippsland
+46645,22110,East Gippsland
+46647,22110,East Gippsland
+46649,22110,East Gippsland
+46651,22110,East Gippsland
+46653,22110,East Gippsland
+46655,22110,East Gippsland
+46657,22110,East Gippsland
+46661,22110,East Gippsland
+46667,22110,East Gippsland
+46669,22110,East Gippsland
+46671,22110,East Gippsland
+46673,22110,East Gippsland
+46675,22110,East Gippsland
+46677,22110,East Gippsland
+46679,22110,East Gippsland
+46681,22110,East Gippsland
+46683,22110,East Gippsland
+46687,22110,East Gippsland
+46691,22110,East Gippsland
+46697,22110,East Gippsland
+46705,22110,East Gippsland
+46709,22110,East Gippsland
+46711,22110,East Gippsland
+46713,22110,East Gippsland
+46715,22110,East Gippsland
+46717,22110,East Gippsland
+46719,22110,East Gippsland
+46721,22110,East Gippsland
+46723,22110,East Gippsland
+46725,22110,East Gippsland
+46727,22110,East Gippsland
+46729,22110,East Gippsland
+46731,22110,East Gippsland
+46733,22110,East Gippsland
+46735,22110,East Gippsland
+46737,22110,East Gippsland
+46741,22110,East Gippsland
+46751,27450,Yarra Ranges
+46771,24700,Merri-bek
+46817,23670,Knox
+46885,21890,Darebin
+47001,23190,Horsham
+47121,24650,Melton
+47437,24700,Merri-bek
+47457,22620,Greater Bendigo
+47465,21890,Darebin
+47473,24410,Maroondah
+47483,21370,Campaspe
+47489,24130,Macedon Ranges
+47497,23670,Knox
+47509,20910,Bayside (Vic.)
+47517,22170,Frankston
+47521,24850,Mitchell
+47559,25900,Port Phillip
+47571,26350,Stonnington
+47609,21180,Brimbank
+47627,27260,Wyndham
+47631,21180,Brimbank
+47643,23810,Latrobe (Vic.)
+47667,23670,Knox
+47679,27260,Wyndham
+47723,27170,Wodonga
+47725,27170,Wodonga
+47727,27070,Whittlesea
+47859,25710,Nillumbik
+47861,25710,Nillumbik
+47925,23270,Hume
+47969,25150,Moorabool
+47981,20570,Ballarat
+47983,20570,Ballarat
+48011,23810,Latrobe (Vic.)
+48481,22250,Gannawarra
+48483,22250,Gannawarra
+48635,22310,Glen Eira
+48879,24700,Merri-bek
+48881,24700,Merri-bek
+48921,21890,Darebin
+48923,21890,Darebin
+48925,22750,Greater Geelong
+48975,20260,Ararat
+48977,20260,Ararat
+49161,26810,Wellington
+49275,27450,Yarra Ranges
+49277,27450,Yarra Ranges
+49279,27450,Yarra Ranges
+49285,22250,Gannawarra
+49333,22170,Frankston
+49335,22170,Frankston
+49337,22170,Frankston
+49339,22170,Frankston
+49399,27350,Yarra
+49479,24600,Melbourne
+49715,23270,Hume
+49899,25340,Mornington Peninsula
+49923,22490,Golden Plains
+50121,22750,Greater Geelong
+50125,22750,Greater Geelong
+50677,24600,Melbourne
+50759,23430,Kingston (Vic.)
+50761,23430,Kingston (Vic.)
+50767,24900,Moira
+50769,24900,Moira
+50851,20570,Ballarat
+50899,23110,Hobsons Bay
+50991,20570,Ballarat
+50993,20570,Ballarat
+51053,24600,Melbourne
+51097,27450,Yarra Ranges
+51107,23670,Knox
+51171,25340,Mornington Peninsula
+51201,23270,Hume
+51251,22750,Greater Geelong
+51285,27630,Yarriambiack
+51295,22310,Glen Eira
+51311,27170,Wodonga
+51317,24650,Melton
+51327,20570,Ballarat
+51357,23270,Hume
+51377,21450,Cardinia
+51379,21450,Cardinia
+51389,21450,Cardinia
+51395,20740,Bass Coast
+51397,20740,Bass Coast
+51399,20740,Bass Coast
+51401,20740,Bass Coast
+51407,26980,Whitehorse
+51431,26610,Swan Hill
+51455,21450,Cardinia
+51463,23810,Latrobe (Vic.)
+51475,26080,Queenscliffe
+51515,24700,Merri-bek
+51993,25490,Moyne
+52011,26170,South Gippsland
+52157,26350,Stonnington
+52171,23810,Latrobe (Vic.)
+52173,23810,Latrobe (Vic.)
+52175,23810,Latrobe (Vic.)
+52181,23810,Latrobe (Vic.)
+52183,23810,Latrobe (Vic.)
+52193,26980,Whitehorse
+52195,26980,Whitehorse
+52229,22310,Glen Eira
+52237,23810,Latrobe (Vic.)
+52247,22750,Greater Geelong
+52249,22750,Greater Geelong
+52251,22750,Greater Geelong
+52253,22620,Greater Bendigo
+52255,22750,Greater Geelong
+52257,20570,Ballarat
+52259,22620,Greater Bendigo
+52261,22750,Greater Geelong
+52263,27260,Wyndham
+52265,22750,Greater Geelong
+52267,22750,Greater Geelong
+52269,27070,Whittlesea
+52271,26700,Wangaratta
+52273,21610,Casey
+52275,21610,Casey
+52279,22110,East Gippsland
+52281,24780,Mildura
+52283,27070,Whittlesea
+52285,27170,Wodonga
+52287,22830,Greater Shepparton
+52289,22750,Greater Geelong
+52355,24130,Macedon Ranges
+52357,27260,Wyndham
+52645,27170,Wodonga
+52647,27170,Wodonga
+52649,27170,Wodonga
+52749,20910,Bayside (Vic.)
+52751,20910,Bayside (Vic.)
+52753,20910,Bayside (Vic.)
+52757,20910,Bayside (Vic.)
+52763,20910,Bayside (Vic.)
+52785,24780,Mildura
+52789,22750,Greater Geelong
+52793,24900,Moira
+52795,24900,Moira
+52797,24900,Moira
+52815,22750,Greater Geelong
+52817,22750,Greater Geelong
+52861,24210,Manningham
+52873,26700,Wangaratta
+52907,23940,Loddon
+52909,23940,Loddon
+52925,25990,Pyrenees
+52957,22310,Glen Eira
+52959,22310,Glen Eira
+52961,22310,Glen Eira
+52963,20570,Ballarat
+52969,20570,Ballarat
+52987,24850,Mitchell
+52989,22830,Greater Shepparton
+52991,26430,Strathbogie
+52993,20110,Alpine
+53105,22750,Greater Geelong
+53107,22750,Greater Geelong
+53109,22750,Greater Geelong
+53111,22750,Greater Geelong
+53113,22750,Greater Geelong
+53115,22750,Greater Geelong
+53117,22750,Greater Geelong
+53119,22750,Greater Geelong
+53233,23810,Latrobe (Vic.)
+53235,23810,Latrobe (Vic.)
+53261,21110,Boroondara
+53275,25490,Moyne
+53343,21010,Benalla
+53345,21010,Benalla
+53347,26700,Wangaratta
+53349,26700,Wangaratta
+53351,26700,Wangaratta
+53353,26700,Wangaratta
+53355,23350,Indigo
+53357,23350,Indigo
+53359,26700,Wangaratta
+53361,26700,Wangaratta
+53387,23810,Latrobe (Vic.)
+53439,27350,Yarra
+53441,24410,Maroondah
+53449,20740,Bass Coast
+53467,23270,Hume
+53469,23270,Hume
+53471,23270,Hume
+53473,23270,Hume
+53475,23270,Hume
+53477,23270,Hume
+53509,27350,Yarra
+53513,22750,Greater Geelong
+53515,22750,Greater Geelong
+53517,22750,Greater Geelong
+53519,22750,Greater Geelong
+53571,27450,Yarra Ranges
+53585,22310,Glen Eira
+53587,22310,Glen Eira
+53589,22310,Glen Eira
+53591,22310,Glen Eira
+53593,22310,Glen Eira
+53595,22310,Glen Eira
+53597,21610,Casey
+53599,21610,Casey
+53603,21610,Casey
+53605,21610,Casey
+53607,21610,Casey
+53649,27350,Yarra
+53659,24970,Monash
+53661,26980,Whitehorse
+53675,26490,Surf Coast
+53679,26490,Surf Coast
+53683,26490,Surf Coast
+53685,26490,Surf Coast
+53687,26490,Surf Coast
+53689,26490,Surf Coast
+53781,21450,Cardinia
+53787,24600,Melbourne
+53789,24600,Melbourne
+53805,24650,Melton
+53807,24650,Melton
+53809,24650,Melton
+53819,24650,Melton
+53821,24650,Melton
+53835,25990,Pyrenees
+53841,21450,Cardinia
+53843,21450,Cardinia
+53845,21450,Cardinia
+53847,21450,Cardinia
+53849,21450,Cardinia
+53925,27260,Wyndham
+53927,27260,Wyndham
+53929,27260,Wyndham
+53931,27260,Wyndham
+53933,27260,Wyndham
+54035,21670,Central Goldfields
+54041,22310,Glen Eira
+54051,22750,Greater Geelong
+54057,26980,Whitehorse
+54073,26810,Wellington
+54085,24780,Mildura
+54087,26700,Wangaratta
+54089,24600,Melbourne
+54095,22750,Greater Geelong
+54105,25060,Moonee Valley
+54111,24600,Melbourne
+54145,21370,Campaspe
+54147,21370,Campaspe
+54149,21370,Campaspe
+54151,21370,Campaspe
+54153,21370,Campaspe
+54157,24700,Merri-bek
+54195,25340,Mornington Peninsula
+54239,21110,Boroondara
+54245,21450,Cardinia
+54269,23270,Hume
+54271,23270,Hume
+54273,26890,West Wimmera
+54275,26890,West Wimmera
+54279,21180,Brimbank
+54281,24130,Macedon Ranges
+54287,21450,Cardinia
+54289,23350,Indigo
+54309,26810,Wellington
+54311,23810,Latrobe (Vic.)
+54317,22310,Glen Eira
+54319,22310,Glen Eira
+54337,23940,Loddon
+54355,22110,East Gippsland
+54371,24410,Maroondah
+54385,24900,Moira
+54439,24850,Mitchell
+54447,27260,Wyndham
+54451,26490,Surf Coast
+54499,22750,Greater Geelong
+54501,22750,Greater Geelong
+54515,23270,Hume
+54553,26260,Southern Grampians
+54563,22490,Golden Plains
+54565,22490,Golden Plains
+54571,23190,Horsham
+54575,22490,Golden Plains
+54597,27450,Yarra Ranges
+54689,27450,Yarra Ranges
+54723,26430,Strathbogie
+54753,21750,Colac Otway
+54755,22410,Glenelg
+54757,22410,Glenelg
+54759,21750,Colac Otway
+54761,22750,Greater Geelong
+54763,22750,Greater Geelong
+54765,22980,Hindmarsh
+54767,22980,Hindmarsh
+54769,22980,Hindmarsh
+54771,26890,West Wimmera
+54773,26260,Southern Grampians
+54775,25810,Northern Grampians
+54777,20260,Ararat
+54779,23190,Horsham
+54781,25810,Northern Grampians
+54785,25150,Moorabool
+54787,20570,Ballarat
+54789,29399,Unincorporated Vic
+54791,27450,Yarra Ranges
+54793,25620,Murrindindi
+54795,26430,Strathbogie
+54797,29399,Unincorporated Vic
+54799,25620,Murrindindi
+54801,21010,Benalla
+54805,21010,Benalla
+54807,26430,Strathbogie
+54811,22110,East Gippsland
+54813,22110,East Gippsland
+54815,20830,Baw Baw
+54821,21450,Cardinia
+54823,24850,Mitchell
+54827,24130,Macedon Ranges
+54829,24130,Macedon Ranges
+54831,21370,Campaspe
+54833,22830,Greater Shepparton
+54835,26610,Swan Hill
+54839,21270,Buloke
+54841,24130,Macedon Ranges
+54843,27630,Yarriambiack
+54845,24780,Mildura
+54847,21270,Buloke
+54849,21270,Buloke
+54891,24850,Mitchell
+54903,24600,Melbourne
+54913,26610,Swan Hill
+54973,24700,Merri-bek
+54975,24700,Merri-bek
+54977,24700,Merri-bek
+54979,24700,Merri-bek
+54981,24700,Merri-bek
+54983,24700,Merri-bek
+54985,24700,Merri-bek
+54987,24700,Merri-bek
+55055,25060,Moonee Valley
+55057,21610,Casey
+55059,24650,Melton
+55061,22750,Greater Geelong
+55063,24210,Manningham
+55065,21610,Casey
+55067,21180,Brimbank
+55071,25060,Moonee Valley
+55073,25340,Mornington Peninsula
+55075,24970,Monash
+55101,27260,Wyndham
+55103,27260,Wyndham
+55105,27170,Wodonga
+55151,22750,Greater Geelong
+55153,26730,Warrnambool
+55157,24600,Melbourne
+55161,21670,Central Goldfields
+55193,24600,Melbourne
+55205,23110,Hobsons Bay
+55223,24700,Merri-bek
+55225,24700,Merri-bek
+55243,27070,Whittlesea
+55245,27070,Whittlesea
+55267,25490,Moyne
+55281,21890,Darebin
+55334,26980,Whitehorse
+55340,22620,Greater Bendigo
+55341,26730,Warrnambool
+55352,24410,Maroondah
+55353,24410,Maroondah
+55367,22750,Greater Geelong
+55373,26700,Wangaratta
+55376,24700,Merri-bek
+55406,24130,Macedon Ranges
+55411,22910,Hepburn
+55414,22910,Hepburn
+55419,22910,Hepburn
+55423,27350,Yarra
+55438,22750,Greater Geelong
+55443,20570,Ballarat
+55465,23350,Indigo
+55466,26430,Strathbogie
+55467,22250,Gannawarra
+55481,21110,Boroondara
+55482,25710,Nillumbik
+55483,25710,Nillumbik
+55484,25710,Nillumbik
+55485,29399,Unincorporated Vic
+55487,25620,Murrindindi
+55488,20830,Baw Baw
+55489,27450,Yarra Ranges
+55490,27450,Yarra Ranges
+55501,25340,Mornington Peninsula
+55504,27450,Yarra Ranges
+55511,23810,Latrobe (Vic.)
+55535,24700,Merri-bek
+55536,24700,Merri-bek
+55542,24970,Monash
+55543,22110,East Gippsland
+55548,22910,Hepburn
+55550,24970,Monash
+55554,21890,Darebin
+55562,26730,Warrnambool
+55579,21450,Cardinia
+55580,21450,Cardinia
+55581,21450,Cardinia
+55582,21450,Cardinia
+55584,21450,Cardinia
+55585,21450,Cardinia
+55586,27450,Yarra Ranges
+55588,21450,Cardinia
+55591,21110,Boroondara
+55620,26170,South Gippsland
+55621,20110,Alpine
+55634,20740,Bass Coast
+55638,26700,Wangaratta
+55639,26700,Wangaratta
+55640,26700,Wangaratta
+55648,26700,Wangaratta
+55649,26700,Wangaratta
+55650,26700,Wangaratta
+55651,26700,Wangaratta
+55652,26700,Wangaratta
+55653,21010,Benalla
+55658,26670,Towong
+55659,24330,Maribyrnong
+55662,27450,Yarra Ranges
+55664,20740,Bass Coast
+55673,24700,Merri-bek
+55677,23270,Hume
+55679,21830,Corangamite
+55683,23350,Indigo
+55684,26170,South Gippsland
+55696,21010,Benalla
+55716,21610,Casey
+55717,21610,Casey
+55719,22750,Greater Geelong
+55721,22110,East Gippsland
+55722,21110,Boroondara
+55731,23190,Horsham
+55735,27450,Yarra Ranges
+55752,26170,South Gippsland
+55757,22410,Glenelg
+55761,24850,Mitchell
+55765,23350,Indigo
+55766,23350,Indigo
+55767,23350,Indigo
+55768,21750,Colac Otway
+55769,21750,Colac Otway
+55770,22110,East Gippsland
+55783,27630,Yarriambiack
+55789,20740,Bass Coast
+55803,20660,Banyule
+55827,22750,Greater Geelong
+55840,21450,Cardinia
+55842,24600,Melbourne
+55843,24600,Melbourne
+55844,24600,Melbourne
+55845,24650,Melton
+55846,27260,Wyndham
+55847,27450,Yarra Ranges
+55863,27070,Whittlesea
+55864,27070,Whittlesea
+55865,22910,Hepburn
+55866,21750,Colac Otway
+55868,25150,Moorabool
+55874,25150,Moorabool
+55880,22750,Greater Geelong
+55887,21750,Colac Otway
+55893,25490,Moyne
+55894,26700,Wangaratta
+55895,26700,Wangaratta
+55927,21750,Colac Otway
+55929,26810,Wellington
+55952,20260,Ararat
+55954,22750,Greater Geelong
+55955,22750,Greater Geelong
+55957,22750,Greater Geelong
+55958,22750,Greater Geelong
+55960,22750,Greater Geelong
+55963,21750,Colac Otway
+55965,22110,East Gippsland
+55967,27260,Wyndham
+55968,26170,South Gippsland
+55975,21830,Corangamite
+55976,22110,East Gippsland
+55982,22750,Greater Geelong
+55985,22750,Greater Geelong
+55986,22750,Greater Geelong
+55988,23190,Horsham
+55996,27070,Whittlesea
+55997,22750,Greater Geelong
+55999,22750,Greater Geelong
+56000,21830,Corangamite
+56007,22750,Greater Geelong
+56010,22750,Greater Geelong
+56011,22750,Greater Geelong
+56016,26810,Wellington
+56029,26670,Towong
+56032,26490,Surf Coast
+56040,22980,Hindmarsh
+56045,25620,Murrindindi
+56069,22830,Greater Shepparton
+56071,22750,Greater Geelong
+56088,26700,Wangaratta
+56089,26730,Warrnambool
+56096,21750,Colac Otway
+56097,22620,Greater Bendigo
+56099,24780,Mildura
+56116,27170,Wodonga
+56118,29399,Unincorporated Vic
+56120,24130,Macedon Ranges
+56125,25710,Nillumbik
+56127,27450,Yarra Ranges
+56139,25620,Murrindindi
+56144,26730,Warrnambool
+56153,22110,East Gippsland
+56164,24900,Moira
+56167,21370,Campaspe
+56184,26490,Surf Coast
+56194,21890,Darebin
+56196,26700,Wangaratta
+56216,26430,Strathbogie
+56224,22250,Gannawarra
+56233,21830,Corangamite
+56237,25490,Moyne
+56243,21370,Campaspe
+56256,21890,Darebin
+56257,22620,Greater Bendigo
+56259,22620,Greater Bendigo
+56262,22620,Greater Bendigo
+56280,21110,Boroondara
+56289,24130,Macedon Ranges
+56290,24130,Macedon Ranges
+56294,22620,Greater Bendigo
+56296,24130,Macedon Ranges
+56298,24130,Macedon Ranges
+56300,24130,Macedon Ranges
+56303,24130,Macedon Ranges
+56305,24130,Macedon Ranges
+56308,22830,Greater Shepparton
+56313,21610,Casey
+56315,25490,Moyne
+56318,26730,Warrnambool
+56327,20570,Ballarat
+56349,26430,Strathbogie
+56360,22830,Greater Shepparton
+56373,20740,Bass Coast
+56385,24250,Mansfield
+56389,26700,Wangaratta
+56393,20570,Ballarat
+56397,20830,Baw Baw
+56402,21010,Benalla
+56426,25430,Mount Alexander
+56436,27070,Whittlesea
+56439,26350,Stonnington
+56440,23430,Kingston (Vic.)
+56441,22110,East Gippsland
+56444,20830,Baw Baw
+56457,26700,Wangaratta
+56464,26980,Whitehorse
+56485,27450,Yarra Ranges
+56486,25620,Murrindindi
+56491,25430,Mount Alexander
+56493,26170,South Gippsland
+56494,26170,South Gippsland
+56495,25620,Murrindindi
+56499,25900,Port Phillip
+56641,25810,Northern Grampians
+56649,22620,Greater Bendigo
+56681,26350,Stonnington
+56732,25340,Mornington Peninsula
+56773,26170,South Gippsland
+56796,21010,Benalla
+56801,22250,Gannawarra
+56826,20570,Ballarat
+56879,26170,South Gippsland
+56910,24130,Macedon Ranges
+56941,22750,Greater Geelong
+56942,22750,Greater Geelong
+56943,20740,Bass Coast
+56944,22750,Greater Geelong
+56945,22750,Greater Geelong
+56946,22750,Greater Geelong
+56949,21270,Buloke
+56955,22620,Greater Bendigo
+56956,25620,Murrindindi
+56957,25340,Mornington Peninsula
+56958,25340,Mornington Peninsula
+56959,24250,Mansfield
+56960,24250,Mansfield
+56961,25810,Northern Grampians
+56962,25810,Northern Grampians
+56964,25810,Northern Grampians
+56965,25810,Northern Grampians
+56966,25810,Northern Grampians
+56967,25810,Northern Grampians
+56968,25810,Northern Grampians
+56969,25810,Northern Grampians
+56970,25810,Northern Grampians
+56979,25340,Mornington Peninsula
+56984,25810,Northern Grampians
+56985,25810,Northern Grampians
+56987,25810,Northern Grampians
+56988,20260,Ararat
+56989,20260,Ararat
+56991,26490,Surf Coast
+56992,26490,Surf Coast
+56993,22620,Greater Bendigo
+56994,26490,Surf Coast
+56995,21750,Colac Otway
+56996,26700,Wangaratta
+56997,26700,Wangaratta
+56998,22110,East Gippsland
+56999,24970,Monash
+57000,21750,Colac Otway
+57001,24250,Mansfield
+57002,27450,Yarra Ranges
+57003,20110,Alpine
+57004,25900,Port Phillip
+57005,25900,Port Phillip
+57007,27450,Yarra Ranges
+57008,27450,Yarra Ranges
+57028,23110,Hobsons Bay
+57030,27260,Wyndham
+57031,27260,Wyndham
+57032,27260,Wyndham
+57034,27260,Wyndham
+57035,23430,Kingston (Vic.)
+57036,27450,Yarra Ranges
+57037,21180,Brimbank
+57039,22110,East Gippsland
+57040,22110,East Gippsland
+57041,26170,South Gippsland
+57042,26170,South Gippsland
+57043,26170,South Gippsland
+57044,26170,South Gippsland
+57045,26170,South Gippsland
+57046,26170,South Gippsland
+57047,26170,South Gippsland
+57049,21750,Colac Otway
+57050,21750,Colac Otway
+57051,22110,East Gippsland
+57052,22750,Greater Geelong
+57055,21750,Colac Otway
+57056,24210,Manningham
+57058,25620,Murrindindi
+57060,25620,Murrindindi
+57064,22980,Hindmarsh
+57066,27260,Wyndham
+57067,22980,Hindmarsh
+57070,22980,Hindmarsh
+57071,25150,Moorabool
+57074,20830,Baw Baw
+57077,22620,Greater Bendigo
+57080,25490,Moyne
+57081,22750,Greater Geelong
+57084,22750,Greater Geelong
+57085,22110,East Gippsland
+57087,26260,Southern Grampians
+57088,25810,Northern Grampians
+57089,22750,Greater Geelong
+57090,22110,East Gippsland
+57094,25990,Pyrenees
+57095,21180,Brimbank
+57097,21180,Brimbank
+57098,20110,Alpine
+57099,24780,Mildura
+57100,24780,Mildura
+57101,20110,Alpine
+57102,22410,Glenelg
+57103,25340,Mornington Peninsula
+57104,25340,Mornington Peninsula
+57105,27630,Yarriambiack
+57106,24600,Melbourne
+57107,25710,Nillumbik
+57108,24600,Melbourne
+57109,26810,Wellington
+57110,22410,Glenelg
+57111,25150,Moorabool
+57112,22410,Glenelg
+57113,21750,Colac Otway
+57114,24130,Macedon Ranges
+57115,26490,Surf Coast
+57117,21110,Boroondara
+57119,21110,Boroondara
+57131,25340,Mornington Peninsula
+57164,24900,Moira
+57182,20110,Alpine
+57195,21450,Cardinia
+57206,23810,Latrobe (Vic.)
+57207,26490,Surf Coast
+57208,24410,Maroondah
+57210,24600,Melbourne
+57211,23430,Kingston (Vic.)
+57212,25900,Port Phillip
+57213,20830,Baw Baw
+57215,20830,Baw Baw
+57217,20830,Baw Baw
+57219,27070,Whittlesea
+57220,27070,Whittlesea
+57221,27070,Whittlesea
+57222,27070,Whittlesea
+57223,27070,Whittlesea
+57224,27070,Whittlesea
+57225,27070,Whittlesea
+57226,27070,Whittlesea
+57227,27070,Whittlesea
+57228,27070,Whittlesea
+57229,27070,Whittlesea
+57230,27070,Whittlesea
+57231,27070,Whittlesea
+57232,27070,Whittlesea
+57233,27070,Whittlesea
+57234,27070,Whittlesea
+57235,27070,Whittlesea
+57236,27070,Whittlesea
+57237,27070,Whittlesea
+57238,27070,Whittlesea
+57239,27070,Whittlesea
+57240,27070,Whittlesea
+57241,27070,Whittlesea
+57242,27070,Whittlesea
+57243,27070,Whittlesea
+57244,27070,Whittlesea
+57245,23270,Hume
+57246,23270,Hume
+57247,23270,Hume
+57248,23270,Hume
+57249,27070,Whittlesea
+57251,27070,Whittlesea
+57252,21890,Darebin
+57253,21890,Darebin
+57254,21890,Darebin
+57255,21890,Darebin
+57256,27070,Whittlesea
+57257,27070,Whittlesea
+57258,27070,Whittlesea
+57262,27070,Whittlesea
+57263,27070,Whittlesea
+57264,27070,Whittlesea
+57265,27070,Whittlesea
+57266,27070,Whittlesea
+57267,27070,Whittlesea
+57499,20260,Ararat
+57500,25810,Northern Grampians
+57921,25620,Murrindindi
+57922,20260,Ararat
+57923,25990,Pyrenees
+57924,20570,Ballarat
+57925,25990,Pyrenees
+57926,23350,Indigo
+57927,21270,Buloke
+57928,23940,Loddon
+57930,22110,East Gippsland
+57931,21370,Campaspe
+57932,22110,East Gippsland
+57933,23350,Indigo
+57934,22910,Hepburn
+57935,21830,Corangamite
+57936,21750,Colac Otway
+57937,26260,Southern Grampians
+57938,21370,Campaspe
+57939,24780,Mildura
+57940,20110,Alpine
+57941,20110,Alpine
+57942,21270,Buloke
+57943,21270,Buloke
+57944,26260,Southern Grampians
+57945,22110,East Gippsland
+57946,21370,Campaspe
+57947,26890,West Wimmera
+57948,25620,Murrindindi
+57949,26170,South Gippsland
+57950,21370,Campaspe
+57951,26260,Southern Grampians
+57952,25430,Mount Alexander
+57953,22620,Greater Bendigo
+57954,27630,Yarriambiack
+57955,27630,Yarriambiack
+57956,22980,Hindmarsh
+57957,26890,West Wimmera
+57958,22250,Gannawarra
+57959,26170,South Gippsland
+57960,21370,Campaspe
+57961,20260,Ararat
+57962,21370,Campaspe
+57963,26490,Surf Coast
+57964,25490,Moyne
+57965,26810,Wellington
+57966,26810,Wellington
+57968,21670,Central Goldfields
+57969,26170,South Gippsland
+57970,26170,South Gippsland
+57971,23810,Latrobe (Vic.)
+57972,22250,Gannawarra
+57973,27630,Yarriambiack
+57974,26430,Strathbogie
+57975,20830,Baw Baw
+57976,25430,Mount Alexander
+57977,22110,East Gippsland
+57978,22620,Greater Bendigo
+57979,22110,East Gippsland
+57980,22110,East Gippsland
+57981,26810,Wellington
+57982,23940,Loddon
+57983,22980,Hindmarsh
+57984,20830,Baw Baw
+57985,21370,Campaspe
+57986,25340,Mornington Peninsula
+57987,26810,Wellington
+57988,27630,Yarriambiack
+57989,25810,Northern Grampians
+57990,21270,Buloke
+57991,24850,Mitchell
+57992,22830,Greater Shepparton
+57993,21830,Corangamite
+57994,22490,Golden Plains
+57996,26670,Towong
+57997,20110,Alpine
+57998,21830,Corangamite
+57999,26170,South Gippsland
+58000,21830,Corangamite
+58002,27630,Yarriambiack
+58003,23940,Loddon
+58004,20260,Ararat
+58005,26490,Surf Coast
+58006,27630,Yarriambiack
+58007,21270,Buloke
+58008,26810,Wellington
+58009,25620,Murrindindi
+58148,25060,Moonee Valley
+58160,23110,Hobsons Bay
+58164,21110,Boroondara
+58170,21110,Boroondara
+58171,22490,Golden Plains
+58175,23350,Indigo
+58179,22620,Greater Bendigo
+58200,24250,Mansfield
+58206,23270,Hume
+58228,23270,Hume
+58235,22170,Frankston
+58237,23430,Kingston (Vic.)
+58245,27350,Yarra
+58250,22250,Gannawarra
+58252,21750,Colac Otway
+58264,21610,Casey
+58270,22670,Greater Dandenong
+58271,22670,Greater Dandenong
+58289,27170,Wodonga
+58296,22620,Greater Bendigo
+58297,25060,Moonee Valley
+58298,21610,Casey
+58302,22750,Greater Geelong
+58303,22750,Greater Geelong
+58322,23270,Hume
+58350,21180,Brimbank
+58351,21180,Brimbank
+58354,24600,Melbourne
+58368,22170,Frankston
+58369,22170,Frankston
+58376,27450,Yarra Ranges
+58377,21830,Corangamite
+58393,24650,Melton
+58394,24780,Mildura
+58398,23270,Hume
+58400,24780,Mildura
+58401,24780,Mildura
+58403,27070,Whittlesea
+58406,22750,Greater Geelong
+58413,23430,Kingston (Vic.)
+58427,21610,Casey
+58437,22750,Greater Geelong
+58444,26610,Swan Hill
+58453,21450,Cardinia
+58463,24600,Melbourne
+58466,26350,Stonnington
+58467,21890,Darebin
+58469,22980,Hindmarsh
+58476,24780,Mildura
+58480,27350,Yarra
+58481,24410,Maroondah
+58492,20570,Ballarat
+58493,24850,Mitchell
+58501,27070,Whittlesea
+58506,27630,Yarriambiack
+58514,24900,Moira
+58518,26670,Towong
+58524,27070,Whittlesea
+58525,27070,Whittlesea
+58535,27260,Wyndham
+58536,27260,Wyndham
+58539,21180,Brimbank
+58548,24210,Manningham
+58552,26980,Whitehorse
+58563,20570,Ballarat
+58577,27070,Whittlesea
+58580,20740,Bass Coast
+58582,27450,Yarra Ranges
+58591,24330,Maribyrnong
+58594,25150,Moorabool
+58610,26430,Strathbogie
+58613,23670,Knox
+58614,23430,Kingston (Vic.)
+58645,20260,Ararat
+58651,23110,Hobsons Bay
+58671,23350,Indigo
+58674,23350,Indigo
+58679,25810,Northern Grampians
+58680,26260,Southern Grampians
+58715,24130,Macedon Ranges
+58716,24130,Macedon Ranges
+58729,26430,Strathbogie
+58740,23110,Hobsons Bay
+58741,23110,Hobsons Bay
+58745,21750,Colac Otway
+58746,21750,Colac Otway
+58754,22620,Greater Bendigo
+58755,24600,Melbourne
+58757,24970,Monash
+58758,24970,Monash
+58759,24970,Monash
+58760,24970,Monash
+58761,24970,Monash
+58762,24970,Monash
+58763,24970,Monash
+58764,24970,Monash
+58765,24970,Monash
+58766,24970,Monash
+58767,24970,Monash
+58768,24970,Monash
+58769,24970,Monash
+58790,24330,Maribyrnong
+58796,25990,Pyrenees
+58812,21110,Boroondara
+58831,22750,Greater Geelong
+58833,24700,Merri-bek
+58849,20570,Ballarat
+58854,27260,Wyndham
+58870,24210,Manningham
+58874,21750,Colac Otway
+58880,20660,Banyule
+58891,24700,Merri-bek
+58899,26610,Swan Hill
+58904,21450,Cardinia
+58907,26980,Whitehorse
+58908,26980,Whitehorse
+58909,26980,Whitehorse
+58910,26980,Whitehorse
+58911,26980,Whitehorse
+58912,29399,Unincorporated Vic
+58914,29399,Unincorporated Vic
+58923,25340,Mornington Peninsula
+58925,25340,Mornington Peninsula
+58926,25340,Mornington Peninsula
+58932,25060,Moonee Valley
+58934,22620,Greater Bendigo
+58936,22410,Glenelg
+58949,24970,Monash
+58977,22620,Greater Bendigo
+59004,21180,Brimbank
+59052,25900,Port Phillip
+59054,23110,Hobsons Bay
+59072,22750,Greater Geelong
+59073,20740,Bass Coast
+59119,25340,Mornington Peninsula
+59161,25620,Murrindindi
+59205,24130,Macedon Ranges
+59218,23430,Kingston (Vic.)
+59220,22830,Greater Shepparton
+59222,27260,Wyndham
+59238,23110,Hobsons Bay
+59240,23110,Hobsons Bay
+59254,24210,Manningham
+59262,22750,Greater Geelong
+59269,20660,Banyule
+59288,26730,Warrnambool
+59294,26730,Warrnambool
+59303,24330,Maribyrnong
+59318,24970,Monash
+59321,25710,Nillumbik
+59322,20660,Banyule
+59323,25710,Nillumbik
+59328,25710,Nillumbik
+59329,24210,Manningham
+59331,27350,Yarra
+59332,24600,Melbourne
+59334,24410,Maroondah
+59339,22410,Glenelg
+59356,25900,Port Phillip
+59358,24600,Melbourne
+59379,24650,Melton
+59380,25060,Moonee Valley
+59410,22410,Glenelg
+59411,22410,Glenelg
+59412,22410,Glenelg
+59413,22410,Glenelg
+59417,22410,Glenelg
+59418,22410,Glenelg
+59432,22750,Greater Geelong
+59435,20830,Baw Baw
+59449,25900,Port Phillip
+59453,23430,Kingston (Vic.)
+59455,27260,Wyndham
+59459,20660,Banyule
+59466,25340,Mornington Peninsula
+59488,27260,Wyndham
+59495,22910,Hepburn
+59502,27350,Yarra
+59508,22110,East Gippsland
+59512,27350,Yarra
+59513,27350,Yarra
+59514,27350,Yarra
+59525,22490,Golden Plains
+59534,25340,Mornington Peninsula
+59535,25340,Mornington Peninsula
+59536,25340,Mornington Peninsula
+59551,27350,Yarra
+59558,27350,Yarra
+59562,24330,Maribyrnong
+59563,21890,Darebin
+59569,25340,Mornington Peninsula
+59571,25340,Mornington Peninsula
+59572,25340,Mornington Peninsula
+59573,25340,Mornington Peninsula
+59589,24410,Maroondah
+59590,24410,Maroondah
+59612,25340,Mornington Peninsula
+59613,22310,Glen Eira
+59615,22310,Glen Eira
+59616,22310,Glen Eira
+59617,22310,Glen Eira
+59618,22310,Glen Eira
+59619,22310,Glen Eira
+59620,22310,Glen Eira
+59621,22310,Glen Eira
+59622,22310,Glen Eira
+59624,22310,Glen Eira
+59625,22310,Glen Eira
+59626,22310,Glen Eira
+59632,22830,Greater Shepparton
+59636,25340,Mornington Peninsula
+59645,20570,Ballarat
+59646,23270,Hume
+59666,23190,Horsham
+59668,27070,Whittlesea
+59697,22750,Greater Geelong
+59698,21610,Casey
+59733,25710,Nillumbik
+59749,22750,Greater Geelong
+59750,22750,Greater Geelong
+59754,23110,Hobsons Bay
+59756,24330,Maribyrnong
+59757,21890,Darebin
+59761,24600,Melbourne
+59849,25810,Northern Grampians
+59891,24780,Mildura
+59901,24850,Mitchell
+59902,24850,Mitchell
+59903,29399,Unincorporated Vic
+59904,25990,Pyrenees
+59905,27260,Wyndham
+59909,23270,Hume
+59913,22750,Greater Geelong
+59915,22750,Greater Geelong
+59916,22750,Greater Geelong
+59918,22750,Greater Geelong
+59919,22750,Greater Geelong
+59920,22490,Golden Plains
+59921,22750,Greater Geelong
+59926,21610,Casey
+59939,26350,Stonnington
+59943,21610,Casey
+59953,23110,Hobsons Bay
+60005,24650,Melton
+60009,25340,Mornington Peninsula
+60011,20570,Ballarat
+60012,20570,Ballarat
+60018,25340,Mornington Peninsula
+60021,24250,Mansfield
+60031,25340,Mornington Peninsula
+60043,23350,Indigo
+60058,21450,Cardinia
+60059,21450,Cardinia
+60062,20570,Ballarat
+60063,25340,Mornington Peninsula
+60078,24130,Macedon Ranges
+60079,24130,Macedon Ranges
+60080,24130,Macedon Ranges
+60081,24130,Macedon Ranges
+60082,24130,Macedon Ranges
+60083,24130,Macedon Ranges
+60084,24130,Macedon Ranges
+60085,24130,Macedon Ranges
+60086,24130,Macedon Ranges
+60090,26170,South Gippsland
+60098,20570,Ballarat
+60110,26730,Warrnambool
+60111,27070,Whittlesea
+60112,27070,Whittlesea
+60113,27070,Whittlesea
+60114,27070,Whittlesea
+60117,20570,Ballarat
+60173,26170,South Gippsland
+60174,26700,Wangaratta
+60175,26700,Wangaratta
+60176,26700,Wangaratta
+60177,26700,Wangaratta
+60178,26700,Wangaratta
+60179,20740,Bass Coast
+60180,20740,Bass Coast
+60181,20740,Bass Coast
+60182,20740,Bass Coast
+60183,20740,Bass Coast
+60184,20740,Bass Coast
+60200,23670,Knox
+60210,26810,Wellington
+60212,25340,Mornington Peninsula
+60216,23670,Knox
+60218,23670,Knox
+60223,25340,Mornington Peninsula
+60225,22830,Greater Shepparton
+60226,23430,Kingston (Vic.)
+60227,23430,Kingston (Vic.)
+60228,23430,Kingston (Vic.)
+60235,24600,Melbourne
+60236,24600,Melbourne
+60237,21370,Campaspe
+60243,25490,Moyne
+60244,25490,Moyne
+60245,25490,Moyne
+60246,25490,Moyne
+60247,25490,Moyne
+60264,25490,Moyne
+60265,20740,Bass Coast
+60269,23810,Latrobe (Vic.)
+60273,24650,Melton
+60274,21450,Cardinia
+60286,22620,Greater Bendigo
+60287,25340,Mornington Peninsula
+60288,25340,Mornington Peninsula
+60289,22620,Greater Bendigo
+60290,25340,Mornington Peninsula
+60291,25340,Mornington Peninsula
+60292,25340,Mornington Peninsula
+60293,25340,Mornington Peninsula
+60294,25340,Mornington Peninsula
+60299,24600,Melbourne
+60300,24600,Melbourne
+60304,22750,Greater Geelong
+60305,22750,Greater Geelong
+60309,23670,Knox
+60312,20740,Bass Coast
+60322,25060,Moonee Valley
+60326,23670,Knox
+60421,23670,Knox
+60422,23670,Knox
+60424,23670,Knox
+60434,23670,Knox
+60435,23670,Knox
+60436,25340,Mornington Peninsula
+60446,24970,Monash
+60448,24970,Monash
+60449,24970,Monash
+60450,24970,Monash
+60451,24970,Monash
+60452,24970,Monash
+60453,24970,Monash
+60454,24970,Monash
+60455,24970,Monash
+60456,24970,Monash
+60457,24970,Monash
+60458,24970,Monash
+60459,24970,Monash
+60462,23670,Knox
+60478,23670,Knox
+60495,22310,Glen Eira
+60594,22170,Frankston
+60601,25430,Mount Alexander
+60610,23270,Hume
+60611,23270,Hume
+60612,23270,Hume
+60613,23270,Hume
+60614,23270,Hume
+60615,20830,Baw Baw
+60616,20830,Baw Baw
+60617,20830,Baw Baw
+60620,24250,Mansfield
+60621,24250,Mansfield
+60622,24250,Mansfield
+60623,24250,Mansfield
+60624,24250,Mansfield
+60625,24250,Mansfield
+60626,24250,Mansfield
+60627,24250,Mansfield
+60628,24250,Mansfield
+60643,24970,Monash
+60647,22620,Greater Bendigo
+60649,20830,Baw Baw
+60655,24330,Maribyrnong
+60656,24330,Maribyrnong
+60658,24600,Melbourne
+60673,24130,Macedon Ranges
+60676,24600,Melbourne
+60677,25340,Mornington Peninsula
+60691,22670,Greater Dandenong
+60692,22670,Greater Dandenong
+60693,22670,Greater Dandenong
+60694,22670,Greater Dandenong
+60695,22670,Greater Dandenong
+60696,22670,Greater Dandenong
+60723,21610,Casey
+60736,21450,Cardinia
+60737,21450,Cardinia
+60738,21450,Cardinia
+60751,20570,Ballarat
+60752,20570,Ballarat
+60766,20570,Ballarat
+60771,24600,Melbourne
+60772,24600,Melbourne
+60773,24600,Melbourne
+60775,24600,Melbourne
+60787,24970,Monash
+60789,23430,Kingston (Vic.)
+60796,26080,Queenscliffe
+60804,27070,Whittlesea
+60810,24780,Mildura
+60811,21270,Buloke
+60812,24780,Mildura
+60813,24780,Mildura
+60814,24850,Mitchell
+60815,24850,Mitchell
+60816,24850,Mitchell
+60817,24850,Mitchell
+60818,24850,Mitchell
+60819,24850,Mitchell
+60820,25060,Moonee Valley
+60822,21270,Buloke
+60823,21270,Buloke
+60829,21670,Central Goldfields
+60830,24970,Monash
+60832,25990,Pyrenees
+60834,25060,Moonee Valley
+60835,27070,Whittlesea
+60836,27070,Whittlesea
+60837,25060,Moonee Valley
+60839,25060,Moonee Valley
+60840,25060,Moonee Valley
+60841,25060,Moonee Valley
+60842,27630,Yarriambiack
+60843,23190,Horsham
+60848,26260,Southern Grampians
+60849,26260,Southern Grampians
+60850,22410,Glenelg
+60851,22410,Glenelg
+60852,22410,Glenelg
+60853,26810,Wellington
+60854,26260,Southern Grampians
+60855,24600,Melbourne
+60857,24780,Mildura
+60858,26610,Swan Hill
+60860,26670,Towong
+60861,26670,Towong
+60887,24850,Mitchell
+60888,24850,Mitchell
+60890,24850,Mitchell
+60891,24850,Mitchell
+60892,24850,Mitchell
+60893,24850,Mitchell
+60894,24650,Melton
+60895,24650,Melton
+60896,25150,Moorabool
+60897,25150,Moorabool
+60898,20570,Ballarat
+60899,21180,Brimbank
+60900,23270,Hume
+60901,24130,Macedon Ranges
+60902,24130,Macedon Ranges
+60903,24130,Macedon Ranges
+60904,25430,Mount Alexander
+60905,22620,Greater Bendigo
+60906,26610,Swan Hill
+60907,21370,Campaspe
+60908,24780,Mildura
+60909,27260,Wyndham
+60910,27260,Wyndham
+60911,22750,Greater Geelong
+60912,22750,Greater Geelong
+60913,22750,Greater Geelong
+60914,22750,Greater Geelong
+60915,26490,Surf Coast
+60916,21750,Colac Otway
+60917,21750,Colac Otway
+60918,21830,Corangamite
+60919,21830,Corangamite
+60920,26730,Warrnambool
+60921,20830,Baw Baw
+60922,20830,Baw Baw
+60923,23810,Latrobe (Vic.)
+60924,23810,Latrobe (Vic.)
+60925,26810,Wellington
+60926,22110,East Gippsland
+60927,24650,Melton
+60928,26260,Southern Grampians
+60935,22980,Hindmarsh
+60936,22980,Hindmarsh
+60937,24850,Mitchell
+60938,24850,Mitchell
+60939,24850,Mitchell
+60940,21370,Campaspe
+60942,27070,Whittlesea
+60943,27070,Whittlesea
+60944,27070,Whittlesea
+60946,26490,Surf Coast
+60949,22750,Greater Geelong
+60950,22750,Greater Geelong
+60951,22750,Greater Geelong
+60952,22750,Greater Geelong
+60961,23810,Latrobe (Vic.)
+60962,23810,Latrobe (Vic.)
+60963,23810,Latrobe (Vic.)
+60964,23810,Latrobe (Vic.)
+60965,23810,Latrobe (Vic.)
+60966,23810,Latrobe (Vic.)
+60968,23810,Latrobe (Vic.)
+60971,23810,Latrobe (Vic.)
+60972,23810,Latrobe (Vic.)
+60975,24780,Mildura
+60976,24780,Mildura
+60978,22620,Greater Bendigo
+60979,25060,Moonee Valley
+60987,21180,Brimbank
+60988,27070,Whittlesea
+60997,27070,Whittlesea
+60998,27070,Whittlesea
+60999,27070,Whittlesea
+61000,27070,Whittlesea
+61001,27070,Whittlesea
+61002,27070,Whittlesea
+61012,25060,Moonee Valley
+61026,21370,Campaspe
+61027,21370,Campaspe
+61028,21370,Campaspe
+61029,22620,Greater Bendigo
+61030,22620,Greater Bendigo
+61031,22620,Greater Bendigo
+61032,22620,Greater Bendigo
+61033,22620,Greater Bendigo
+61034,21370,Campaspe
+61035,21370,Campaspe
+61061,24780,Mildura
+61083,22750,Greater Geelong
+61085,22750,Greater Geelong
+61086,22750,Greater Geelong
+61102,22170,Frankston
+61105,24600,Melbourne
+61107,27170,Wodonga
+61108,24600,Melbourne
+61112,24600,Melbourne
+61114,27350,Yarra
+61116,26810,Wellington
+61119,27350,Yarra
+61122,25340,Mornington Peninsula
+61124,26700,Wangaratta
+61127,22110,East Gippsland
+61147,22750,Greater Geelong
+61175,20660,Banyule
+61178,29399,Unincorporated Vic
+61183,24600,Melbourne
+61193,26980,Whitehorse
+61198,23810,Latrobe (Vic.)
+61200,23110,Hobsons Bay
+61208,27260,Wyndham
+61220,26670,Towong
+61221,20660,Banyule
+61222,25340,Mornington Peninsula
+61232,27260,Wyndham
+61235,22170,Frankston
+61236,22170,Frankston
+61237,22170,Frankston
+61238,22170,Frankston
+61239,22170,Frankston
+61240,22170,Frankston
+61242,22170,Frankston
+61244,22170,Frankston
+61245,22170,Frankston
+61246,22170,Frankston
+61255,26810,Wellington
+61256,26810,Wellington
+61261,24600,Melbourne
+61264,22620,Greater Bendigo
+61274,24970,Monash
+61277,25490,Moyne
+61278,25340,Mornington Peninsula
+61282,20110,Alpine
+61284,20110,Alpine
+61285,20110,Alpine
+61286,20110,Alpine
+61287,24780,Mildura
+61288,21180,Brimbank
+61289,21180,Brimbank
+61290,21270,Buloke
+61292,24600,Melbourne
+61298,21610,Casey
+61303,21180,Brimbank
+61338,21180,Brimbank
+61340,21180,Brimbank
+61341,27070,Whittlesea
+61350,25710,Nillumbik
+61365,23270,Hume
+61366,27260,Wyndham
+61369,23270,Hume
+61370,25710,Nillumbik
+61393,23940,Loddon
+61394,22910,Hepburn
+61395,24130,Macedon Ranges
+61396,25990,Pyrenees
+61397,25990,Pyrenees
+61398,25990,Pyrenees
+61399,25990,Pyrenees
+61400,25990,Pyrenees
+61401,20260,Ararat
+61402,20260,Ararat
+61403,20260,Ararat
+61404,20260,Ararat
+61405,26260,Southern Grampians
+61406,26260,Southern Grampians
+61407,26260,Southern Grampians
+61408,22410,Glenelg
+61409,22410,Glenelg
+61410,22410,Glenelg
+61411,22410,Glenelg
+61412,22410,Glenelg
+61413,25620,Murrindindi
+61414,25620,Murrindindi
+61415,25620,Murrindindi
+61416,25620,Murrindindi
+61417,24250,Mansfield
+61418,24250,Mansfield
+61420,27450,Yarra Ranges
+61421,27450,Yarra Ranges
+61422,20830,Baw Baw
+61423,27450,Yarra Ranges
+61424,24780,Mildura
+61425,22110,East Gippsland
+61426,22110,East Gippsland
+61427,22110,East Gippsland
+61428,22110,East Gippsland
+61429,22110,East Gippsland
+61430,21010,Benalla
+61431,21010,Benalla
+61432,21010,Benalla
+61433,24250,Mansfield
+61434,24250,Mansfield
+61435,24250,Mansfield
+61436,24250,Mansfield
+61437,26670,Towong
+61438,26810,Wellington
+61439,26810,Wellington
+61440,26810,Wellington
+61441,26810,Wellington
+61442,26810,Wellington
+61443,26810,Wellington
+61444,20830,Baw Baw
+61445,20830,Baw Baw
+61446,20830,Baw Baw
+61447,20830,Baw Baw
+61448,20830,Baw Baw
+61449,20830,Baw Baw
+61450,26810,Wellington
+61451,26810,Wellington
+61452,26810,Wellington
+61453,20830,Baw Baw
+61454,20830,Baw Baw
+61455,20830,Baw Baw
+61456,20830,Baw Baw
+61457,20830,Baw Baw
+61459,20830,Baw Baw
+61461,26810,Wellington
+61462,26810,Wellington
+61464,26810,Wellington
+61465,25990,Pyrenees
+61466,25990,Pyrenees
+61467,22110,East Gippsland
+61468,20830,Baw Baw
+61469,20830,Baw Baw
+61470,22110,East Gippsland
+61471,22110,East Gippsland
+61472,22110,East Gippsland
+61473,22110,East Gippsland
+61474,26810,Wellington
+61475,26810,Wellington
+61476,26810,Wellington
+61477,21750,Colac Otway
+61478,24250,Mansfield
+61479,24250,Mansfield
+61480,24250,Mansfield
+61481,25990,Pyrenees
+61482,20830,Baw Baw
+61483,21750,Colac Otway
+61484,26490,Surf Coast
+61485,21750,Colac Otway
+61486,26810,Wellington
+61487,26810,Wellington
+61488,22490,Golden Plains
+61489,25620,Murrindindi
+61490,22110,East Gippsland
+61491,20830,Baw Baw
+61492,20830,Baw Baw
+61493,24250,Mansfield
+61494,24250,Mansfield
+61495,22110,East Gippsland
+61496,24250,Mansfield
+61497,24250,Mansfield
+61498,24250,Mansfield
+61499,25620,Murrindindi
+61500,25620,Murrindindi
+61501,24850,Mitchell
+61502,24850,Mitchell
+61503,24850,Mitchell
+61504,25620,Murrindindi
+61505,25620,Murrindindi
+61506,24250,Mansfield
+61507,24250,Mansfield
+61508,24250,Mansfield
+61509,25620,Murrindindi
+61510,25620,Murrindindi
+61511,24250,Mansfield
+61512,24850,Mitchell
+61513,25620,Murrindindi
+61514,25620,Murrindindi
+61515,22110,East Gippsland
+61516,29399,Unincorporated Vic
+61517,24250,Mansfield
+61518,24250,Mansfield
+61519,25620,Murrindindi
+61520,25620,Murrindindi
+61521,25990,Pyrenees
+61522,24250,Mansfield
+61523,24850,Mitchell
+61524,25620,Murrindindi
+61525,25620,Murrindindi
+61526,21010,Benalla
+61527,24250,Mansfield
+61528,24250,Mansfield
+61529,25620,Murrindindi
+61530,25620,Murrindindi
+61531,25150,Moorabool
+61532,27070,Whittlesea
+61533,24850,Mitchell
+61534,25620,Murrindindi
+61535,25620,Murrindindi
+61536,25620,Murrindindi
+61537,25620,Murrindindi
+61538,25620,Murrindindi
+61539,25620,Murrindindi
+61540,25620,Murrindindi
+61541,25620,Murrindindi
+61542,25620,Murrindindi
+61543,25620,Murrindindi
+61544,24850,Mitchell
+61545,25620,Murrindindi
+61547,20110,Alpine
+61548,26700,Wangaratta
+61549,26700,Wangaratta
+61551,22110,East Gippsland
+61552,24250,Mansfield
+61553,26810,Wellington
+61554,26810,Wellington
+61555,24250,Mansfield
+61556,24250,Mansfield
+61557,24250,Mansfield
+61558,24250,Mansfield
+61559,24250,Mansfield
+61560,24250,Mansfield
+61561,20110,Alpine
+61562,20110,Alpine
+61563,22110,East Gippsland
+61564,22110,East Gippsland
+61565,22110,East Gippsland
+61566,22250,Gannawarra
+61568,24250,Mansfield
+61569,24250,Mansfield
+61570,24250,Mansfield
+61571,24250,Mansfield
+61572,24250,Mansfield
+61573,24250,Mansfield
+61574,24250,Mansfield
+61575,24250,Mansfield
+61576,24250,Mansfield
+61577,24250,Mansfield
+61578,24250,Mansfield
+61579,24250,Mansfield
+61580,24250,Mansfield
+61581,24250,Mansfield
+61582,24250,Mansfield
+61583,24250,Mansfield
+61584,24250,Mansfield
+61585,24250,Mansfield
+61586,24250,Mansfield
+61587,24250,Mansfield
+61588,24250,Mansfield
+61589,24250,Mansfield
+61590,24250,Mansfield
+61591,24250,Mansfield
+61592,24250,Mansfield
+61593,24250,Mansfield
+61594,24250,Mansfield
+61595,24250,Mansfield
+61596,20110,Alpine
+61597,20110,Alpine
+61598,20110,Alpine
+61599,20110,Alpine
+61600,20110,Alpine
+61601,20110,Alpine
+61602,20110,Alpine
+61604,26670,Towong
+61605,26670,Towong
+61608,26670,Towong
+61609,26670,Towong
+61610,26670,Towong
+61611,26670,Towong
+61612,26670,Towong
+61613,26670,Towong
+61615,25620,Murrindindi
+61616,25620,Murrindindi
+61617,25620,Murrindindi
+61618,25620,Murrindindi
+61619,25620,Murrindindi
+61620,26810,Wellington
+61621,21750,Colac Otway
+61622,21750,Colac Otway
+61623,22110,East Gippsland
+61625,25620,Murrindindi
+61626,25990,Pyrenees
+61627,25990,Pyrenees
+61628,22620,Greater Bendigo
+61630,26670,Towong
+61631,20830,Baw Baw
+61632,20830,Baw Baw
+61633,20830,Baw Baw
+61634,25620,Murrindindi
+61635,22110,East Gippsland
+61636,22110,East Gippsland
+61637,22110,East Gippsland
+61638,22110,East Gippsland
+61639,26810,Wellington
+61640,20830,Baw Baw
+61641,22620,Greater Bendigo
+61642,20830,Baw Baw
+61646,20110,Alpine
+61647,20570,Ballarat
+61662,25710,Nillumbik
+61665,24700,Merri-bek
+61676,22750,Greater Geelong
+61699,22670,Greater Dandenong
+61704,26490,Surf Coast
+61705,24850,Mitchell
+61710,23810,Latrobe (Vic.)
+61714,23270,Hume
+61719,23670,Knox
+61720,23670,Knox
+61725,25620,Murrindindi
+61730,21890,Darebin
+61731,24600,Melbourne
+61732,24600,Melbourne
+61733,24600,Melbourne
+61746,27350,Yarra
+61747,24850,Mitchell
+61748,24850,Mitchell
+61757,25810,Northern Grampians
+61766,21890,Darebin
+61767,21890,Darebin
+61768,21890,Darebin
+61771,24700,Merri-bek
+61773,21890,Darebin
+61774,24850,Mitchell
+61780,24850,Mitchell
+61781,24850,Mitchell
+61782,24850,Mitchell
+61792,24600,Melbourne
+61799,25620,Murrindindi
+61810,24410,Maroondah
+61817,22620,Greater Bendigo
+61828,27260,Wyndham
+61840,24600,Melbourne
+61841,24600,Melbourne
+61842,21610,Casey
+61843,21610,Casey
+61844,21610,Casey
+61845,21610,Casey
+61846,21610,Casey
+61847,21610,Casey
+61848,21610,Casey
+61849,21610,Casey
+61850,21610,Casey
+61851,21610,Casey
+61852,21610,Casey
+61853,21610,Casey
+61854,21610,Casey
+61855,21610,Casey
+61856,21610,Casey
+61857,21610,Casey
+61858,21610,Casey
+61859,21610,Casey
+61860,21610,Casey
+61862,21610,Casey
+61863,21610,Casey
+61864,21610,Casey
+61865,20570,Ballarat
+61868,25710,Nillumbik
+61869,23110,Hobsons Bay
+61873,23940,Loddon
+61874,23940,Loddon
+61875,23940,Loddon
+61876,23940,Loddon
+61877,21270,Buloke
+61878,21270,Buloke
+61879,21270,Buloke
+61880,21270,Buloke
+61881,21270,Buloke
+61882,21270,Buloke
+61883,24780,Mildura
+61884,24780,Mildura
+61885,24780,Mildura
+61886,24780,Mildura
+61887,24780,Mildura
+61888,24780,Mildura
+61889,24780,Mildura
+61890,24780,Mildura
+61897,25060,Moonee Valley
+61899,21010,Benalla
+61908,21890,Darebin
+61910,21890,Darebin
+61911,21890,Darebin
+61912,24850,Mitchell
+61914,22620,Greater Bendigo
+61915,22620,Greater Bendigo
+61921,27260,Wyndham
+61922,24700,Merri-bek
+61923,27260,Wyndham
+61925,22830,Greater Shepparton
+61941,21610,Casey
+61973,21270,Buloke
+61982,22670,Greater Dandenong
+61997,27070,Whittlesea
+61998,25060,Moonee Valley
+61999,25060,Moonee Valley
+62042,20570,Ballarat
+62076,21450,Cardinia
+62096,25060,Moonee Valley
+62098,21110,Boroondara
+62122,22170,Frankston
+62139,27260,Wyndham
+62142,26490,Surf Coast
+62143,26490,Surf Coast
+62152,21450,Cardinia
+62168,24700,Merri-bek
+62169,24700,Merri-bek
+62170,21450,Cardinia
+62171,24700,Merri-bek
+62172,24700,Merri-bek
+62174,24700,Merri-bek
+62175,24780,Mildura
+62182,21610,Casey
+62186,25430,Mount Alexander
+62191,20660,Banyule
+62192,20660,Banyule
+62193,20660,Banyule
+62194,20660,Banyule
+62195,20660,Banyule
+62196,24210,Manningham
+62197,24210,Manningham
+62198,24210,Manningham
+62199,24210,Manningham
+62200,24210,Manningham
+62201,24210,Manningham
+62202,24210,Manningham
+62203,24210,Manningham
+62214,21110,Boroondara
+62225,22620,Greater Bendigo
+62238,21450,Cardinia
+62239,21450,Cardinia
+62240,21450,Cardinia
+62270,21890,Darebin
+62271,21890,Darebin
+62272,24780,Mildura
+62284,26350,Stonnington
+62285,27070,Whittlesea
+62288,27260,Wyndham
+62289,21610,Casey
+62323,25710,Nillumbik
+62324,25710,Nillumbik
+62326,24780,Mildura
+62328,25620,Murrindindi
+62340,24650,Melton
+62341,24650,Melton
+62342,27260,Wyndham
+62343,27070,Whittlesea
+62344,,Unmatched location
+62345,,Unmatched location
+62346,27260,Wyndham
+62348,24850,Mitchell
+62349,27070,Whittlesea
+62380,25900,Port Phillip
+62381,21110,Boroondara
+62383,22750,Greater Geelong
+62404,26890,West Wimmera
+62405,23430,Kingston (Vic.)
+62437,21110,Boroondara
+62444,27070,Whittlesea
+62459,23430,Kingston (Vic.)
+62460,23430,Kingston (Vic.)
+62461,23430,Kingston (Vic.)
+62466,21890,Darebin
+62477,27450,Yarra Ranges
+62486,27070,Whittlesea
+62487,27070,Whittlesea
+62488,23270,Hume
+62496,27450,Yarra Ranges
+62497,27070,Whittlesea
+62500,20830,Baw Baw
+62501,20830,Baw Baw
+62502,20830,Baw Baw
+62503,21890,Darebin
+62504,24650,Melton
+62506,24130,Macedon Ranges
+62513,21610,Casey
+62524,27070,Whittlesea
+62525,22620,Greater Bendigo
+62526,22490,Golden Plains
+62536,27450,Yarra Ranges
+62546,22110,East Gippsland
+62563,25150,Moorabool
+62568,21010,Benalla
+62579,25900,Port Phillip
+62580,24700,Merri-bek
+62608,23670,Knox
+62624,21450,Cardinia
+62627,21110,Boroondara
+62631,21110,Boroondara
+62632,21110,Boroondara
+62633,21110,Boroondara
+62634,21110,Boroondara
+62635,21110,Boroondara
+62636,21110,Boroondara
+62637,21110,Boroondara
+62638,21110,Boroondara
+62641,21110,Boroondara
+62666,22670,Greater Dandenong
+62680,24600,Melbourne
+62683,20570,Ballarat
+62703,23190,Horsham
+62704,25810,Northern Grampians
+62706,26980,Whitehorse
+62717,24600,Melbourne
+62718,21610,Casey
+62728,21370,Campaspe
+62735,26980,Whitehorse
+62736,22750,Greater Geelong
+62737,24600,Melbourne
+62738,21180,Brimbank
+62740,24210,Manningham
+62742,21180,Brimbank
+62750,22750,Greater Geelong
+62757,25150,Moorabool
+62773,21610,Casey
+62780,24410,Maroondah
+62791,22170,Frankston
+62792,22170,Frankston
+62793,24210,Manningham
+62794,24210,Manningham
+62799,22830,Greater Shepparton
+62807,27070,Whittlesea
+62808,27260,Wyndham
+62810,20740,Bass Coast
+62834,20910,Bayside (Vic.)
+62836,25060,Moonee Valley
+62844,24700,Merri-bek
+62845,23430,Kingston (Vic.)
+62846,23430,Kingston (Vic.)
+62847,23430,Kingston (Vic.)
+62848,23430,Kingston (Vic.)
+62849,23430,Kingston (Vic.)
+62850,23430,Kingston (Vic.)
+62851,23430,Kingston (Vic.)
+62852,23430,Kingston (Vic.)
+62853,23430,Kingston (Vic.)
+62854,23430,Kingston (Vic.)
+62859,27260,Wyndham
+62880,22620,Greater Bendigo
+62884,23110,Hobsons Bay
+62885,23110,Hobsons Bay
+62886,23110,Hobsons Bay
+62889,26260,Southern Grampians
+62891,27170,Wodonga
+62895,27260,Wyndham
+62896,27260,Wyndham
+62912,27260,Wyndham
+62913,26980,Whitehorse
+62915,24600,Melbourne
+62916,24600,Melbourne
+62918,22670,Greater Dandenong
+62919,22670,Greater Dandenong
+62924,22670,Greater Dandenong
+62926,22670,Greater Dandenong
+62928,22670,Greater Dandenong
+62929,22670,Greater Dandenong
+62935,20830,Baw Baw
+62942,27260,Wyndham
+62945,22910,Hepburn
+62950,24600,Melbourne
+62951,21450,Cardinia
+62953,24700,Merri-bek
+62955,25060,Moonee Valley
+62968,24330,Maribyrnong
+62991,27170,Wodonga
+62996,24600,Melbourne
+63007,25430,Mount Alexander
+63012,27070,Whittlesea
+63013,21270,Buloke
+63016,24780,Mildura
+63017,21830,Corangamite
+63071,25430,Mount Alexander
+63094,23670,Knox
+63103,22830,Greater Shepparton
+63104,21450,Cardinia
+63105,24210,Manningham
+63106,24210,Manningham
+63107,26810,Wellington
+63108,20830,Baw Baw
+63109,25340,Mornington Peninsula
+63110,25340,Mornington Peninsula
+63111,25060,Moonee Valley
+63114,27260,Wyndham
+63120,24410,Maroondah
+63121,24410,Maroondah
+63122,24410,Maroondah
+63125,22670,Greater Dandenong
+63147,23190,Horsham
+63148,23110,Hobsons Bay
+63151,27070,Whittlesea
+63152,25810,Northern Grampians
+63153,22750,Greater Geelong
+63164,27450,Yarra Ranges
+63168,22410,Glenelg
+63169,22110,East Gippsland
+63170,26260,Southern Grampians
+63171,26260,Southern Grampians
+63172,25620,Murrindindi
+63173,25620,Murrindindi
+63174,26670,Towong
+63175,20260,Ararat
+63176,24250,Mansfield
+63177,21370,Campaspe
+63178,22410,Glenelg
+63179,26670,Towong
+63180,26490,Surf Coast
+63181,26260,Southern Grampians
+63182,24250,Mansfield
+63183,20830,Baw Baw
+63184,20830,Baw Baw
+63185,26670,Towong
+63186,24250,Mansfield
+63187,25430,Mount Alexander
+63188,20570,Ballarat
+63189,26670,Towong
+63190,22490,Golden Plains
+63191,22620,Greater Bendigo
+63192,26260,Southern Grampians
+63193,26670,Towong
+63194,26670,Towong
+63195,26700,Wangaratta
+63196,21010,Benalla
+63197,22410,Glenelg
+63198,21450,Cardinia
+63199,21750,Colac Otway
+63200,21750,Colac Otway
+63201,22980,Hindmarsh
+63202,26490,Surf Coast
+63203,26810,Wellington
+63204,26670,Towong
+63205,25620,Murrindindi
+63206,25620,Murrindindi
+63207,25620,Murrindindi
+63208,25620,Murrindindi
+63209,25430,Mount Alexander
+63210,22110,East Gippsland
+63211,23350,Indigo
+63212,23350,Indigo
+63213,23350,Indigo
+63214,23350,Indigo
+63215,23350,Indigo
+63216,21750,Colac Otway
+63233,26430,Strathbogie
+63238,25340,Mornington Peninsula
+63239,23350,Indigo
+63268,22750,Greater Geelong
+63269,22750,Greater Geelong
+63270,25710,Nillumbik
+63278,24780,Mildura
+63282,24600,Melbourne
+63283,24970,Monash
+63293,22170,Frankston
+63294,22170,Frankston
+63299,23270,Hume
+63305,20570,Ballarat
+63307,20570,Ballarat
+63321,27450,Yarra Ranges
+63333,21610,Casey
+63341,27070,Whittlesea
+63346,24970,Monash
+63361,27260,Wyndham
+63374,21110,Boroondara
+63375,24410,Maroondah
+63376,20910,Bayside (Vic.)
+63377,20570,Ballarat
+63395,26490,Surf Coast
+63402,24330,Maribyrnong
+63403,25060,Moonee Valley
+63404,29399,Unincorporated Vic
+63405,20110,Alpine
+63413,21610,Casey
+63433,20740,Bass Coast
+63448,22620,Greater Bendigo
+63449,27070,Whittlesea
+63450,26700,Wangaratta
+63451,25810,Northern Grampians
+63453,20740,Bass Coast
+63563,26700,Wangaratta
+63567,21450,Cardinia
+63568,23430,Kingston (Vic.)
+63569,23430,Kingston (Vic.)
+63570,23430,Kingston (Vic.)
+63571,23430,Kingston (Vic.)
+63572,20570,Ballarat
+63573,25430,Mount Alexander
+63580,22620,Greater Bendigo
+63581,22620,Greater Bendigo
+63584,22750,Greater Geelong
+63586,22750,Greater Geelong
+63603,25710,Nillumbik
+63605,24650,Melton
+63607,23270,Hume
+63609,20830,Baw Baw
+63616,25710,Nillumbik
+63640,23190,Horsham
+63647,26890,West Wimmera
+63648,20570,Ballarat
+63658,23190,Horsham
+63659,23190,Horsham
+63661,23190,Horsham
+63662,23190,Horsham
+63663,23190,Horsham
+63664,25810,Northern Grampians
+63665,25810,Northern Grampians
+63666,25810,Northern Grampians
+63667,25810,Northern Grampians
+63668,20260,Ararat
+63669,20260,Ararat
+63671,20260,Ararat
+63672,20570,Ballarat
+63673,24700,Merri-bek
+63674,24700,Merri-bek
+63675,24700,Merri-bek
+63677,22620,Greater Bendigo
+63678,27070,Whittlesea
+63686,23270,Hume
+63688,25710,Nillumbik
+63699,22910,Hepburn
+63706,27170,Wodonga
+63724,25710,Nillumbik
+63741,25340,Mornington Peninsula
+63743,20740,Bass Coast
+63744,20740,Bass Coast
+63750,25340,Mornington Peninsula
+63759,26980,Whitehorse
+63762,26080,Queenscliffe
+63782,22310,Glen Eira
+63786,27450,Yarra Ranges
+63788,21110,Boroondara
+63789,27450,Yarra Ranges
+63794,20570,Ballarat
+63802,23270,Hume
+63807,27260,Wyndham
+63810,24780,Mildura
+63811,24780,Mildura
+63860,26490,Surf Coast
+63865,20260,Ararat
+63871,22110,East Gippsland
+63876,22110,East Gippsland
+63877,22110,East Gippsland
+63878,22110,East Gippsland
+63879,22110,East Gippsland
+63880,22110,East Gippsland
+63881,22110,East Gippsland
+63882,22110,East Gippsland
+63883,22110,East Gippsland
+63884,22110,East Gippsland
+63885,22110,East Gippsland
+63886,22110,East Gippsland
+63887,22110,East Gippsland
+63888,22110,East Gippsland
+63889,22110,East Gippsland
+63890,22110,East Gippsland
+63891,22310,Glen Eira
+63893,22750,Greater Geelong
+63895,21450,Cardinia
+63896,26170,South Gippsland
+63897,26170,South Gippsland
+63898,26170,South Gippsland
+63899,26170,South Gippsland
+63903,24600,Melbourne
+63905,25900,Port Phillip
+63906,22410,Glenelg
+63907,22410,Glenelg
+63908,26730,Warrnambool
+63916,24650,Melton
+63917,27450,Yarra Ranges
+63918,20910,Bayside (Vic.)
+63919,21370,Campaspe
+63923,27070,Whittlesea
+63924,20740,Bass Coast
+63946,23270,Hume
+63981,25430,Mount Alexander
+63983,24410,Maroondah
+63984,24410,Maroondah
+63988,22670,Greater Dandenong
+63990,26350,Stonnington
+63998,24600,Melbourne
+64000,22750,Greater Geelong
+64003,24700,Merri-bek
+64005,26080,Queenscliffe
+64006,20740,Bass Coast
+64026,23430,Kingston (Vic.)
+64036,21450,Cardinia
+64037,22910,Hepburn
+64038,24970,Monash
+64045,21610,Casey
+64046,22620,Greater Bendigo
+64048,25900,Port Phillip
+64053,27350,Yarra
+64054,24600,Melbourne
+64067,26670,Towong
+64071,24780,Mildura
+64074,21270,Buloke
+64079,27260,Wyndham
+64082,26260,Southern Grampians
+64083,26260,Southern Grampians
+64084,26260,Southern Grampians
+64085,26260,Southern Grampians
+64086,26260,Southern Grampians
+64087,26260,Southern Grampians
+64088,26260,Southern Grampians
+64096,20740,Bass Coast
+64097,20740,Bass Coast
+64098,20740,Bass Coast
+64100,20740,Bass Coast
+64108,21890,Darebin
+64112,26730,Warrnambool
+64115,26700,Wangaratta
+64118,23110,Hobsons Bay
+64136,23430,Kingston (Vic.)
+64137,27450,Yarra Ranges
+64138,27450,Yarra Ranges
+64140,27450,Yarra Ranges
+64167,24700,Merri-bek
+64170,22830,Greater Shepparton
+64171,20110,Alpine
+64172,26810,Wellington
+64180,21450,Cardinia
+64185,21110,Boroondara
+64190,27350,Yarra
+64199,22980,Hindmarsh
+64201,22980,Hindmarsh
+64204,22980,Hindmarsh
+64205,26890,West Wimmera
+64206,26890,West Wimmera
+64216,26430,Strathbogie
+64219,26810,Wellington
+64227,22750,Greater Geelong
+64231,26980,Whitehorse
+64235,24600,Melbourne
+64236,21610,Casey
+64244,20830,Baw Baw
+64251,22750,Greater Geelong
+64252,22750,Greater Geelong
+64267,23670,Knox
+64268,24410,Maroondah
+64276,27450,Yarra Ranges
+64289,22170,Frankston
+64306,26170,South Gippsland
+64312,22750,Greater Geelong
+64323,26430,Strathbogie
+64338,22750,Greater Geelong
+64345,26490,Surf Coast
+64349,21180,Brimbank
+64351,26490,Surf Coast
+64356,27260,Wyndham
+64365,22750,Greater Geelong
+64366,25150,Moorabool
+64368,22750,Greater Geelong
+64371,25340,Mornington Peninsula
+64374,22750,Greater Geelong
+64375,24970,Monash
+64386,22670,Greater Dandenong
+64399,21370,Campaspe
+64406,23270,Hume
+64407,23270,Hume
+64408,23270,Hume
+64409,23270,Hume
+64410,23270,Hume
+64411,23270,Hume
+64412,23270,Hume
+64413,23270,Hume
+64414,23270,Hume
+64415,23270,Hume
+64416,23270,Hume
+64417,23270,Hume
+64418,23270,Hume
+64419,23270,Hume
+64420,27260,Wyndham
+64422,26700,Wangaratta
+64423,21610,Casey
+64431,23810,Latrobe (Vic.)
+64433,27260,Wyndham
+64442,20910,Bayside (Vic.)
+64445,27450,Yarra Ranges
+64460,25900,Port Phillip
+64462,26490,Surf Coast
+64473,22620,Greater Bendigo
+64480,22490,Golden Plains
+64499,21670,Central Goldfields
+64500,21890,Darebin
+64515,27450,Yarra Ranges
+64516,27450,Yarra Ranges
+64517,27450,Yarra Ranges
+64520,24600,Melbourne
+64521,24600,Melbourne
+64561,26810,Wellington
+64566,27170,Wodonga
+64581,21830,Corangamite
+64586,27260,Wyndham
+64614,21370,Campaspe
+64629,22250,Gannawarra
+64636,24600,Melbourne
+64637,24600,Melbourne
+64639,26260,Southern Grampians
+64642,25900,Port Phillip
+64644,26730,Warrnambool
+64646,21110,Boroondara
+64650,26260,Southern Grampians
+64656,22620,Greater Bendigo
+64660,26810,Wellington
+64661,22750,Greater Geelong
+64662,24700,Merri-bek
+64663,20570,Ballarat
+64664,24210,Manningham
+64674,,Unmatched location
+64676,26490,Surf Coast
+64677,20910,Bayside (Vic.)
+64682,22410,Glenelg
+64699,24650,Melton
+64707,22620,Greater Bendigo
+64708,21890,Darebin
+64709,23110,Hobsons Bay
+64721,24130,Macedon Ranges
+64724,22750,Greater Geelong
+64725,23270,Hume
+64727,22750,Greater Geelong
+64728,22750,Greater Geelong
+64735,25340,Mornington Peninsula
+64736,26980,Whitehorse
+64738,24780,Mildura
+64741,20570,Ballarat
+64742,26980,Whitehorse
+64749,20260,Ararat
+64785,24970,Monash
+64795,22750,Greater Geelong
+64801,26170,South Gippsland
+64821,24210,Manningham
+64831,20910,Bayside (Vic.)
+64832,20910,Bayside (Vic.)
+64834,20910,Bayside (Vic.)
+64837,23270,Hume
+64840,27450,Yarra Ranges
+64875,24970,Monash
+64879,23270,Hume
+64881,23810,Latrobe (Vic.)
+64886,24780,Mildura
+64898,26350,Stonnington
+64899,25340,Mornington Peninsula
+64904,24600,Melbourne
+64909,24330,Maribyrnong
+64910,23270,Hume
+64914,26350,Stonnington
+64915,26350,Stonnington
+64916,26350,Stonnington
+64917,21750,Colac Otway
+64919,24600,Melbourne
+64920,24600,Melbourne
+64925,24780,Mildura
+64927,27070,Whittlesea
+64941,24600,Melbourne
+64957,23110,Hobsons Bay
+64970,27070,Whittlesea
+64971,27070,Whittlesea
+64972,27070,Whittlesea
+64973,27070,Whittlesea
+64974,27070,Whittlesea
+64975,27070,Whittlesea
+64976,27070,Whittlesea
+64977,27070,Whittlesea
+64981,26350,Stonnington
+64989,24600,Melbourne
+64990,21890,Darebin
+64992,26490,Surf Coast
+65012,23350,Indigo
+65034,21110,Boroondara
+65036,20660,Banyule
+65040,23110,Hobsons Bay
+65050,20910,Bayside (Vic.)
+65053,21450,Cardinia
+65057,22670,Greater Dandenong
+65058,21610,Casey
+65059,20910,Bayside (Vic.)
+65060,21450,Cardinia
+65063,20910,Bayside (Vic.)
+65073,22170,Frankston
+65074,22170,Frankston
+65075,24970,Monash
+65076,23430,Kingston (Vic.)
+65078,21180,Brimbank
+65079,22670,Greater Dandenong
+65083,21610,Casey
+65087,25990,Pyrenees
+65088,22170,Frankston
+65089,22170,Frankston
+65095,22670,Greater Dandenong
+65109,,Unmatched location
+65111,22170,Frankston
+65112,20740,Bass Coast
+65117,21610,Casey
+65118,21610,Casey
+65119,24970,Monash
+65130,20910,Bayside (Vic.)
+65139,27260,Wyndham
+65140,27260,Wyndham
+65141,23270,Hume
+65144,20660,Banyule
+65152,27170,Wodonga
+65159,22170,Frankston
+65168,24600,Melbourne
+65169,26810,Wellington
+65170,23670,Knox
+65171,25900,Port Phillip
+65173,24600,Melbourne
+65175,21890,Darebin
+65178,24210,Manningham
+65203,23430,Kingston (Vic.)
+65204,24330,Maribyrnong
+65207,23270,Hume
+65208,27260,Wyndham
+65217,24600,Melbourne
+65221,27260,Wyndham
+65222,24650,Melton
+65224,25710,Nillumbik
+65233,21610,Casey
+65257,26490,Surf Coast
+65265,27630,Yarriambiack
+65275,24130,Macedon Ranges
+65276,23270,Hume
+65277,24130,Macedon Ranges
+65278,24130,Macedon Ranges
+65279,24130,Macedon Ranges
+65287,24130,Macedon Ranges
+65288,24130,Macedon Ranges
+65289,24130,Macedon Ranges
+65290,20910,Bayside (Vic.)
+65295,26430,Strathbogie
+65296,22750,Greater Geelong
+65297,22750,Greater Geelong
+65298,20660,Banyule
+65299,24130,Macedon Ranges
+65301,22170,Frankston
+65315,26980,Whitehorse
+65317,21110,Boroondara
+65322,24600,Melbourne
+65326,25340,Mornington Peninsula
+65339,27350,Yarra
+65340,22750,Greater Geelong
+65343,22750,Greater Geelong
+65355,25490,Moyne
+65361,22750,Greater Geelong
+65362,26810,Wellington
+65365,24330,Maribyrnong
+65367,24600,Melbourne
+65368,24600,Melbourne
+65369,24600,Melbourne
+65370,24600,Melbourne
+65383,26610,Swan Hill
+65387,25900,Port Phillip
+65395,27450,Yarra Ranges
+65398,27450,Yarra Ranges
+65400,26490,Surf Coast
+65404,22170,Frankston
+65406,22620,Greater Bendigo
+65410,20260,Ararat
+65414,24700,Merri-bek
+65418,24600,Melbourne
+65420,24970,Monash
+65434,22110,East Gippsland
+65437,21610,Casey
+65439,26170,South Gippsland
+65441,27350,Yarra
+65449,27170,Wodonga
+65451,23270,Hume
+65452,23270,Hume
+65457,24410,Maroondah
+65459,25340,Mornington Peninsula
+65482,27260,Wyndham
+65483,27260,Wyndham
+65486,27450,Yarra Ranges
+65490,27450,Yarra Ranges
+65491,23270,Hume
+65492,27070,Whittlesea
+65493,27070,Whittlesea
+65494,24410,Maroondah
+65496,22620,Greater Bendigo
+65498,27070,Whittlesea
+65499,23270,Hume
+65500,23270,Hume
+65501,23270,Hume
+65502,23270,Hume
+65503,23270,Hume
+65506,24650,Melton
+65509,27070,Whittlesea
+65510,25710,Nillumbik
+65511,27450,Yarra Ranges
+65512,24410,Maroondah
+65513,22910,Hepburn
+65518,21890,Darebin
+65521,23350,Indigo
+65523,25340,Mornington Peninsula
+65530,22410,Glenelg
+65543,27450,Yarra Ranges
+65559,23350,Indigo
+65569,27070,Whittlesea
+65570,27070,Whittlesea
+65574,23430,Kingston (Vic.)
+65577,24700,Merri-bek
+65580,26350,Stonnington
+65583,27070,Whittlesea
+65589,26170,South Gippsland
+65621,20910,Bayside (Vic.)
+65624,27260,Wyndham
+65626,26890,West Wimmera
+65627,25150,Moorabool
+65628,27450,Yarra Ranges
+65631,26670,Towong
+65633,26670,Towong
+65634,21270,Buloke
+65658,27170,Wodonga
+65659,23940,Loddon
+65666,26810,Wellington
+65667,21610,Casey
+65677,23430,Kingston (Vic.)
+65683,20660,Banyule
+65684,21110,Boroondara
+65697,24330,Maribyrnong
+65733,25340,Mornington Peninsula
+65753,22310,Glen Eira
+65773,21670,Central Goldfields
+65774,21670,Central Goldfields
+65775,21670,Central Goldfields
+65778,27260,Wyndham
+65783,20910,Bayside (Vic.)
+65791,23270,Hume
+65810,27260,Wyndham
+65840,24900,Moira
+65860,22910,Hepburn
+65865,27450,Yarra Ranges
+65866,22310,Glen Eira
+65868,22620,Greater Bendigo
+65871,23270,Hume
+65875,21370,Campaspe
+65878,25340,Mornington Peninsula
+65884,22670,Greater Dandenong
+65885,21890,Darebin
+65892,21610,Casey
+65904,21610,Casey
+65912,24600,Melbourne
+65916,21180,Brimbank
+65934,26810,Wellington
+65937,27260,Wyndham
+65944,24600,Melbourne
+65945,26350,Stonnington
+65946,27350,Yarra
+65947,25900,Port Phillip
+65958,24330,Maribyrnong
+65963,27350,Yarra
+65993,22670,Greater Dandenong
+65994,22670,Greater Dandenong
+65995,22670,Greater Dandenong
+65999,21610,Casey
+66004,21610,Casey
+66012,20260,Ararat
+66013,21890,Darebin
+66060,24700,Merri-bek
+66079,26490,Surf Coast
+66084,26670,Towong
+66094,21110,Boroondara
+66103,27630,Yarriambiack
+66104,27630,Yarriambiack
+66111,22620,Greater Bendigo
+66113,26080,Queenscliffe
+66114,23270,Hume
+66116,24600,Melbourne
+66120,21610,Casey
+66123,24970,Monash
+66135,24330,Maribyrnong
+66162,22310,Glen Eira
+66164,25900,Port Phillip
+66166,26430,Strathbogie
+66210,22750,Greater Geelong
+66211,25060,Moonee Valley
+66212,25060,Moonee Valley
+66222,21610,Casey
+66223,21610,Casey
+66227,22170,Frankston
+66237,26490,Surf Coast
+66267,24330,Maribyrnong
+66270,25060,Moonee Valley
+66273,22670,Greater Dandenong
+66274,26350,Stonnington
+66275,21110,Boroondara
+66281,21610,Casey
+66293,21890,Darebin
+66305,20740,Bass Coast
+66311,22980,Hindmarsh
+66312,22910,Hepburn
+66345,20740,Bass Coast
+66346,22620,Greater Bendigo
+66357,26980,Whitehorse
+66358,25430,Mount Alexander
+66363,24970,Monash
+66383,27630,Yarriambiack
+66388,23810,Latrobe (Vic.)
+66389,23270,Hume
+66396,23810,Latrobe (Vic.)
+66397,26610,Swan Hill
+66400,26350,Stonnington
+66401,26350,Stonnington
+66402,24650,Melton
+66411,24130,Macedon Ranges
+66418,27070,Whittlesea
+66437,27260,Wyndham
+66438,26490,Surf Coast
+66444,26980,Whitehorse
+66446,27260,Wyndham
+66450,23670,Knox
+66457,21670,Central Goldfields
+66458,21010,Benalla
+66460,24600,Melbourne
+66461,22750,Greater Geelong
+66462,20660,Banyule
+66464,22750,Greater Geelong
+66466,26260,Southern Grampians
+66469,27070,Whittlesea
+66482,21890,Darebin
+66508,25060,Moonee Valley
+66509,25060,Moonee Valley
+66510,25060,Moonee Valley
+66511,25060,Moonee Valley
+66513,25060,Moonee Valley
+66514,25060,Moonee Valley
+66520,26260,Southern Grampians
+66521,21890,Darebin
+66522,21890,Darebin
+66523,21890,Darebin
+66524,21890,Darebin
+66525,21890,Darebin
+66526,21890,Darebin
+66528,21610,Casey
+66529,21450,Cardinia
+66530,27260,Wyndham
+66533,26350,Stonnington
+66552,27450,Yarra Ranges
+66553,24970,Monash
+66583,24650,Melton
+66587,26350,Stonnington
+66604,21750,Colac Otway
+66627,24650,Melton
+66630,26430,Strathbogie

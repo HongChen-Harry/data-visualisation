@@ -1,0 +1,1217 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Council Spending by Location",
+    "subtitle": "2024\u201325 \u00b7 Circle area represents total expenditure \u00b7 AUD",
+    "fontSize": 24,
+    "subtitleFontSize": 13,
+    "anchor": "start"
+  },
+  "description": "VGC 2024\u201325 total expenditure for 79 councils, from graph 4 cleaned data; ABS population at 30 June 2025. Symbols at interior representative points of simplified ABS 2025 LGA boundaries, not council offices. Shared linear circle-area scale with zero origin in both panels. Larger symbols drawn first. Total spending is not spending per resident. Council selector highlights the chosen circle and boundary; hover highlights a circle and its boundary in each panel. Circle-area scale remains shared. Dashed rectangle shows the enlarged extent.",
+  "hconcat": [
+    {
+      "width": 530,
+      "height": 400,
+      "title": {
+        "text": "Victoria \u00b7 state-wide",
+        "fontSize": 14,
+        "anchor": "start",
+        "color": "#52697a",
+        "offset": 12
+      },
+      "projection": {
+        "type": "conicEqualArea",
+        "rotate": [
+          -145,
+          0,
+          0
+        ],
+        "center": [
+          0,
+          -37
+        ],
+        "parallels": [
+          -36,
+          -38
+        ]
+      },
+      "layer": [
+        {
+          "data": {
+            "url": "data/maps/victoria_lga_2025.topojson",
+            "format": {
+              "type": "topojson",
+              "feature": "victoria_lga"
+            }
+          },
+          "mark": {
+            "type": "geoshape",
+            "fill": "#edf1f3",
+            "stroke": "white",
+            "strokeWidth": 0.7,
+            "aria": false
+          }
+        },
+        {
+          "data": {
+            "url": "data/maps/victoria_lga_2025.topojson",
+            "format": {
+              "type": "topojson",
+              "feature": "victoria_lga"
+            }
+          },
+          "mark": {
+            "type": "geoshape",
+            "fill": null,
+            "stroke": "#123f68",
+            "strokeWidth": 1.8,
+            "aria": false
+          },
+          "transform": [
+            {
+              "lookup": "properties.LGA_CODE25",
+              "from": {
+                "data": {
+                  "url": "data/processed/graph_2_council_expenditure_map.csv",
+                  "format": {
+                    "parse": {
+                      "lga_code": "string"
+                    }
+                  }
+                },
+                "key": "lga_code",
+                "fields": [
+                  "council"
+                ]
+              }
+            }
+          ],
+          "encoding": {
+            "opacity": {
+              "condition": [
+                {
+                  "test": "datum.council === selectedMapCouncil",
+                  "value": 1
+                },
+                {
+                  "param": "spendHoverState",
+                  "empty": false,
+                  "value": 1
+                }
+              ],
+              "value": 0
+            }
+          }
+        },
+        {
+          "data": {
+            "url": "data/processed/graph_2_council_expenditure_map.csv"
+          },
+          "transform": [
+            {
+              "calculate": "-datum.expenditure",
+              "as": "draw_order"
+            }
+          ],
+          "mark": {
+            "type": "circle",
+            "color": "#245f8c",
+            "stroke": "#123f68",
+            "strokeWidth": 0.6
+          },
+          "encoding": {
+            "longitude": {
+              "field": "longitude",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "latitude",
+              "type": "quantitative"
+            },
+            "size": {
+              "field": "expenditure",
+              "type": "quantitative",
+              "scale": {
+                "type": "linear",
+                "domain": [
+                  0,
+                  750000000
+                ],
+                "range": [
+                  0,
+                  950
+                ]
+              },
+              "legend": {
+                "title": "Total expenditure (AUD) \u00b7 circle area",
+                "titleLimit": 500,
+                "orient": "bottom",
+                "values": [
+                  100000000,
+                  300000000,
+                  700000000
+                ],
+                "format": "$.2s",
+                "direction": "horizontal"
+              }
+            },
+            "order": {
+              "field": "draw_order",
+              "type": "quantitative",
+              "sort": "ascending"
+            },
+            "tooltip": [
+              {
+                "field": "council",
+                "title": "Council"
+              },
+              {
+                "field": "expenditure",
+                "type": "quantitative",
+                "title": "Total expenditure (AUD)",
+                "format": "$,.0f"
+              },
+              {
+                "field": "population",
+                "type": "quantitative",
+                "title": "Residents (30 June 2025)",
+                "format": ",.0f"
+              },
+              {
+                "field": "expenditure_per_resident",
+                "type": "quantitative",
+                "title": "AUD per resident",
+                "format": "$,.0f"
+              }
+            ],
+            "opacity": {
+              "condition": [
+                {
+                  "test": "datum.council === selectedMapCouncil",
+                  "value": 0.95
+                },
+                {
+                  "param": "spendHoverState",
+                  "empty": false,
+                  "value": 0.95
+                },
+                {
+                  "test": "selectedMapCouncil === 'All councils'",
+                  "value": 0.45
+                }
+              ],
+              "value": 0.12
+            }
+          },
+          "params": [
+            {
+              "name": "spendHoverState",
+              "select": {
+                "type": "point",
+                "fields": [
+                  "council"
+                ],
+                "on": "mouseover",
+                "clear": "mouseout"
+              }
+            }
+          ]
+        },
+        {
+          "data": {
+            "url": "data/processed/graph_2_council_expenditure_map.csv"
+          },
+          "transform": [
+            {
+              "calculate": "-datum.expenditure",
+              "as": "draw_order"
+            },
+            {
+              "filter": "datum.council === selectedMapCouncil"
+            }
+          ],
+          "mark": {
+            "type": "circle",
+            "color": "#245f8c",
+            "stroke": "#123f68",
+            "strokeWidth": 0.6
+          },
+          "encoding": {
+            "longitude": {
+              "field": "longitude",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "latitude",
+              "type": "quantitative"
+            },
+            "size": {
+              "field": "expenditure",
+              "type": "quantitative",
+              "scale": {
+                "type": "linear",
+                "domain": [
+                  0,
+                  750000000
+                ],
+                "range": [
+                  0,
+                  950
+                ]
+              },
+              "legend": {
+                "title": "Total expenditure (AUD) \u00b7 circle area",
+                "titleLimit": 500,
+                "orient": "bottom",
+                "values": [
+                  100000000,
+                  300000000,
+                  700000000
+                ],
+                "format": "$.2s",
+                "direction": "horizontal"
+              }
+            },
+            "order": {
+              "field": "draw_order",
+              "type": "quantitative",
+              "sort": "ascending"
+            },
+            "tooltip": [
+              {
+                "field": "council",
+                "title": "Council"
+              },
+              {
+                "field": "expenditure",
+                "type": "quantitative",
+                "title": "Total expenditure (AUD)",
+                "format": "$,.0f"
+              },
+              {
+                "field": "population",
+                "type": "quantitative",
+                "title": "Residents (30 June 2025)",
+                "format": ",.0f"
+              },
+              {
+                "field": "expenditure_per_resident",
+                "type": "quantitative",
+                "title": "AUD per resident",
+                "format": "$,.0f"
+              }
+            ],
+            "opacity": {
+              "value": 0.95
+            }
+          }
+        },
+        {
+          "data": {
+            "values": [
+              {
+                "type": "Feature",
+                "geometry": {
+                  "type": "Polygon",
+                  "coordinates": [
+                    [
+                      [
+                        144.75,
+                        -38.05
+                      ],
+                      [
+                        144.75,
+                        -37.55
+                      ],
+                      [
+                        145.3,
+                        -37.55
+                      ],
+                      [
+                        145.3,
+                        -38.05
+                      ],
+                      [
+                        144.75,
+                        -38.05
+                      ]
+                    ]
+                  ]
+                }
+              }
+            ]
+          },
+          "mark": {
+            "type": "geoshape",
+            "fill": null,
+            "stroke": "#18364a",
+            "strokeWidth": 1.5,
+            "strokeDash": [
+              4,
+              3
+            ],
+            "tooltip": false,
+            "aria": false
+          }
+        },
+        {
+          "name": "overview_label_0_halo",
+          "data": {
+            "url": "data/maps/victoria_lga_representative_points.csv"
+          },
+          "transform": [
+            {
+              "calculate": "replace(datum.LGA_NAME25, ' (Vic.)', '')",
+              "as": "council_name"
+            },
+            {
+              "calculate": "split(datum.council_name, ' ')",
+              "as": "label_lines"
+            },
+            {
+              "filter": "datum.council_name === selectedMapCouncil || (selectedMapCouncil === 'All councils' && datum.AREASQKM >= 3000)"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "font": "Arial",
+            "fontSize": 8,
+            "fontWeight": "bold",
+            "lineHeight": 9,
+            "color": "#18364a",
+            "stroke": "white",
+            "strokeWidth": 2,
+            "strokeOpacity": 0.95,
+            "tooltip": false,
+            "align": "center",
+            "baseline": "middle",
+            "dx": {
+              "expr": "datum.council_name === 'Moyne' ? -10 : datum.council_name === 'Corangamite' ? 10 : 0"
+            },
+            "strokeJoin": "round"
+          },
+          "encoding": {
+            "longitude": {
+              "field": "longitude",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "latitude",
+              "type": "quantitative"
+            },
+            "text": {
+              "field": "label_lines"
+            },
+            "opacity": {
+              "condition": {
+                "test": "selectedMapCouncil === 'All councils' || datum.council_name === selectedMapCouncil",
+                "value": 1
+              },
+              "value": 0.45
+            }
+          }
+        },
+        {
+          "name": "overview_label_0_ink",
+          "data": {
+            "url": "data/maps/victoria_lga_representative_points.csv"
+          },
+          "transform": [
+            {
+              "calculate": "replace(datum.LGA_NAME25, ' (Vic.)', '')",
+              "as": "council_name"
+            },
+            {
+              "calculate": "split(datum.council_name, ' ')",
+              "as": "label_lines"
+            },
+            {
+              "filter": "datum.council_name === selectedMapCouncil || (selectedMapCouncil === 'All councils' && datum.AREASQKM >= 3000)"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "font": "Arial",
+            "fontSize": 8,
+            "fontWeight": "bold",
+            "lineHeight": 9,
+            "color": "#18364a",
+            "tooltip": false,
+            "align": "center",
+            "baseline": "middle",
+            "dx": {
+              "expr": "datum.council_name === 'Moyne' ? -10 : datum.council_name === 'Corangamite' ? 10 : 0"
+            }
+          },
+          "encoding": {
+            "longitude": {
+              "field": "longitude",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "latitude",
+              "type": "quantitative"
+            },
+            "text": {
+              "field": "label_lines"
+            },
+            "opacity": {
+              "condition": {
+                "test": "selectedMapCouncil === 'All councils' || datum.council_name === selectedMapCouncil",
+                "value": 1
+              },
+              "value": 0.45
+            }
+          }
+        }
+      ]
+    },
+    {
+      "width": 420,
+      "height": 483.2227162306804,
+      "title": {
+        "text": "Inner Melbourne \u00b7 boxed area",
+        "fontSize": 14,
+        "anchor": "start",
+        "color": "#52697a",
+        "offset": 12
+      },
+      "projection": {
+        "type": "mercator",
+        "center": [
+          145.025,
+          -37.80042307211171
+        ],
+        "scale": 43753.14071908014,
+        "translate": [
+          210.0,
+          241.6113581153402
+        ]
+      },
+      "layer": [
+        {
+          "data": {
+            "url": "data/maps/graph_1_melbourne_inset.topojson",
+            "format": {
+              "type": "topojson",
+              "feature": "melbourne_lga"
+            }
+          },
+          "mark": {
+            "type": "geoshape",
+            "fill": "#edf1f3",
+            "stroke": "white",
+            "strokeWidth": 0.7,
+            "aria": false,
+            "clip": true
+          }
+        },
+        {
+          "data": {
+            "url": "data/maps/graph_1_melbourne_inset.topojson",
+            "format": {
+              "type": "topojson",
+              "feature": "melbourne_lga"
+            }
+          },
+          "mark": {
+            "type": "geoshape",
+            "fill": null,
+            "stroke": "#123f68",
+            "strokeWidth": 1.8,
+            "aria": false,
+            "clip": true
+          },
+          "transform": [
+            {
+              "lookup": "properties.LGA_CODE25",
+              "from": {
+                "data": {
+                  "url": "data/processed/graph_2_council_expenditure_map.csv",
+                  "format": {
+                    "parse": {
+                      "lga_code": "string"
+                    }
+                  }
+                },
+                "key": "lga_code",
+                "fields": [
+                  "council"
+                ]
+              }
+            }
+          ],
+          "encoding": {
+            "opacity": {
+              "condition": [
+                {
+                  "test": "datum.council === selectedMapCouncil",
+                  "value": 1
+                },
+                {
+                  "param": "spendHoverDetail",
+                  "empty": false,
+                  "value": 1
+                }
+              ],
+              "value": 0
+            }
+          }
+        },
+        {
+          "data": {
+            "url": "data/processed/graph_2_council_expenditure_map.csv"
+          },
+          "transform": [
+            {
+              "filter": "datum.longitude >= 144.75 && datum.longitude <= 145.3 && datum.latitude >= -38.05 && datum.latitude <= -37.55"
+            },
+            {
+              "calculate": "-datum.expenditure",
+              "as": "draw_order"
+            }
+          ],
+          "mark": {
+            "type": "circle",
+            "color": "#245f8c",
+            "stroke": "#123f68",
+            "strokeWidth": 0.6,
+            "clip": true
+          },
+          "encoding": {
+            "longitude": {
+              "field": "longitude",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "latitude",
+              "type": "quantitative"
+            },
+            "size": {
+              "field": "expenditure",
+              "type": "quantitative",
+              "scale": {
+                "type": "linear",
+                "domain": [
+                  0,
+                  750000000
+                ],
+                "range": [
+                  0,
+                  950
+                ]
+              },
+              "legend": {
+                "title": "Total expenditure (AUD) \u00b7 circle area",
+                "titleLimit": 500,
+                "orient": "bottom",
+                "values": [
+                  100000000,
+                  300000000,
+                  700000000
+                ],
+                "format": "$.2s",
+                "direction": "horizontal"
+              }
+            },
+            "order": {
+              "field": "draw_order",
+              "type": "quantitative",
+              "sort": "ascending"
+            },
+            "tooltip": [
+              {
+                "field": "council",
+                "title": "Council"
+              },
+              {
+                "field": "expenditure",
+                "type": "quantitative",
+                "title": "Total expenditure (AUD)",
+                "format": "$,.0f"
+              },
+              {
+                "field": "population",
+                "type": "quantitative",
+                "title": "Residents (30 June 2025)",
+                "format": ",.0f"
+              },
+              {
+                "field": "expenditure_per_resident",
+                "type": "quantitative",
+                "title": "AUD per resident",
+                "format": "$,.0f"
+              }
+            ],
+            "opacity": {
+              "condition": [
+                {
+                  "test": "datum.council === selectedMapCouncil",
+                  "value": 0.95
+                },
+                {
+                  "param": "spendHoverDetail",
+                  "empty": false,
+                  "value": 0.95
+                },
+                {
+                  "test": "selectedMapCouncil === 'All councils'",
+                  "value": 0.45
+                }
+              ],
+              "value": 0.12
+            }
+          },
+          "params": [
+            {
+              "name": "spendHoverDetail",
+              "select": {
+                "type": "point",
+                "fields": [
+                  "council"
+                ],
+                "on": "mouseover",
+                "clear": "mouseout"
+              }
+            }
+          ]
+        },
+        {
+          "data": {
+            "url": "data/processed/graph_2_council_expenditure_map.csv"
+          },
+          "transform": [
+            {
+              "filter": "datum.longitude >= 144.75 && datum.longitude <= 145.3 && datum.latitude >= -38.05 && datum.latitude <= -37.55"
+            },
+            {
+              "calculate": "-datum.expenditure",
+              "as": "draw_order"
+            },
+            {
+              "filter": "datum.council === selectedMapCouncil"
+            }
+          ],
+          "mark": {
+            "type": "circle",
+            "color": "#245f8c",
+            "stroke": "#123f68",
+            "strokeWidth": 0.6,
+            "clip": true
+          },
+          "encoding": {
+            "longitude": {
+              "field": "longitude",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "latitude",
+              "type": "quantitative"
+            },
+            "size": {
+              "field": "expenditure",
+              "type": "quantitative",
+              "scale": {
+                "type": "linear",
+                "domain": [
+                  0,
+                  750000000
+                ],
+                "range": [
+                  0,
+                  950
+                ]
+              },
+              "legend": {
+                "title": "Total expenditure (AUD) \u00b7 circle area",
+                "titleLimit": 500,
+                "orient": "bottom",
+                "values": [
+                  100000000,
+                  300000000,
+                  700000000
+                ],
+                "format": "$.2s",
+                "direction": "horizontal"
+              }
+            },
+            "order": {
+              "field": "draw_order",
+              "type": "quantitative",
+              "sort": "ascending"
+            },
+            "tooltip": [
+              {
+                "field": "council",
+                "title": "Council"
+              },
+              {
+                "field": "expenditure",
+                "type": "quantitative",
+                "title": "Total expenditure (AUD)",
+                "format": "$,.0f"
+              },
+              {
+                "field": "population",
+                "type": "quantitative",
+                "title": "Residents (30 June 2025)",
+                "format": ",.0f"
+              },
+              {
+                "field": "expenditure_per_resident",
+                "type": "quantitative",
+                "title": "AUD per resident",
+                "format": "$,.0f"
+              }
+            ],
+            "opacity": {
+              "value": 0.95
+            }
+          }
+        },
+        {
+          "data": {
+            "values": [
+              {
+                "lga_code": "24600",
+                "council": "Melbourne",
+                "group": "Metro",
+                "expenditure": 714967000.0,
+                "population": 194481,
+                "expenditure_per_resident": 3676.28,
+                "longitude": 144.94556577784192,
+                "latitude": -37.806901240395604,
+                "label_lon": 144.8,
+                "label_lat": -37.99,
+                "note": [
+                  "Melbourne: $715m",
+                  "Highest total expenditure"
+                ]
+              }
+            ]
+          },
+          "mark": {
+            "type": "rule",
+            "color": "#18364a",
+            "strokeWidth": 1.5,
+            "clip": true
+          },
+          "encoding": {
+            "longitude": {
+              "field": "longitude",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "latitude",
+              "type": "quantitative"
+            },
+            "longitude2": {
+              "field": "label_lon"
+            },
+            "latitude2": {
+              "field": "label_lat"
+            },
+            "tooltip": null
+          }
+        },
+        {
+          "data": {
+            "values": [
+              {
+                "lga_code": "24600",
+                "council": "Melbourne",
+                "group": "Metro",
+                "expenditure": 714967000.0,
+                "population": 194481,
+                "expenditure_per_resident": 3676.28,
+                "longitude": 144.94556577784192,
+                "latitude": -37.806901240395604,
+                "label_lon": 144.8,
+                "label_lat": -37.99,
+                "note": [
+                  "Melbourne: $715m",
+                  "Highest total expenditure"
+                ]
+              }
+            ]
+          },
+          "mark": {
+            "type": "point",
+            "shape": "triangle-up",
+            "filled": true,
+            "color": "#18364a",
+            "size": 90,
+            "strokeWidth": 0,
+            "aria": false,
+            "clip": true,
+            "xOffset": {
+              "expr": "-sin(datum.annotation_arrow_angle * PI / 180) * 9"
+            },
+            "yOffset": {
+              "expr": "cos(datum.annotation_arrow_angle * PI / 180) * 9"
+            }
+          },
+          "encoding": {
+            "longitude": {
+              "field": "longitude",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "latitude",
+              "type": "quantitative"
+            },
+            "tooltip": null,
+            "angle": {
+              "field": "annotation_arrow_angle",
+              "type": "quantitative",
+              "scale": null
+            }
+          },
+          "name": "annotation_arrow_2_root_hconcat_1_5",
+          "transform": [
+            {
+              "calculate": "atan2((datum.longitude-datum.label_lon) * cos(datum.latitude * PI / 180), datum.latitude-datum.label_lat) * 180 / PI",
+              "as": "annotation_arrow_angle"
+            }
+          ]
+        },
+        {
+          "data": {
+            "values": [
+              {
+                "lga_code": "24600",
+                "council": "Melbourne",
+                "group": "Metro",
+                "expenditure": 714967000.0,
+                "population": 194481,
+                "expenditure_per_resident": 3676.28,
+                "longitude": 144.94556577784192,
+                "latitude": -37.806901240395604,
+                "label_lon": 144.8,
+                "label_lat": -37.99,
+                "note": [
+                  "Melbourne: $715m",
+                  "Highest total expenditure"
+                ]
+              }
+            ]
+          },
+          "mark": {
+            "type": "point",
+            "filled": true,
+            "color": "#123f68",
+            "stroke": "white",
+            "strokeWidth": 1.5,
+            "size": 55,
+            "clip": true
+          },
+          "encoding": {
+            "longitude": {
+              "field": "longitude",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "latitude",
+              "type": "quantitative"
+            },
+            "tooltip": [
+              {
+                "field": "council",
+                "title": "Council"
+              },
+              {
+                "field": "expenditure",
+                "type": "quantitative",
+                "title": "Total expenditure (AUD)",
+                "format": "$,.0f"
+              },
+              {
+                "field": "population",
+                "type": "quantitative",
+                "title": "Residents (30 June 2025)",
+                "format": ",.0f"
+              },
+              {
+                "field": "expenditure_per_resident",
+                "type": "quantitative",
+                "title": "AUD per resident",
+                "format": "$,.0f"
+              }
+            ]
+          }
+        },
+        {
+          "data": {
+            "values": [
+              {
+                "lga_code": "24600",
+                "council": "Melbourne",
+                "group": "Metro",
+                "expenditure": 714967000.0,
+                "population": 194481,
+                "expenditure_per_resident": 3676.28,
+                "longitude": 144.94556577784192,
+                "latitude": -37.806901240395604,
+                "label_lon": 144.8,
+                "label_lat": -37.99,
+                "note": [
+                  "Melbourne: $715m",
+                  "Highest total expenditure"
+                ]
+              }
+            ]
+          },
+          "mark": {
+            "type": "text",
+            "fontSize": 11,
+            "fontWeight": "bold",
+            "align": "left",
+            "dx": 6,
+            "dy": -5,
+            "color": "#123f68",
+            "clip": true
+          },
+          "encoding": {
+            "longitude": {
+              "field": "label_lon",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "label_lat",
+              "type": "quantitative"
+            },
+            "text": {
+              "field": "note"
+            },
+            "tooltip": null
+          }
+        },
+        {
+          "name": "overview_label_1_halo",
+          "data": {
+            "url": "data/maps/inner_melbourne_council_labels.csv"
+          },
+          "transform": [
+            {
+              "calculate": "replace(datum.LGA_NAME25, ' (Vic.)', '')",
+              "as": "council_name"
+            },
+            {
+              "calculate": "split(datum.council_name, ' ')",
+              "as": "label_lines"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "font": "Arial",
+            "fontSize": 8,
+            "fontWeight": "bold",
+            "lineHeight": 9,
+            "color": "#18364a",
+            "stroke": "white",
+            "strokeWidth": 2,
+            "strokeOpacity": 0.95,
+            "tooltip": false,
+            "align": {
+              "expr": "indexof(['Casey', 'Knox', 'Maroondah', 'Yarra Ranges'], datum.council_name) >= 0 ? 'right' : indexof(['Melton', 'Wyndham'], datum.council_name) >= 0 ? 'left' : 'center'"
+            },
+            "baseline": "middle",
+            "dy": {
+              "expr": "datum.council_name === 'Melbourne' ? 4 : datum.council_name === 'Yarra' ? -9 : datum.council_name === 'Moonee Valley' ? 5 : 0"
+            },
+            "dx": {
+              "expr": "datum.council_name === 'Merri-bek' || datum.council_name === 'Port Phillip' ? -4 : datum.council_name === 'Darebin' || datum.council_name === 'Stonnington' ? 4 : 0"
+            },
+            "clip": true,
+            "strokeJoin": "round"
+          },
+          "encoding": {
+            "longitude": {
+              "field": "longitude",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "latitude",
+              "type": "quantitative"
+            },
+            "text": {
+              "field": "label_lines"
+            },
+            "opacity": {
+              "condition": {
+                "test": "selectedMapCouncil === 'All councils' || datum.council_name === selectedMapCouncil",
+                "value": 1
+              },
+              "value": 0.45
+            }
+          }
+        },
+        {
+          "name": "overview_label_1_ink",
+          "data": {
+            "url": "data/maps/inner_melbourne_council_labels.csv"
+          },
+          "transform": [
+            {
+              "calculate": "replace(datum.LGA_NAME25, ' (Vic.)', '')",
+              "as": "council_name"
+            },
+            {
+              "calculate": "split(datum.council_name, ' ')",
+              "as": "label_lines"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "font": "Arial",
+            "fontSize": 8,
+            "fontWeight": "bold",
+            "lineHeight": 9,
+            "color": "#18364a",
+            "tooltip": false,
+            "align": {
+              "expr": "indexof(['Casey', 'Knox', 'Maroondah', 'Yarra Ranges'], datum.council_name) >= 0 ? 'right' : indexof(['Melton', 'Wyndham'], datum.council_name) >= 0 ? 'left' : 'center'"
+            },
+            "baseline": "middle",
+            "dy": {
+              "expr": "datum.council_name === 'Melbourne' ? 4 : datum.council_name === 'Yarra' ? -9 : datum.council_name === 'Moonee Valley' ? 5 : 0"
+            },
+            "dx": {
+              "expr": "datum.council_name === 'Merri-bek' || datum.council_name === 'Port Phillip' ? -4 : datum.council_name === 'Darebin' || datum.council_name === 'Stonnington' ? 4 : 0"
+            },
+            "clip": true
+          },
+          "encoding": {
+            "longitude": {
+              "field": "longitude",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "latitude",
+              "type": "quantitative"
+            },
+            "text": {
+              "field": "label_lines"
+            },
+            "opacity": {
+              "condition": {
+                "test": "selectedMapCouncil === 'All councils' || datum.council_name === selectedMapCouncil",
+                "value": 1
+              },
+              "value": 0.45
+            }
+          }
+        }
+      ],
+      "view": {
+        "stroke": null,
+        "fill": "#ffffff"
+      }
+    }
+  ],
+  "spacing": 48,
+  "resolve": {
+    "scale": {
+      "size": "shared"
+    }
+  },
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "font": "Arial",
+    "background": "white"
+  },
+  "params": [
+    {
+      "name": "selectedMapCouncil",
+      "value": "All councils",
+      "bind": {
+        "input": "select",
+        "name": "Highlight council: ",
+        "options": [
+          "All councils",
+          "Alpine",
+          "Ararat",
+          "Ballarat",
+          "Banyule",
+          "Bass Coast",
+          "Baw Baw",
+          "Bayside",
+          "Benalla",
+          "Boroondara",
+          "Brimbank",
+          "Buloke",
+          "Campaspe",
+          "Cardinia",
+          "Casey",
+          "Central Goldfields",
+          "Colac Otway",
+          "Corangamite",
+          "Darebin",
+          "East Gippsland",
+          "Frankston",
+          "Gannawarra",
+          "Glen Eira",
+          "Glenelg",
+          "Golden Plains",
+          "Greater Bendigo",
+          "Greater Dandenong",
+          "Greater Geelong",
+          "Greater Shepparton",
+          "Hepburn",
+          "Hindmarsh",
+          "Hobsons Bay",
+          "Horsham",
+          "Hume",
+          "Indigo",
+          "Kingston",
+          "Knox",
+          "Latrobe",
+          "Loddon",
+          "Macedon Ranges",
+          "Manningham",
+          "Mansfield",
+          "Maribyrnong",
+          "Maroondah",
+          "Melbourne",
+          "Melton",
+          "Merri-bek",
+          "Mildura",
+          "Mitchell",
+          "Moira",
+          "Monash",
+          "Moonee Valley",
+          "Moorabool",
+          "Mornington Peninsula",
+          "Mount Alexander",
+          "Moyne",
+          "Murrindindi",
+          "Nillumbik",
+          "Northern Grampians",
+          "Port Phillip",
+          "Pyrenees",
+          "Queenscliffe",
+          "South Gippsland",
+          "Southern Grampians",
+          "Stonnington",
+          "Strathbogie",
+          "Surf Coast",
+          "Swan Hill",
+          "Towong",
+          "Wangaratta",
+          "Warrnambool",
+          "Wellington",
+          "West Wimmera",
+          "Whitehorse",
+          "Whittlesea",
+          "Wodonga",
+          "Wyndham",
+          "Yarra",
+          "Yarra Ranges",
+          "Yarriambiack"
+        ]
+      }
+    }
+  ]
+}

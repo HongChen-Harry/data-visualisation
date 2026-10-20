@@ -1,0 +1,239 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "LGPRF WC5 actual results, 2020-21 through 2024-25; council names and groups harmonized to 2024-25. Councils with any missing annual result excluded. Cell labels show percentage diverted.",
+  "width": 650,
+  "height": {
+    "step": 23
+  },
+  "title": {
+    "text": "Landfill Diversion Across Councils",
+    "subtitle": "2020–21 to 2024–25 · Percentage diverted from landfill · Councils with complete records",
+    "anchor": "start",
+    "color": "#172b40",
+    "subtitleColor": "#526171",
+    "fontSize": 24,
+    "subtitleFontSize": 13,
+    "subtitlePadding": 7,
+    "offset": 22
+  },
+  "data": {
+    "url": "data/processed/graph_6_waste_heatmap.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "landfill_diversion_pct": "number",
+        "latest_diversion_pct": "number"
+      }
+    }
+  },
+  "params": [
+    {
+      "name": "heatGroup",
+      "value": "Metro",
+      "bind": {
+        "input": "select",
+        "options": [
+          "Metro",
+          "Interface",
+          "Regional City",
+          "Large Shire",
+          "Small Shire"
+        ],
+        "name": "Council group: "
+      }
+    }
+  ],
+  "transform": [
+    {
+      "calculate": "datum.status === 'Reported' ? 0 : 1",
+      "as": "missing_flag"
+    },
+    {
+      "joinaggregate": [
+        {
+          "op": "sum",
+          "field": "missing_flag",
+          "as": "missing_years"
+        }
+      ],
+      "groupby": [
+        "council"
+      ]
+    },
+    {
+      "filter": "datum.missing_years === 0"
+    },
+    {
+      "filter": "datum.group === heatGroup"
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "domain": false,
+      "ticks": false,
+      "labelColor": "#43566a",
+      "titleColor": "#43566a",
+      "labelFontSize": 12
+    },
+    "title": {
+      "anchor": "start",
+      "color": "#172b40",
+      "subtitleColor": "#526171",
+      "fontSize": 24,
+      "subtitleFontSize": 13,
+      "subtitlePadding": 7,
+      "offset": 22
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "rect",
+        "stroke": "white",
+        "strokeWidth": 2,
+        "invalid": null
+      },
+      "encoding": {
+        "x": {
+          "field": "financial_year",
+          "type": "ordinal",
+          "sort": [
+            "2020-21",
+            "2021-22",
+            "2022-23",
+            "2023-24",
+            "2024-25"
+          ],
+          "axis": {
+            "title": null,
+            "orient": "top",
+            "labelAngle": 0,
+            "labelPadding": 10
+          }
+        },
+        "y": {
+          "field": "council",
+          "type": "nominal",
+          "sort": {
+            "field": "latest_diversion_pct",
+            "order": "descending"
+          },
+          "axis": {
+            "title": null,
+            "labelLimit": 190,
+            "labelPadding": 8
+          }
+        },
+        "color": {
+          "field": "landfill_diversion_pct",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              100
+            ],
+            "range": [
+              "#deebf7",
+              "#08519c"
+            ]
+          },
+          "legend": {
+            "title": "Diverted (%)",
+            "orient": "bottom",
+            "direction": "horizontal",
+            "gradientLength": 250
+          }
+        },
+        "tooltip": [
+          {
+            "field": "council",
+            "title": "Council"
+          },
+          {
+            "field": "financial_year",
+            "title": "Year"
+          },
+          {
+            "field": "landfill_diversion_pct",
+            "type": "quantitative",
+            "title": "Diverted (%)",
+            "format": ".1f"
+          }
+        ]
+      }
+    },
+    {
+      "transform": [
+        {
+          "calculate": "format(datum.landfill_diversion_pct, '.1f') + '%'",
+          "as": "percent_label"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "fontSize": 12
+      },
+      "encoding": {
+        "x": {
+          "field": "financial_year",
+          "type": "ordinal",
+          "sort": [
+            "2020-21",
+            "2021-22",
+            "2022-23",
+            "2023-24",
+            "2024-25"
+          ],
+          "axis": {
+            "title": null,
+            "orient": "top",
+            "labelAngle": 0,
+            "labelPadding": 10
+          }
+        },
+        "y": {
+          "field": "council",
+          "type": "nominal",
+          "sort": {
+            "field": "latest_diversion_pct",
+            "order": "descending"
+          },
+          "axis": {
+            "title": null,
+            "labelLimit": 190,
+            "labelPadding": 8
+          }
+        },
+        "text": {
+          "field": "percent_label"
+        },
+        "color": {
+          "condition": {
+            "test": "datum.landfill_diversion_pct >= 55",
+            "value": "white"
+          },
+          "value": "#173f65"
+        },
+        "tooltip": [
+          {
+            "field": "council",
+            "title": "Council"
+          },
+          {
+            "field": "financial_year",
+            "title": "Year"
+          },
+          {
+            "field": "landfill_diversion_pct",
+            "type": "quantitative",
+            "title": "Diverted (%)",
+            "format": ".1f"
+          }
+        ]
+      }
+    }
+  ]
+}
